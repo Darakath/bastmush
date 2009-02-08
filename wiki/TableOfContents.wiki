@@ -1,3 +1,26 @@
 #summary Table of Contents
 
  * [Intro]
+ == Plugins ==
+ * [Aardwolf_Spellups] - A modified version of Nick's Spellup Plugin
+ * [AFK_Detector]
+ * [Aardwolf_Playing_Detector]
+ * [Aardwolf_Regen]
+ * [Aardwolf_autohunter_swalec]
+ * [Aardwolf_chats]
+ * [Aardwolf_cp_miniwin]
+ * [Aardwolf_disarm]
+ * [Aardwolf_exits_detector]
+ * [Aardwolf_map_miniwin]
+ * [Aardwolf_moons]
+ * [Aardwolf_quest_miniwin]
+ * [Aardwolf_stats]
+ * [PotionQuafferv2]
+
+ == Support Files ==
+ * [class]
+ * [miniwin]
+ * [pluginhelper]
+ * [stringfuncs]
+ * [verify]
+ * [window]

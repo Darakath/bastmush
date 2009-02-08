@@ -2,7 +2,7 @@
  == General ==
  * [Intro]
  == Plugins ==
- * [Aardwolf_Spellups] - A modified version of Nick's Spellup Plugin
+ * [Aardwolf_Spellups]
  * [AFK_Detector]
  * [Aardwolf_Playing_Detector]
  * [Aardwolf_Regen]

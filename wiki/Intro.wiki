@@ -1,0 +1,33 @@
+#summary An intro to the scripts that are here.
+#labels featured
+
+= Introduction =
+
+This is a repository for my mushclient scripts.  Many of them are modified plugins and most of them are geared toward [http://aardmud.org Aardwolf Mud].
+
+
+= Details =
+
+== Plugins ==
+ * [Aardwolf_Spellups]
+ * [AFK_Detector]
+ * [Aardwolf_Playing_Detector]
+ * [Aardwolf_Regen]
+ * [Aardwolf_autohunter_swalec]
+ * [Aardwolf_chats]
+ * [Aardwolf_cp_miniwin]
+ * [Aardwolf_disarm]
+ * [Aardwolf_exits_detector]
+ * [Aardwolf_map_miniwin]
+ * [Aardwolf_moons]
+ * [Aardwolf_quest_miniwin]
+ * [Aardwolf_stats]
+ * [PotionQuafferv2]
+
+== Support Files ==
+ * [class]
+ * [miniwin]
+ * [pluginhelper]
+ * [stringfuncs]
+ * [verify]
+ * [window]

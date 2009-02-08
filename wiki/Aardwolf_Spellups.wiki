@@ -1,0 +1,10 @@
+#summary Aardwolf Spellup Plugin
+
+= Introduction =
+
+This is a modified version of Nick's Aardwolf Spellup Plugin.  It requires 
+
+
+= Details =
+
+It requires the modified [AFK_Detector] and [Playing_Detector]

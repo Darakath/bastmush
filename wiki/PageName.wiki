@@ -1,3 +1,0 @@
-#summary Table of Contents
-
- * [Intro]

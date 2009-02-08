@@ -1,5 +1,8 @@
 #summary Aardwolf Spellup Plugin
 
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
 = Introduction =
 
 This is a modified version of Nick's Aardwolf Spellup Plugin. 
@@ -8,6 +11,14 @@ The original is here http://www.gammon.com.au/mushclient/plugins/Aardwolf/Aardwo
 
 = Details =
 
+ == Differences from Nick's Plugin ==
+  * no more spell timer, it looks for the specific spell that it tried to cast and waits for the spell tags.  I have had no issues with this
+  * You can have spells that are blocked by other spells
+   * For example "spellup block 68 121" will block casting of "protection good" if "intertial barrier" is active.  Therefore, if you have "protection good" before "inertial barrier" in your spellup list, it will only cast "protection good" when "inertial barrier" wears off.
+  * You can disable a spell without taking it out of your list
+ 
+
+ == Installation ==
  * download this world file http://www.gammon.com.au/mushclient/plugins/Aardwolf/Spellups.mcl and put into <Mushclient Install Dir>\worlds\Aardwolf
 
 It requires the modified [AFK_Detector] and [Playing_Detector]

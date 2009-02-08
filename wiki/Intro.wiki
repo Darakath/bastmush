@@ -1,8 +1,6 @@
 #summary An intro to the scripts that are here.
 #labels featured
 
-= Introduction =
-
 This is a repository for my mushclient scripts.  Many of them are modified plugins and most of them are geared toward [http://aardmud.org Aardwolf Mud].
 
 

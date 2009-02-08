@@ -19,6 +19,6 @@ The original is here http://www.gammon.com.au/mushclient/plugins/Aardwolf/Aardwo
  
 
  == Installation ==
- * download this world file http://www.gammon.com.au/mushclient/plugins/Aardwolf/Spellups.mcl and put into <Mushclient Install Dir>\worlds\Aardwolf
+  * download this world file http://www.gammon.com.au/mushclient/plugins/Aardwolf/Spellups.mcl and put into <Mushclient Install Dir>\worlds\Aardwolf
 
 It requires the modified [AFK_Detector] and [Playing_Detector]

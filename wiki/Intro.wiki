@@ -3,11 +3,14 @@
 
 This is a repository for my mushclient scripts.  Many of them are modified plugins and most of them are geared toward [http://aardmud.org Aardwolf Mud].
 
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
 
 = Details =
 
 == Plugins ==
- * [Aardwolf_Spellups]
+ * [Aardwolf_Spellups] - A modified version of Nick's Spellup Plugin
  * [AFK_Detector]
  * [Aardwolf_Playing_Detector]
  * [Aardwolf_Regen]

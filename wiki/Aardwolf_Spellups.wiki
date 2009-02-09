@@ -11,7 +11,7 @@ The original is here http://www.gammon.com.au/mushclient/plugins/Aardwolf/Aardwo
 = Differences from Nick's Plugin ==
  * no more spell timer, it looks for the specific spell that it tried to cast and waits for the spell tags.  I have had no issues with this
  * You can have spells that are blocked by other spells
-  * For example "spellup block 68 121" will block casting of "protection good" if "intertial barrier" is active.  Therefore, if you have "protection good" before "inertial barrier" in your spellup list, it will only cast "protection good" when "inertial barrier" wears off.
+  * For example "spellup block 68 121" will block casting of "protection good" if "inertial barrier" is active.  Therefore, if you have "protection good" before "inertial barrier" in your spellup list, it will only cast "protection good" when "inertial barrier" wears off.
  * You can disable a spell without taking it out of your list
   * I use this for when I want to vis with sneak
  * Add a spell to a specific place in the list

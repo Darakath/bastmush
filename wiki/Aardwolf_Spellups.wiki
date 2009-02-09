@@ -20,4 +20,4 @@ The original is here http://www.gammon.com.au/mushclient/plugins/Aardwolf/Aardwo
 
  == Installation ==
   * download this world file http://www.gammon.com.au/mushclient/plugins/Aardwolf/Spellups.mcl and put into <Mushclient Install Dir>\worlds\Aardwolf
-  * It also requires [Aardwolf_State_Detector]
+  * It also requires [State_Detector]

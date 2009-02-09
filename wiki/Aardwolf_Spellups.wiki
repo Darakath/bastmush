@@ -8,6 +8,41 @@
 This is a modified version of Nick's Aardwolf Spellup Plugin. 
 The original is here http://www.gammon.com.au/mushclient/plugins/Aardwolf/Aardwolf_Spellups.xml 
 
+= Help =
+ {{{
+spellups            --> display current spellups in output window
+
+spellup all         --> cast all possible spellups
+spellup none        --> remove all spellups
+
+spellup a,b,c       --> add spells a, b, c in that order 
+                      (eg. spellup shield, blur, detect magic)
+                      (or: spellup 72, 171, 35)
+(or)
+Spellups: a, b, c   --> add spells a, b, c 
+                      (you can copy and paste output from current list)
+
+spellup + blur, avoid:3    --> add more to the current list
+  to add a spell in a certain place add a : then the place number
+spellup - night vision, detect magic   --> remove those from the list
+
+spellup fast    --> cast all spellups immediately, as fast as you can
+spellup pause   --> stop casting spellups until a resume
+spellup resume  --> resume casting
+spellup refresh --> requery server for current spells on us
+
+spellup brief   --> show summary of spellup situation
+spellup full    --> show full details
+
+spellup other (name) --> try to spellup another player with all spellups
+                          (eg. spellup other johnsmith)
+                        
+spellup block   --> block a spell with another spell
+                           (eg. spellup block 68 121)
+spellup disable --> disable a spell without taking it out of the list
+
+spellup help    --> this message 
+ }}}
 
 = Details =
 
@@ -16,6 +51,8 @@ The original is here http://www.gammon.com.au/mushclient/plugins/Aardwolf/Aardwo
   * You can have spells that are blocked by other spells
    * For example "spellup block 68 121" will block casting of "protection good" if "intertial barrier" is active.  Therefore, if you have "protection good" before "inertial barrier" in your spellup list, it will only cast "protection good" when "inertial barrier" wears off.
   * You can disable a spell without taking it out of your list
+   * I use this for when I want to vis with sneak
+  * Add a spell to a specific place in the list
  
 
  == Installation ==

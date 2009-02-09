@@ -3,7 +3,6 @@
  * [Intro]
  == Plugins ==
  * [Aardwolf_Spellups]
- * [State_Detector]
  * [Aardwolf_Regen]
  * [Aardwolf_autohunter_swalec]
  * [Aardwolf_chats]
@@ -15,6 +14,7 @@
  * [Aardwolf_quest_miniwin]
  * [Aardwolf_stats]
  * [PotionQuafferv2]
+ * [State_Detector]
 
  == Support Files ==
  * [class]

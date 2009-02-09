@@ -57,4 +57,4 @@ spellup help    --> this message
 = Installation ==
  * download this world file http://www.gammon.com.au/mushclient/plugins/Aardwolf/Spellups.mcl and put into <Mushclient Install Dir>\worlds\Aardwolf
  * It also requires [State_Detector]
- * download from trunk [http://code.google.com/p/bastmush/source/browse/trunk/worlds/plugins/Aardwolf/Aardwolf_Spellups.xml here]
+ * download from trunk [http://code.google.com/p/bastmush/source/browse/trunk/worlds/plugins/Aardwolf/Aardwolf_Spellups.xml here] or checkout with subversion

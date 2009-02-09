@@ -1,0 +1,38 @@
+#summary Broadcasts when the telopts state changes
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * broadcasts when Aardwolf sends the telopts state change
+
+= Help =
+ {{{
+
+[FOR PLUGIN AUTHORS ONLY]
+
+Detects when there is a change in state
+
+Example:
+
+  function OnPluginBroadcast (msg, id, name, text)
+    if id == "3448fed8734053327438a4df" then
+      state = GetPluginVariable ("3448fed8734053327438a4df", "state")
+      statestring = GetPluginVariable ("3448fed8734053327438a4df", "statestring")
+    end -- playing status changed
+  end
+
+To test if you are currently playing (after a reinstall):
+
+  state = GetPluginVariable ("3448fed8734053327438a4df", "state")
+  
+You can also just do:
+  state = GetPluginVariable ("3448fed8734053327438a4df")
+  
+and then get the values by:
+  state.state
+  state.statestring
+}}}
+
+= Installation ==
+ * download the script and put into your plugins directory

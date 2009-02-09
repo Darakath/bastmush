@@ -36,4 +36,4 @@ and then get the values by:
 
 = Installation ==
  * download from [http://code.google.com/p/bastmush/source/browse/trunk/worlds/plugins/Aardwolf/State_Detector.xml here] or checkout with subversion
- * put the plugin in your plugins directory
+ * put the plugin in your plugins directory and load it

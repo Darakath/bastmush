@@ -4,6 +4,7 @@
  == Plugins ==
  * [Aardwolf_Spellups]
  * [AFK_Detector]
+ * [Aardwolf_State_Detector]
  * [Aardwolf_Playing_Detector]
  * [Aardwolf_Regen]
  * [Aardwolf_autohunter_swalec]

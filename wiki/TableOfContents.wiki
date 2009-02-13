@@ -15,6 +15,7 @@
  * [Aardwolf_stats]
  * [PotionQuafferv2]
  * [State_Detector]
+ * [Tick_Detector]
 
  == Support Files ==
  * [class]

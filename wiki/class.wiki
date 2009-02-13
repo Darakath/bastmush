@@ -7,7 +7,7 @@
  * a lua class library from http://class.luaforge.net
 
 = Differences from Original Plugin ==
- * converted to work with 5.1 and the new varargs syntax because mushclient does not support the old varargs syntax
+ * converted to work with 5.1 and the new varargs syntax because [http://mushclient.com mushclient] does not support the old varargs syntax
 
 = Help =
  * see http://class.luaforge.net

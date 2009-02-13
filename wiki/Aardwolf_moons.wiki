@@ -39,3 +39,18 @@ set            : set script and window vars, show plugin vars when called with n
  * the miniwindow will not show until you have seen all 3 of the moons rise or fall at least once
 
 = Screenshots =
+ * the regular moonbot miniwindow
+  * click on the - to toggle the window or type mb toggle
+  * click on the ? to change the background colours of parts of the window
+ http://bastmush.googlecode.com/svn/wiki/moonbot_images/moonbot.png
+ * the miniwindow when the three moons are up
+ http://bastmush.googlecode.com/svn/wiki/moonbot_images/moonbot-threemoons.png
+ * the toggled moonbot miniwindow
+  * click on "Show Moons" to toggle back to the full window
+ http://bastmush.googlecode.com/svn/wiki/moonbot_images/moonbot-toggled.png
+ * the toggled moonbot miniwindow when the 3 moons are up
+ http://bastmush.googlecode.com/svn/wiki/moonbot_images/moonbot-toggled-threemoons.png
+ * moonbot tick messages
+ http://bastmush.googlecode.com/svn/wiki/moonbot_images/moonbot-attick.png
+ * moonbot settings
+ http://bastmush.googlecode.com/svn/wiki/moonbot_images/moonbot-settings.png

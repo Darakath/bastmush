@@ -1,0 +1,22 @@
+#summary a lua module that contains a class for making windows
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * a lua module that contains a window class
+
+= Help =
+{{{
+forthcoming
+}}}
+
+= Installation =
+ * Requires
+  * [class]
+  * [verify]
+  * [pluginhelper]
+ * download from trunk [http://code.google.com/p/bastmush/source/browse/trunk/lua/window.lua here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\lua
+
+= Example =
+ * see the [Aardwolf_Moons] plugin

@@ -63,4 +63,8 @@ spellup help    --> this message
   * Nick's [http://www.gammon.com.au/forum/?id=8776 Stats_Detector.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
   * [State_Detector] in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
  * download from trunk [http://code.google.com/p/bastmush/source/browse/trunk/worlds/plugins/Aardwolf/Aardwolf_Spellups.xml here] (make a note of the revision, it will help troubleshoot) and place in your plugins directory or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+
+= Troubleshooting =
  * make sure tags are on by typing "tags on"
+ * "spellup debug" will turn debugging on or look in the spellup plugin for "fdebug = false" and change it to "fdebug = true", this will give you a lot of debugging output
+ * paste whatever errors and debugging information you get into a post on the mushclient site

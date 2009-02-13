@@ -3,17 +3,7 @@
  * [Intro]
  == Plugins ==
  * [Aardwolf_Spellups]
- * [Aardwolf_Regen]
- * [Aardwolf_autohunter_swalec]
- * [Aardwolf_chats]
- * [Aardwolf_cp_miniwin]
- * [Aardwolf_disarm]
- * [Aardwolf_exits_detector]
- * [Aardwolf_map_miniwin]
  * [Aardwolf_moons]
- * [Aardwolf_quest_miniwin]
- * [Aardwolf_stats]
- * [PotionQuafferv2]
  * [State_Detector]
  * [Tick_Detector]
 

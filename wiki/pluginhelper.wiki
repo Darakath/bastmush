@@ -1,0 +1,133 @@
+#summary A plugin to help with cmd parsing and option setting
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * this modules is a helper module that tracks variables, settings and commands for plugins
+
+= Help =
+{{{
+this module will help with setting up plugin commands and variables
+
+requires the verify and stringfuncs modules
+
+an option table looks like this
+options_table  = {
+  plotlength = {help="set the length of the moon plot", type="number", high=80, low=0, after=styleplotdata, default=66},
+  plugin_colour = {help="set the plugin colour", type="colour", default="lime"},
+  tickgag = {help="toggle gagging the tick", type="bool", after=check_tickgag,default=false},
+  shortcmd = {help="the short command for this plugin", type="string", after=set_plugin_alias, default="mb"},
+  longcmd = {help="the long command for this plugin", type="string", after=set_plugin_alias, default="moonbot"},
+  three_colour = {help="the colour for the when three moons are up", type="colour", default=verify_colour("gold"), sortlev=2}  
+}
+valid values:
+  help     -- the help for this option
+  type     -- the type of this option, valid are string, bool, colour, number
+  default  -- the default value
+  high,low -- valid for numbers only, the lowest and highest values for this option
+  after    -- the function to run after this option has been set
+  sortlev  -- you can group options by setting this, all options with the same number will be printed together
+NOTE: the plugin_colour, shortcmd, and longcmd options are required!!  
+  
+a command table looks like this
+cmds_table = {
+  plot      = {func=plotdata, help="plot moons"},
+  union     = {func=moonbot_union, help="show next moons union"}, 
+  print     = {func=printmoons, help="print the current moon phase #s"},
+  toggle    = {func=togglewindow, help="toggle the moons miniwindow"}, 
+  reset     = {func=moonbot_reset, help="reset the moons"},
+}
+valid values -
+  func     -- the function to call 
+              the arguments are sent in this order (name, line, wildcards, cmds_table, options_table, window)
+  help     -- the help for this command
+}}}
+
+= Installation =
+
+= Troubleshooting =
+
+= Sample Script =
+{{{
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE muclient>
+<!-- MuClient version 4.37 -->
+
+<muclient>
+<plugin
+   name="Pluginhelper_test"
+   author="Bast"
+   id="234ee13944ee86427311ad5e"
+   language="Lua"
+   purpose="test pluginhelper functionality"
+   save_state="y"
+   date_written="2009-02-13 09:28:14"
+   requires="4.37"
+   version="1"
+   >
+</plugin>
+
+<!--  Get our standard constants -->
+
+<include name="constants.lua"/>
+
+<!--  Aliases  -->
+
+<aliases>
+  <alias
+   name="plugin_parse"
+   script="plugin_parse"
+   match="nothing"
+   enabled="y"
+   regexp="y"
+   ignore_case="y"
+   sequence="110"
+   expand_variables="y"
+  >
+  </alias>   
+</aliases>
+
+<script>
+<![CDATA[
+-- var is required for pluginhelper below
+require "var"
+require "pluginhelper"
+
+
+function test_cmd (name, line, wildcards)
+  print("This is a test")
+  return true
+end -- 
+
+options_table  = {
+  shortcmd = {help="the short command for this plugin", type="string", after=set_plugin_alias, default="pt"},
+  longcmd = {help="the long command for this plugin", type="string", after=set_plugin_alias, default="ptest"},
+  testnum = {help="a test number", type="number", high=80, low=0, after=styleplotdata, default=66},
+  testbool = {help="a test boolean", type="bool", default=false, sortlev=10},  
+  plugin_colour = {help="set the plugin colour", type="colour", default="red", sortlev=99},  
+}
+
+cmds_table = {
+  test      = {func=test_cmd, help="a test printing"},
+}
+  
+function plugin_parse (name, line, wildcards)
+  plugin_parse_helper(name, line, wildcards, cmds_table, options_table, moonwin)
+end -- plugin_parse
+
+function OnPluginSaveState()
+  plugin_save_vars(options_table)
+end
+
+function OnPluginInstall()
+  plugin_help_helper("", "", "", cmds_table)
+end -- OnPluginInstall
+
+init_plugin_vars(options_table)
+set_plugin_alias()
+
+]]>
+</script>
+</muclient>
+}}}

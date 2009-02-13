@@ -20,6 +20,7 @@ The original is here http://www.gammon.com.au/mushclient/plugins/Aardwolf/Aardwo
 
 = Help =
  {{{
+/*
 spellups            --> display current spellups in output window
 
 spellup all         --> cast all possible spellups
@@ -52,6 +53,7 @@ spellup block   --> block a spell with another spell
 spellup disable --> disable a spell without taking it out of the list
 
 spellup help    --> this message 
+*/
  }}}
 
 

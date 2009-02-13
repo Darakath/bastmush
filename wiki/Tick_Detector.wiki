@@ -1,0 +1,28 @@
+#summary Broadcasts when a tick is sent through telopts
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * broadcasts when a tick is sent through telopts
+
+= Help =
+ {{{
+/*
+[FOR PLUGIN AUTHORS ONLY]
+
+Detects when a tick is sent through telopts
+
+Example:
+
+  function OnPluginBroadcast (msg, id, name, text)
+    if id == "55567d873405332743347afc" and msg == 1 then
+      -- do something on tick
+    end
+  end
+
+*/
+}}}
+
+= Installation ==
+ * download from trunk [http://code.google.com/p/bastmush/source/browse/trunk/worlds/plugins/Aardwolf/Tick_Detector.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf

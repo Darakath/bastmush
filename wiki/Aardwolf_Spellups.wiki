@@ -58,9 +58,9 @@ spellup help    --> this message
 
 
 = Installation ==
- * download the [http://www.gammon.com.au/mushclient/plugins/Aardwolf/Spellups.mcl Spellups.mcl ] World into the directory <Mushclient Install Dir>\worlds\Aardwolf
- * download Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/telnet_options.lua telnet_options.lua] script into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
- * You will also need the following plugins (load them in this order)
+ * Required 
+  * [http://www.gammon.com.au/mushclient/plugins/Aardwolf/Spellups.mcl Spellups.mcl ] World in the directory <Mushclient Install Dir>\worlds\Aardwolf
+  * Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/telnet_options.lua telnet_options.lua] script in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
   * Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/Create_World_File.xml Create_World_File.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
   * Nick's [http://www.gammon.com.au/forum/?id=8776 Stats_Detector.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
   * [State_Detector] in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf

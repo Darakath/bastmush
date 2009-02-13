@@ -4,7 +4,7 @@
 <wiki:toc max_depth="2" />
 
 = Introduction =
- * this modules is a helper module that tracks variables, settings and commands for plugins
+ * this module is a helper module that tracks variables, settings and commands for plugins
 
 = Help =
 {{{
@@ -45,8 +45,12 @@ valid values -
 }}}
 
 = Installation =
+ * download the [verify] module into the directory <Mushclient Install Dir>\lua
+ * download the [stringfuncs] module into the directory <Mushclient Install Dir>\lua
+ * download from trunk [http://code.google.com/p/bastmush/source/browse/trunk/lua/pluginhelper.lua here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\lua
 
 = Troubleshooting =
+ * post errors on the mushclient forums, I watch those forums 
 
 = Sample Script =
 {{{

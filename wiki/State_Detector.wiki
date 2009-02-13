@@ -8,7 +8,7 @@
 
 = Help =
  {{{
-
+/*
 [FOR PLUGIN AUTHORS ONLY]
 
 Detects when there is a change in state
@@ -32,6 +32,7 @@ You can also just do:
 and then get the values by:
   state.state
   state.statestring
+*/
 }}}
 
 = Installation ==

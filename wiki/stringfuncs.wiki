@@ -1,0 +1,18 @@
+#summary a module for various string functions not included in the utils module or string class
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * a plugin for string functions
+
+= Help =
+{{{
+/*
+functions in this module
+ strip - strip a string of all forward and trailing whitespace
+*/
+}}}
+
+= Installation ==
+ * download from trunk [http://code.google.com/p/bastmush/source/browse/trunk/lua/stringfuncs.lua here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\lua

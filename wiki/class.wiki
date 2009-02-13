@@ -1,0 +1,16 @@
+#summary a lua module for a class library
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * a lua class library from http://class.luaforge.net
+
+= Differences from Original Plugin ==
+ * converted to work with 5.1 and the new varargs syntax because mushclient does not support the old varargs syntax
+
+= Help =
+ * see http://class.luaforge.net
+
+= Installation ==
+ * download from trunk [http://code.google.com/p/bastmush/source/browse/trunk/lua/class.lua here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\lua

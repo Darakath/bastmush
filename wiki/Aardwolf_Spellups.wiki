@@ -56,13 +56,13 @@ spellup help    --> this message
 
 
 = Installation ==
- * download the [http://www.gammon.com.au/mushclient/plugins/Aardwolf/Spellups.mcl Spellups.mcl ] World and into the directory <Mushclient Install Dir>\worlds\Aardwolf
- * download Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/telnet_options.lua telnet_options.lua] script in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+ * download the [http://www.gammon.com.au/mushclient/plugins/Aardwolf/Spellups.mcl Spellups.mcl ] World into the directory <Mushclient Install Dir>\worlds\Aardwolf
+ * download Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/telnet_options.lua telnet_options.lua] script into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
  * You will also need the following plugins (load them in this order)
   * Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/Create_World_File.xml Create_World_File.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
   * Nick's [http://www.gammon.com.au/forum/?id=8776 Stats_Detector.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
   * [State_Detector] in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
- * download from trunk [http://code.google.com/p/bastmush/source/browse/trunk/worlds/plugins/Aardwolf/Aardwolf_Spellups.xml here] (make a note of the revision, it will help troubleshoot) and place in your plugins directory or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+ * download from trunk [http://code.google.com/p/bastmush/source/browse/trunk/worlds/plugins/Aardwolf/Aardwolf_Spellups.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
 
 = Troubleshooting =
  * make sure tags are on by typing "tags on"

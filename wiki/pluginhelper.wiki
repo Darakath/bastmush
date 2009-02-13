@@ -117,7 +117,7 @@ cmds_table = {
 }
   
 function plugin_parse (name, line, wildcards)
-  plugin_parse_helper(name, line, wildcards, cmds_table, options_table, moonwin)
+  plugin_parse_helper(name, line, wildcards, cmds_table, options_table, window)
 end -- plugin_parse
 
 function OnPluginSaveState()

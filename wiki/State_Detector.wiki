@@ -36,5 +36,4 @@ and then get the values by:
 }}}
 
 = Installation ==
- * download from [http://code.google.com/p/bastmush/source/browse/trunk/worlds/plugins/Aardwolf/State_Detector.xml here] or checkout with subversion
- * put the plugin in your plugins directory and load it
+ * download from trunk [http://code.google.com/p/bastmush/source/browse/trunk/worlds/plugins/Aardwolf/State_Detector.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf

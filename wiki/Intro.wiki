@@ -1,4 +1,4 @@
 #summary An intro to the scripts that are here.
 #labels featured
 
-This is a repository for my [http://mushclient.com mushclient] scripts.  Many of them are modified plugins and most of them are geared toward [http://aardwolf.com Aardwolf Mud].
+This is a repository for my [http://mushclient.com Mushclient] scripts.  Many of them are modified plugins and most of them are geared toward [http://aardwolf.com Aardwolf Mud].

@@ -49,7 +49,6 @@ valid values -
 
 = Installation =
  * download the [verify] module into the directory <Mushclient Install Dir>\lua
- * download the [stringfuncs] module into the directory <Mushclient Install Dir>\lua
  * download from trunk [http://code.google.com/p/bastmush/source/browse/trunk/lua/pluginhelper.lua here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\lua
 
 = Troubleshooting =

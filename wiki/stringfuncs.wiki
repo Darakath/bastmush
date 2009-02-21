@@ -4,13 +4,13 @@
 <wiki:toc max_depth="2" />
 
 = Introduction =
- * a plugin for string functions
+ * a plugin for string functions, which has nothing of value in it right now
 
 = Help =
 {{{
 /*
 functions in this module
- strip - strip a string of all forward and trailing whitespace
+
 */
 }}}
 

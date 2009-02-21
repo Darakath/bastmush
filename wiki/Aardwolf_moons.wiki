@@ -34,7 +34,6 @@ set            : set script and window vars, show plugin vars when called with n
   * [miniwin]
   * [window]
   * [class]
-  * [stringfuncs]
   * [pluginhelper]
   * [verify]
   * [Tick_Detector] and all of its dependencies

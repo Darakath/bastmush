@@ -59,7 +59,7 @@ spellup help    --> this message
 
 = Installation ==
  * Required 
-  * [http://www.gammon.com.au/mushclient/plugins/Aardwolf/Spellups.mcl Spellups.mcl ] World in the directory <Mushclient Install Dir>\worlds\Aardwolf (included in the Aardwolf Mushclient)
+  * [http://www.gammon.com.au/mushclient/plugins/Aardwolf/Spellups.mcl Spellups.mcl ] World in the directory <Mushclient Install Dir>\worlds\Aardwolf 
   * Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/telnet_options.lua telnet_options.lua] script in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
   * Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/Create_World_File.xml Create_World_File.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
   * Nick's [http://www.gammon.com.au/forum/?id=8776 Stats_Detector.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)

@@ -109,7 +109,7 @@ end --
 options_table  = {
   shortcmd = {help="the short command for this plugin", type="string", after=set_plugin_alias, default="pt"},
   longcmd = {help="the long command for this plugin", type="string", after=set_plugin_alias, default="ptest"},
-  testnum = {help="a test number", type="number", high=80, low=0, after=styleplotdata, default=66},
+  testnum = {help="a test number", type="number", high=80, low=0, default=66},
   testbool = {help="a test boolean", type="bool", default=false, sortlev=10},  
   plugin_colour = {help="set the plugin colour", type="colour", default="red", sortlev=99},  
 }

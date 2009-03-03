@@ -18,7 +18,7 @@ Broadcasts when anything happens in a gquest
 Broadcasts
    1 - gquest available
    2 - gquest joined
-   3 - Mob list, get var.mobs and unserialize it
+   3 - Mob list, get var.mobs and loadstring it
        mobs = { 1 = {name = 'Some name', room = 'Some room', clean = 'A name with some stuff removed', num=number},
               2 = {name = 'Another name', room = 'Another room', clean = 'Another name with some stuff removed', num=number}, }
        It will be resent when a mob is killed and will be nil when a gquest is not active        

@@ -1,0 +1,50 @@
+#summary Plugin to broadcast cp info
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+
+ * this is a plugin that broadcasts items when a cp is updated, includes a timer function that updates the cp timer every 30 seconds
+ * it is used for the [miniwin_cp] plugin
+
+
+= Help =
+ {{{
+/*
+[FOR PLUGIN AUTHORS ONLY]
+
+Broadcasts when anything happens in a campaign
+Broadcasts
+   1 - Mob list, get var.mobs and unserialize it
+       mobs = { 1 = {name = 'Some name', room = 'Some room', clean = 'A name with some stuff removed'},
+              2 = {name = 'Another name', room = 'Another room', clean = 'Another name with some stuff removed'}, }
+       It will be resent when a mob is killed and will be nil when a cp is not active        
+   2 - timer, will be updated every 60 seconds, get var.timer and unserialize it
+        timer = {secs = num, text = 'time in text format', days = days, hours = hours, mins = minutes}
+   3 - rewards, get var.rewards and unserialize it, this can also be used to check when a cp is finished
+       reqards = { trivia = num, training = num, gold = num, practice = num, quest = num}
+
+Example
+  function OnPluginBroadcast (msg, id, name, text)
+    if id == "aaa66f81c50828bbbfda7100" and msg == 1 then
+      local pvar = GetPluginVariable(  "aaa66f81c50828bbbfda7100", mobs )
+
+      -- get the mobs
+      loadstring( pvar )()
+      cp_mobs = mobs
+    end
+  end
+
+*/
+ }}}
+
+
+= Installation ==
+ * Required 
+  * [plugin_helper] and its dependencies
+  * Nick's [http://www.gammon.com.au/forum/?id=8776 Stats_Detector.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
+ * download from stable [http://code.google.com/p/bastmush/source/browse/branches/stable/worlds/plugins/Aardwolf/broadcast_cp.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+
+= Troubleshooting =
+ * run the command "bcp set tdebug true" to enable debugging

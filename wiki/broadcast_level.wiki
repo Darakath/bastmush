@@ -34,7 +34,7 @@ Example
 
 = Installation ==
  * Required 
-  * [plugin_helper] and its dependencies
+  * [pluginhelper] and its dependencies
  * download from stable [http://code.google.com/p/bastmush/source/browse/branches/stable/worlds/plugins/Aardwolf/broadcast_level.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
 
 = Troubleshooting =

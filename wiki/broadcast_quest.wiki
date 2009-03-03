@@ -1,0 +1,54 @@
+#summary Plugin to broadcast quest info
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * this is a plugin that broadcasts info about quests
+ * [miniwin_quest] uses it
+
+= Help =
+ {{{
+/*
+[FOR PLUGIN AUTHORS ONLY]
+
+Broadcasts when anything happens in a quest
+Broadcasts
+   1 - can now quest
+   2 - Mob info, get var.mob and unserialize it
+        mob = { name = 'Some name', room = 'Some room', area = 'some area'}
+   3 - time left to finish quest
+        timer = {secs = num, text = 'time in text format' }
+   4 - quest mob killed
+   5 - length of quest, get var.length and loadstring it
+        length = {secs = num, mins = num' }
+   6 - rewards , values will be nil if not applicable
+        rewards = { qp = questpoints, gold = goldamount, tier = tierbonus,
+                    lucky = luckyqp, mccp = mccpqp, trivia = tp, training = trains
+                    practices = pracs }
+   7 - time left until next quest
+        timer = {secs = num, text = 'time in text format' }
+
+       
+Example:
+  function OnPluginBroadcast (msg, id, name, text)
+    if id == "aaa8a9eda20fa11787c6b438" and msg == 2 then
+      local pvar = GetPluginVariable(  "aaa8a9eda20fa11787c6b438" , mob)
+
+      --get the mob info
+      loadstring( pvar )()
+      mob_info = mob
+    end
+  end
+
+*/
+ }}}
+
+
+= Installation ==
+ * Required 
+  * [pluginhelper] and its dependencies
+ * download from stable [http://code.google.com/p/bastmush/source/browse/branches/stable/worlds/plugins/Aardwolf/broadcast_quest.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+
+= Troubleshooting =
+ * run the command "blevel set tdebug true" to enable debugging

@@ -3,9 +3,10 @@
 <wiki:toc max_depth="2" />
 
 = Introduction =
-
+ * redirect chats to another world window
 
 = Differences from Original Plugin ==
+ * fixes the bug with cutting off some auctions
 
 = Help =
  {{{

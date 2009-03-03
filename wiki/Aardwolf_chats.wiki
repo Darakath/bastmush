@@ -7,10 +7,16 @@
 
 = Differences from Nick's Plugin ==
  * fixes the bug with cutting off some auctions
+ * will save echo preference
 
 = Help =
  {{{
 /*
+Redirects chats, tells and channels to the "Chats" world window.
+
+chats echo on   --> also echo in the main window
+chats echo off  --> only show in the other window
+
 */
  }}}
 

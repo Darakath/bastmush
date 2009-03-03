@@ -6,7 +6,7 @@
 = Introduction =
 
  * this is a plugin that broadcasts info about a gq
- * it is used for the [miniwin_cgq] plugin
+ * it is used for the [miniwin_gq] plugin
 
 
 = Help =
@@ -22,7 +22,7 @@ Broadcasts
        mobs = { 1 = {name = 'Some name', room = 'Some room', clean = 'A name with some stuff removed', num=number},
               2 = {name = 'Another name', room = 'Another room', clean = 'Another name with some stuff removed', num=number}, }
        It will be resent when a mob is killed and will be nil when a gquest is not active        
-   4 - rewards, get var.rewards and unserialize it, this can also be used to check when a gquest is finished
+   4 - rewards, get var.rewards and unserialize it
        rewards = { trivia = num, training = num, gold = num, practice = num, quest = num, mobqp=mobqp }
    5 - gquest over
 

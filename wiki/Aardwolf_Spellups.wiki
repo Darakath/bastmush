@@ -64,7 +64,7 @@ spellup help    --> this message
   * Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/Create_World_File.xml Create_World_File.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
   * Nick's [http://www.gammon.com.au/forum/?id=8776 Stats_Detector.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
   * [State_Detector] in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
- * download from trunk [http://code.google.com/p/bastmush/source/browse/trunk/worlds/plugins/Aardwolf/Aardwolf_Spellups.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+ * download from trunk [http://code.google.com/p/bastmush/source/browse/branches/stable/worlds/plugins/Aardwolf/Aardwolf_Spellups.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
 
 = Troubleshooting =
  * make sure tags are on by typing "tags on"

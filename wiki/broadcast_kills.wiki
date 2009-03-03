@@ -32,7 +32,7 @@ Example
 
 = Installation ==
  * Required 
-  * [plugin_helper] and its dependencies
+  * [pluginhelper] and its dependencies
   * Nick's [http://www.gammon.com.au/forum/?id=8776 Stats_Detector.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
  * download from stable [http://code.google.com/p/bastmush/source/browse/branches/stable/worlds/plugins/Aardwolf/broadcast_kills.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
 

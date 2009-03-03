@@ -8,6 +8,7 @@
 = Differences from Nick's Plugin ==
  * fixes the bug with cutting off some auctions
  * will save echo preference
+ * also redirects, Info, Global Quest, and Remort Auction
 
 = Help =
  {{{

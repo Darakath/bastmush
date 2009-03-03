@@ -13,4 +13,4 @@
  * see http://class.luaforge.net
 
 = Installation ==
- * download from trunk [http://code.google.com/p/bastmush/source/browse/trunk/lua/class.lua here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\lua
+ * download from stable [http://code.google.com/p/bastmush/source/browse/branches/stable/lua/class.lua here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\lua

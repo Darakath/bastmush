@@ -26,4 +26,4 @@ Example:
 
 = Installation ==
  * download Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/telnet_options.lua telnet_options.lua] script into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
- * download from trunk [http://code.google.com/p/bastmush/source/browse/trunk/worlds/plugins/Aardwolf/Tick_Detector.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+ * download from stable [http://code.google.com/p/bastmush/source/browse/branches/stable/worlds/plugins/Aardwolf/Tick_Detector.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf

@@ -3,7 +3,7 @@
  * [Intro]
  == Plugins ==
  * [Aardwolf_Spellups]
- * [Aardwolf_moons]
+ * [miniwin_moons]
  * [State_Detector]
  * [Tick_Detector]
 

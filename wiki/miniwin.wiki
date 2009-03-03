@@ -17,4 +17,4 @@ forthcoming
  * download from stable [http://code.google.com/p/bastmush/source/browse/branches/stable/lua/miniwin.lua here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\lua
 
 = Example =
- * see the [Aardwolf_moons] plugin
+ * see the [miniwin_moons] plugin

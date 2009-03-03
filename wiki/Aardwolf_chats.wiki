@@ -1,0 +1,23 @@
+#summary Send chats to another world window
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+
+
+= Differences from Original Plugin ==
+
+= Help =
+ {{{
+/*
+*/
+ }}}
+
+
+= Installation ==
+ * Required 
+  * [http://www.gammon.com.au/mushclient/plugins/Aardwolf/Chats.mcl Chats.mcl ] World in the directory <Mushclient Install Dir>\worlds\Aardwolf 
+ * download from stable [http://code.google.com/p/bastmush/source/browse/branches/stable/worlds/plugins/Aardwolf/Aardwolf_chats.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+
+= Troubleshooting =
+ * channel tags must be turned on

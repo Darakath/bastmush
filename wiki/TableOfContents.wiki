@@ -5,8 +5,7 @@
 == Plugins ==
  * [Aardwolf_chats]
  * [Aardwolf_Spellups]
- * BroadCast plugins
-  * [broadcast_cp]
+ * [broadcast_cp]
  * [broadcast_gq]
  * [broadcast_kills]
  * [broadcast_level]

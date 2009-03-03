@@ -5,7 +5,7 @@
 = Introduction =
  * redirect chats to another world window
 
-= Differences from Original Plugin ==
+= Differences from Nick's Plugin ==
  * fixes the bug with cutting off some auctions
 
 = Help =

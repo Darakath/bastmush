@@ -4,8 +4,8 @@
 
 = Introduction =
 
-This is a plugin that puts campaign objectives into a miniwindow
-
+ * This is a plugin that puts campaign objectives into a miniwindow
+ * It will automatically update when a cp mob is killed
 
 = Help =
  {{{

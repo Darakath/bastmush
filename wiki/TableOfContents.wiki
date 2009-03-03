@@ -3,14 +3,14 @@
  * [Intro]
 
  == Plugins ==
- * [Aardwolf_chats]
- * [Aardwolf_Spellups]
- * Broadcast Plugins
-  * [broadcast_cp]
-  * [broadcast_gq]
-  * [broadcast_kills]
-  * [broadcast_level]
-  * [broadcast_quest]
+  * [Aardwolf_chats]
+  * [Aardwolf_Spellups]
+  * [broadcast plugins]
+   * [broadcast_cp]
+   * [broadcast_gq]
+   * [broadcast_kills]
+   * [broadcast_level]
+   * [broadcast_quest]
  * miniwindow plugins
   * [miniwin_cp]
   * [miniwin_gq]

@@ -20,7 +20,6 @@ set            : set script and window vars, show plugin vars when called with n
 
 = Installation ==
  * Required 
-  * [miniwin]
   * [window]
   * [class]
   * [pluginhelper]
@@ -38,4 +37,3 @@ set            : set script and window vars, show plugin vars when called with n
  http://bastmush.googlecode.com/svn/wiki/gq_images/gq-joined.png
  * gq mobs
  http://bastmush.googlecode.com/svn/wiki/gq_images/gq-mobs.png
-

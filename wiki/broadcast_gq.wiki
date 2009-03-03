@@ -1,0 +1,51 @@
+#summary Plugin to broadcast gq info
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+
+ * this is a plugin that broadcasts info about a gq
+ * it is used for the [miniwin_cgq] plugin
+
+
+= Help =
+ {{{
+/*
+[FOR PLUGIN AUTHORS ONLY]
+
+Broadcasts when anything happens in a gquest
+Broadcasts
+   1 - gquest available
+   2 - gquest joined
+   3 - Mob list, get var.mobs and unserialize it
+       mobs = { 1 = {name = 'Some name', room = 'Some room', clean = 'A name with some stuff removed', num=number},
+              2 = {name = 'Another name', room = 'Another room', clean = 'Another name with some stuff removed', num=number}, }
+       It will be resent when a mob is killed and will be nil when a gquest is not active        
+   4 - rewards, get var.rewards and unserialize it, this can also be used to check when a gquest is finished
+       rewards = { trivia = num, training = num, gold = num, practice = num, quest = num, mobqp=mobqp }
+   5 - gquest over
+
+Example
+  function OnPluginBroadcast (msg, id, name, text)
+    if id == "aaa77f81c5408278ccda7100" and msg == 3 then
+      local pvar = GetPluginVariable(  "aaa77f81c5408278ccda7100", "mobs" )
+
+      -- get the mobs
+      loadstring( pvar )()
+      gq_mobs = mobs
+    end
+  end
+  
+*/
+ }}}
+
+
+= Installation ==
+ * Required 
+  * [plugin_helper] and its dependencies
+  * Nick's [http://www.gammon.com.au/forum/?id=8776 Stats_Detector.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
+ * download from stable [http://code.google.com/p/bastmush/source/browse/branches/stable/worlds/plugins/Aardwolf/broadcast_gq.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+
+= Troubleshooting =
+ * run the command "bgq set tdebug true" to enable debugging

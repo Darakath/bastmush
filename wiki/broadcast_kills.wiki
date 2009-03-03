@@ -1,0 +1,40 @@
+#summary Plugin to broadcast kill info
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * this is a plugin that broadcasts info about a mob kill
+
+= Help =
+ {{{
+/*
+[FOR PLUGIN AUTHORS ONLY]
+
+Broadcasts when a mob is killed
+Broadcasts
+   1 - mob killed
+       kill_info = {mob = mobname, xp = xp, bonusxp = bonusxp, gold = gold
+
+Example
+  function OnPluginBroadcast (msg, id, name, text)
+    if id == "37a61c4570508448e19c7c14" and msg == 1 then
+      local pvar = GetPluginVariable(  "37a61c4570508448e19c7c14", "kill_info")
+
+      -- get the mobs
+      loadstring( pvar )()
+      kill = kill_info
+    end
+  end
+*/
+ }}}
+
+
+= Installation ==
+ * Required 
+  * [plugin_helper] and its dependencies
+  * Nick's [http://www.gammon.com.au/forum/?id=8776 Stats_Detector.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
+ * download from stable [http://code.google.com/p/bastmush/source/browse/branches/stable/worlds/plugins/Aardwolf/broadcast_kills.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+
+= Troubleshooting =
+ * run the command "bkill set tdebug true" to enable debugging

@@ -1,0 +1,41 @@
+#summary Put gquest info into a miniwindow
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+
+ * This is a plugin that puts gq info into a miniwindow
+ * It will automatically update when a gq mob is killed
+
+= Help =
+ {{{
+/*
+miniwin_gq 1 Options
+-----------------------------------------------
+help           : show help
+set            : set script and window vars, show plugin vars when called with no arguments, 'window': show window vars, 'all': show all vars
+*/
+ }}}
+
+
+= Installation ==
+ * Required 
+  * [miniwin]
+  * [window]
+  * [class]
+  * [pluginhelper]
+  * [verify]
+  * [broadcast_gq]
+ * download from stable [http://code.google.com/p/bastmush/source/browse/branches/stable/worlds/plugins/Aardwolf/miniwin_gq.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+
+= Troubleshooting =
+ * the miniwindow will not show until gquest info has been received
+
+= Screenshots =
+ * gq available
+ http://bastmush.googlecode.com/svn/wiki/gq_images/gq-avail.png
+ * gq joined
+ http://bastmush.googlecode.com/svn/wiki/gq_images/gq-joined.png
+ * gq mobs
+ http://bastmush.googlecode.com/svn/wiki/gq_images/gq-mobs.png
+

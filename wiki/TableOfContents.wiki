@@ -1,9 +1,21 @@
 #summary Table of Contents
  == General ==
  * [Intro]
+
  == Plugins ==
+ * [Aardwolf_chats]
  * [Aardwolf_Spellups]
+ * [broadcast_cp]
+ * [broadcast_gq]
+ * [broadcast_kills]
+ * [broadcast_level]
+ * [broadcast_quest]
+ * [miniwin_cp]
+ * [miniwin_gq]
+ * [miniwin_map]
  * [miniwin_moons]
+ * [miniwin_quest]
+ * [pluginlist]
  * [State_Detector]
  * [Tick_Detector]
 

@@ -34,6 +34,6 @@ set            : set script and window vars, show plugin vars when called with n
  * gq available
  http://bastmush.googlecode.com/svn/wiki/gq_images/gquest-avail.png
  * gq joined
- http://bastmush.googlecode.com/svn/wiki/gq_images/gques-joined.png
+ http://bastmush.googlecode.com/svn/wiki/gq_images/gquest-joined.png
  * gq mobs
  http://bastmush.googlecode.com/svn/wiki/gq_images/gquest-mobs.png

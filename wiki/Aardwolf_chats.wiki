@@ -25,7 +25,7 @@ chats echo off  --> only show in the other window
 = Installation ==
  * Required 
   * Chats World in the directory <Mushclient Install Dir>\worlds\Aardwolf  (available with the Aardwolf Mushclient)
- * download from stable [http://code.google.com/p/bastmush/source/browse/branches/stable/worlds/plugins/Aardwolf/Aardwolf_chats.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+ * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
 
 = Troubleshooting =
  * channel tags must be turned on

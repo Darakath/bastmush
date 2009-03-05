@@ -24,7 +24,7 @@ set            : set script and window vars, show plugin vars when called with n
   * [pluginhelper]
   * [verify]
   * [broadcast_quest]
- * download from stable [http://code.google.com/p/bastmush/source/browse/branches/stable/worlds/plugins/Aardwolf/miniwin_map.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+ * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
 
 = Troubleshooting =
  * type "qw set tdebug true" to enable debugging

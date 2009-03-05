@@ -1,0 +1,9 @@
+#summary Troubleshooting plugins
+
+== General Information ==
+ * most of the plugins have debug options and can be turned on by typing "<cmd> set tdebug on"
+ * the spellup plugin debug cmd is "spellup debug on"
+
+== Getting Help ==
+ * post a message in the mushclient forums (best place for help)
+ * add an issue in the issue tracker on this web page

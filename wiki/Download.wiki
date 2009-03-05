@@ -21,8 +21,12 @@
    1 copy the files from the worlds/plugins/Aardwolf into mushclient_install_dir/worlds/plugins/Aardwolf
    1 load the plugins in mushclient
 
-= Bleeding Edge =
+= Subversion =
  * *This is only for advanced users*
- == Download ==
-  * check out from subversion, see the [http://code.google.com/p/bastmush/source/checkout Source] page
-  * copy plugins into the appropriate folder
+ == Stable ==
+  1 checkout from https://bastmush.googlecode.com/svn/branches/stable
+  1 copy or link files into the appropriate directories
+
+ == Bleeding Edge ==
+  1 check out from https://bastmush.googlecode.com/svn/trunk
+  1 copy or link files into the appropriate directories

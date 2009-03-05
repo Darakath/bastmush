@@ -1,11 +1,11 @@
 #summary Table of Contents
 == General ==
  * [Intro]
+ * [Download]
 
- * Plugins
-  * [Aardwolf_chats]
-  * [Aardwolf_Spellups]
-
+== Plugins ==
+ * [Aardwolf_chats]
+ * [Aardwolf_Spellups]
  * [broadcast_cp]
  * [broadcast_gq]
  * [broadcast_kills]

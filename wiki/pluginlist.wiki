@@ -1,0 +1,31 @@
+#summary list plugins that are using plugin manager
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+
+ * This plugin will list other plugins using plugin manager
+
+= Help =
+ {{{
+/*
+pluginlist 1 Options
+-----------------------------------------------
+list           : show help
+help           : show help
+set            : set script and window vars, show plugin vars when called with no arguments, 'window': show window vars, 'all': show all vars
+*/
+ }}}
+
+
+= Installation ==
+ * Required 
+  * [class]
+  * [pluginhelper]
+  * [verify]
+ * download from stable [http://code.google.com/p/bastmush/source/browse/branches/stable/worlds/plugins/Aardwolf/pluginlist.xml here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+
+
+= Screenshots =
+ * output of plugin list
+ http://bastmush.googlecode.com/svn/wiki/pluginlist_images/pluginlist.png

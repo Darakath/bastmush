@@ -4,7 +4,7 @@
 
 = Stable Version =
  == Download ==
-  * http://bastmush.googlecode.com/files/bastmush-stable-rev192.zip
+  * http://bastmush.googlecode.com/files/bastmush-stable-rev217.zip
 
  == Notes ==
   * The only plugin that is overwritten is [Aardwolf_chats], all other plugins have unique names and ids

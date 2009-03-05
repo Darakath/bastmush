@@ -1,0 +1,19 @@
+#summary Latest stable version
+
+
+== Download ==
+ * http://bastmush.googlecode.com/files/bastmush-stable-rev192.zip
+
+== Notes ==
+ * The only plugin that is overwritten is [Aardwolf_chats], all other plugins have unique names and ids
+
+== Install ==
+=== Easy ===
+ 1 Unzip into your mushclient installation directory
+ 1 load the plugins in mushclient
+
+=== Manual ===
+ 1 unzip the zip file into a location of your choice
+ 1 copy the files from the lua directory to mushclient_install_dir/lua
+ 1 copy the files from the worlds/plugins/Aardwolf into mushclient_install_dir/worlds/plugins/Aardwolf
+ 1 load the plugins in mushclient

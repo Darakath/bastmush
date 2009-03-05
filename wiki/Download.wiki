@@ -8,7 +8,8 @@
   * latest stable from [http://code.google.com/p/bastmush/downloads/list Download] page
 
  == Notes ==
-  * The only plugin that is overwritten is [Aardwolf_chats], all other plugins have unique names and ids
+  * [Aardwolf_chats] is overwritten if you are using the Aardwolf Mushclient
+  * [Aardwolf_spellups] is overwritten if you are using Nick's Spellup plugin
 
  == Install ==
   === Easy ===

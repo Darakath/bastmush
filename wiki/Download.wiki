@@ -1,4 +1,5 @@
 #summary Latest stable version
+#labels Featured
 
 <wiki:toc max_depth="3" />
 

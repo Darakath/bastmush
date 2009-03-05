@@ -9,7 +9,7 @@
 
  == Notes ==
   * [Aardwolf_chats] is overwritten if you are using the Aardwolf Mushclient
-  * [Aardwolf_spellups] is overwritten if you are using Nick's Spellup plugin
+  * [Aardwolf_Spellups] is overwritten if you are using Nick's Spellup plugin
 
  == Install ==
   === Easy ===

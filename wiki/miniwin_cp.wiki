@@ -21,8 +21,8 @@ set            : set script and window vars, show plugin vars when called with n
 
 = Installation ==
  * Required 
+  * [togglewin]
   * [miniwin]
-  * [window]
   * [class]
   * [pluginhelper]
   * [verify]

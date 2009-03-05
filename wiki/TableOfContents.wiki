@@ -24,7 +24,7 @@
 == Support Files ==
  * [class]
  * [miniwin]
+ * [togglewin]
  * [pluginhelper]
  * [stringfuncs]
  * [verify]
- * [window]

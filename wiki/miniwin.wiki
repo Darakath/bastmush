@@ -1,4 +1,4 @@
-#summary a lua module that contains a class for making windows
+#summary a lua module that contains a class for creating miniwindows
 
 === Table of Contents ===
 <wiki:toc max_depth="2" />
@@ -16,7 +16,7 @@ forthcoming
   * [class]
   * [verify]
   * [pluginhelper]
- * download from stable [http://code.google.com/p/bastmush/source/browse/branches/stable/lua/window.lua here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\lua
+ * download from stable [http://code.google.com/p/bastmush/source/browse/branches/stable/lua/miniwin.lua here] (make a note of the revision, it will help troubleshoot) or checkout with subversion and copy into the directory <Mushclient Install Dir>\lua
 
 = Example =
  * see the [miniwin_quest] plugin

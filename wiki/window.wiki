@@ -4,7 +4,7 @@
 <wiki:toc max_depth="2" />
 
 = Introduction =
- * a lua module that contains a window class
+ * a lua module that contains a class for creating miniwindows
 
 = Help =
 {{{

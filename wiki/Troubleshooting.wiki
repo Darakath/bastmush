@@ -1,6 +1,7 @@
 #summary Troubleshooting plugins
 
 == General Information ==
+ * the support files are required for most of the plugins to work
  * most of the plugins have debug options and can be turned on by typing "(plugincmd) set tdebug on"
  * the spellup plugin debug cmd is "spellup debug"
 

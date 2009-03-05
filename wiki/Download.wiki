@@ -1,6 +1,5 @@
-#summary Latest stable version
+#summary Downloading the scripts
 #labels Featured
-
 <wiki:toc max_depth="3" />
 
 = Stable Version =

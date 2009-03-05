@@ -1,4 +1,5 @@
 #summary Troubleshooting plugins
+#labels Featured
 
 == General Information ==
  * the support files are required for most of the plugins to work

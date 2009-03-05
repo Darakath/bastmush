@@ -2,6 +2,7 @@
 == General ==
  * [Intro]
  * [Download]
+ * [Troubleshooting]
 
 == Plugins ==
  * [Aardwolf_chats]

@@ -11,7 +11,7 @@
 
  == Install ==
   === Easy ===
-   1 Unzip into your mushclient installation directory
+   1 Unzip into your mushclient_installation_dir
    1 load the plugins in mushclient
   === Manual ===
    1 unzip the zip file into a location of your choice

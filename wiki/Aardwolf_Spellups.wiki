@@ -63,7 +63,7 @@ spellup help    --> this message
   * Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/telnet_options.lua telnet_options.lua] script in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
   * Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/Create_World_File.xml Create_World_File.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
   * Nick's [http://www.gammon.com.au/forum/?id=8776 Stats_Detector.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
-  * [State_Detector] in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+  * [broadcast_state] in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
  * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
 
 = Troubleshooting =

@@ -12,14 +12,14 @@
  * [broadcast_kills]
  * [broadcast_level]
  * [broadcast_quest]
+ * [broadcast_state]
+ * [broadcast_tick]
  * [miniwin_cp]
  * [miniwin_gq]
  * [miniwin_map]
  * [miniwin_moons]
  * [miniwin_quest]
  * [pluginlist]
- * [State_Detector]
- * [Tick_Detector]
 
 == Support Files ==
  * [class]

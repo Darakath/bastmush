@@ -2,3 +2,30 @@
 #labels featured
 
 This is a repository for my [http://mushclient.com Mushclient] scripts.  Some of them are modified plugins and most of them are geared toward [http://aardwolf.com Aardwolf Mud].
+
+== miniwindow plugins notes ==
+ * Miniwindows can be customized on the fly, "plugin_cmd set window" will show the options that can be changed.  "plugin_cmd set (option) (value)" can then set the value.
+ Example
+ {{{
+miniwin_map 1 Settings
+-----------------------------------------------
+windowpos            : 6                    - position for this window: see http://www.gammon.com.au/scripts/function.php?name=WindowCreate
+text_colour          : gainsboro            - text colour for this window
+bg_colour            : #0E2200              - background colour for this window
+header_text_colour   : lime                 - header text colour for this window
+header_bg_colour     : dimgray              - header colour for this window
+footer_bg_colour     : dimgray              - footer colour for this window
+footer_text_colour   : lime                 - footer text colour for this window
+font_size            : 8                    - font_size for this window
+font                 : courier new          - change the font for this window
+width_padding        : 5                    - width padding for this window
+width                : 31                   - width of this window, 0 = auto
+height               : 19                   - height of this window, 0 = auto
+height_padding       : 5                    - height padding for this window
+show_hyperlinks      : 1                    - show the default hyperlinks
+hyperlink_colour     : yellow               - hyperlink colour for this window
+}}}
+  * colour values can take colours of the form "#AABBCC", a colour number, and a colour name
+   * if no colour is passed, the colour chooser dialog will be shown
+  * text_colour is only used if the text is not styled or the style has no textcolour
+  * bg_colour is only used if the text is not styled or the style has no bgcolour

@@ -1,11 +1,13 @@
 #summary Aardwolf Moons Miniwindow
+#labels Author-Bast
+
 === Table of Contents ===
 <wiki:toc max_depth="2" />
 
 = Introduction =
-
-This is a modified version of Balaam's moonbot Plugin to use a miniwindow. 
-The original is here http://www.gammon.com.au/forum/bbshowpost.php?id=8146&page=2
+ * Author: Bast
+ * This is a modified version of Balaam's moonbot Plugin to use a miniwindow. 
+  The original is here http://www.gammon.com.au/forum/bbshowpost.php?id=8146&page=2
 
 = Differences from Balaam's Plugin ==
  * can now show moons as a miniwindow

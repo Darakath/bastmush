@@ -1,9 +1,11 @@
 #summary Plugin to put quest info into a miniwin
+#labels Author-Bast
+
 === Table of Contents ===
 <wiki:toc max_depth="2" />
 
 = Introduction =
-
+ * Author: Bast
  * This is a plugin that puts quest info into a miniwindow
 
 = Help =

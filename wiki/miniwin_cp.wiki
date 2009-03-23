@@ -1,9 +1,11 @@
 #summary Aardwolf Campaign MiniWindow
+#labels Author-Bast
+
 === Table of Contents ===
 <wiki:toc max_depth="2" />
 
 = Introduction =
-
+ * Author: Bast
  * This is a plugin that puts campaign objectives into a miniwindow
  * It will automatically update when a cp mob is killed
 

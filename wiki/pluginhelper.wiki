@@ -1,9 +1,11 @@
 #summary A plugin to help with cmd parsing and option setting
+#labels Author-Bast
 
 === Table of Contents ===
 <wiki:toc max_depth="2" />
 
 = Introduction =
+ * Author: Bast
  * this module is a helper module that tracks variables, settings and commands for plugins
 
 = Help =

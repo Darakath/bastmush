@@ -1,9 +1,11 @@
 #summary a lua module for a class library
+#labels Author-Bast
 
 === Table of Contents ===
 <wiki:toc max_depth="2" />
 
 = Introduction =
+ * Author: Bast
  * a lua class library from http://class.luaforge.net
 
 = Differences from Original Plugin ==

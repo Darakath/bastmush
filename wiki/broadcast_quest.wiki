@@ -1,9 +1,11 @@
 #summary Plugin to broadcast quest info
+#labels Author-Bast
 
 === Table of Contents ===
 <wiki:toc max_depth="2" />
 
 = Introduction =
+ * Author: Bast
  * this is a plugin that broadcasts info about quests
  * [miniwin_quest] uses it
 

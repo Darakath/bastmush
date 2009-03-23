@@ -5,9 +5,9 @@
 <wiki:toc max_depth="2" />
 
 = Introduction =
-
-This is a modified version of Nick's Aardwolf Spellup Plugin. 
-The original is here http://www.gammon.com.au/mushclient/plugins/Aardwolf/Aardwolf_Spellups.xml 
+ * Author: Bast
+ * This is a modified version of Nick's Aardwolf Spellup Plugin. 
+    The original is here http://www.gammon.com.au/mushclient/plugins/Aardwolf/Aardwolf_Spellups.xml 
 
 = Differences from Nick's Plugin ==
  * no more spell timer, it looks for the specific spell that it tried to cast and waits for the spell tags.  I have had no issues with this

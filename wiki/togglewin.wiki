@@ -1,9 +1,11 @@
 #summary a lua module that contains a class for making a toggle window
+#labels Author-Bast
 
 === Table of Contents ===
 <wiki:toc max_depth="2" />
 
 = Introduction =
+ * Author: Bast
  * a lua module that contains a class for creating toggle windows
 
 = Help =

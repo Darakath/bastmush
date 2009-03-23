@@ -1,9 +1,11 @@
 #summary list plugins that are using plugin manager
+#labels Author-Bast
+
 === Table of Contents ===
 <wiki:toc max_depth="2" />
 
 = Introduction =
-
+ * Author: Bast
  * This plugin will list other plugins using plugin manager
 
 = Help =

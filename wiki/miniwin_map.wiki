@@ -1,9 +1,11 @@
 #summary Put map info into a miniwindow
+#labels Author-Bast
+
 === Table of Contents ===
 <wiki:toc max_depth="2" />
 
 = Introduction =
-
+ * Author: Bast
  * This is a plugin that puts map info into a miniwindow
 
 = Help =

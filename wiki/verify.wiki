@@ -1,9 +1,11 @@
 #summary a module to verify data types
+#labels Author-Bast
 
 === Table of Contents ===
 <wiki:toc max_depth="2" />
 
 = Introduction =
+ * Author: Bast
  * a module to verify data types
 
 = Help =

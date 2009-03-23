@@ -3,9 +3,9 @@
  * [Download]
  * [Troubleshooting]
  * Bast's Plugins
-   * [Aardwolf_chats]
-   * [Aardwolf_Spellups]
-   * [broadcast_cp]
+  * [Aardwolf_chats]
+  * [Aardwolf_Spellups]
+  * [broadcast_cp]
   * [broadcast_gq]
   * [broadcast_kills]
   * [broadcast_level]
@@ -19,8 +19,8 @@
   * [miniwin_quest]
   * [pluginlist]
  * Bast's Support Files
-   * [class]
-   * [miniwin]
+  * [class]
+  * [miniwin]
   * [togglewin]
   * [pluginhelper]
   * [stringfuncs]

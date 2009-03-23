@@ -1,14 +1,11 @@
 #summary Table of Contents
-== General ==
  * [Intro]
  * [Download]
  * [Troubleshooting]
-
-== Plugins ==
-  * Bast's Plugins
-    * [Aardwolf_chats]
-    * [Aardwolf_Spellups]
-    * [broadcast_cp]
+ * Bast's Plugins
+   * [Aardwolf_chats]
+   * [Aardwolf_Spellups]
+   * [broadcast_cp]
   * [broadcast_gq]
   * [broadcast_kills]
   * [broadcast_level]
@@ -21,11 +18,9 @@
   * [miniwin_moons]
   * [miniwin_quest]
   * [pluginlist]
-
-== Support Files ==
  * Bast's Support Files
-  * [class]
-  * [miniwin]
+   * [class]
+   * [miniwin]
   * [togglewin]
   * [pluginhelper]
   * [stringfuncs]

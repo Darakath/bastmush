@@ -1,7 +1,7 @@
 #summary An intro to the scripts that are here.
 #labels featured
 
-This is a repository for my [http://mushclient.com Mushclient] scripts.  Some of them are modified plugins and most of them are geared toward [http://aardwolf.com Aardwolf Mud].
+This is a repository for [http://mushclient.com Mushclient] scripts.  Some of them are modified plugins and most of them are geared toward [http://aardwolf.com Aardwolf Mud].
 
 == miniwindow plugins notes ==
  * Miniwindows can be customized on the fly, "plugin_cmd set window" will show the options that can be changed.  "plugin_cmd set (option) (value)" can then set the value.

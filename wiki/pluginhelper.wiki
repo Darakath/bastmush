@@ -36,12 +36,14 @@ cmds_table = {
   union     = {func=moonbot_union, help="show next moons union"}, 
   print     = {func=printmoons, help="print the current moon phase #s"},
   toggle    = {func=togglewindow, help="toggle the moons miniwindow"}, 
-  reset     = {func=moonbot_reset, help="reset the moons"},
+  mreset     = {func=moonbot_reset, help="reset the moons"},
 }
 valid values -
   func     -- the function to call 
               the arguments are sent in this order (name, line, wildcards, cmds_table, options_table, window)
   help     -- the help for this command
+  default  -- set this true and this will be the default cmd
+
 */
 --]]
 }}}

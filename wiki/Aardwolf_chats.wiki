@@ -1,8 +1,10 @@
 #summary Send chats to another world window
+#labels Author-Bast
 === Table of Contents ===
 <wiki:toc max_depth="2" />
 
 = Introduction =
+ * Author: Bast
  * redirect chats to another world window
 
 = Differences from Nick's Plugin ==

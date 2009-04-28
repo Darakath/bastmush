@@ -16,7 +16,7 @@
  * You can disable a spell without taking it out of your list
   * I use this for when I want to vis with sneak
  * Add a spell to a specific place in the list
- * Will also work with spellup skills, such as nimble cunning, sneak, hide, etc..
+ * Will also work with spellup skills, such as nimble cunning, sneak, etc..
 
 
 = Help =

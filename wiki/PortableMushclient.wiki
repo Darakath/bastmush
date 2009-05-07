@@ -21,11 +21,11 @@ This has not been extensively tested, so take it with a grain of salt.
    1. then close mushclient and it should now exist
  1. open the mushclient_prefs.sqlite from the mushclient directory on the flash drive in sqlitebrowser
   * under the prefs table
-   * DefaultLogFileDirectory should be .\logs\
-   * DefaultWorldFileDirectory should be .\worlds\
-   * PluginsDirectory should be .\worlds\plugins
-   * WorldList should be .\worlds\Aardwolf\Aardwolf.MCL
-   * TrayIconFileName should be .\aardwolf.ico
+   * !DefaultLogFileDirectory should be .\logs\
+   * !DefaultWorldFileDirectory should be .\worlds\
+   * !PluginsDirectory should be .\worlds\plugins
+   * !WorldList should be .\worlds\Aardwolf\Aardwolf.MCL
+   * !TrayIconFileName should be .\aardwolf.ico
  1. save and close the sqlite db
 
 Now you should be able to move the flash drive to another computer and just click mushclient.exe in the mushclient folder.

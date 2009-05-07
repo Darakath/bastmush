@@ -2,6 +2,7 @@
  * [Intro]
  * [Download]
  * [Troubleshooting]
+ * PortableMushclient
  * Bast's Plugins
   * [Aardwolf_chats]
   * [Aardwolf_Spellups]

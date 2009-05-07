@@ -9,6 +9,8 @@ This requires sqlitebrowser from http://sqlitebrowser.sourceforge.net/
 
 This has not been extensively tested, so take it with a grain of salt.
 
+Download at least 4.40 from http://www.gammon.com.au/forum/?bbtopic_id=1
+
 = Details =
 
  1. Install the Aardwolf mushclient

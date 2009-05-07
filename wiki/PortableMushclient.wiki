@@ -25,7 +25,7 @@ Download at least 4.40 from http://www.gammon.com.au/forum/?bbtopic_id=1
   * under the prefs table
    * !DefaultLogFileDirectory should be .\logs\
    * !DefaultWorldFileDirectory should be .\worlds\
-   * !PluginsDirectory should be .\worlds\plugins
+   * !PluginsDirectory should be .\worlds\plugins\
    * !WorldList should be .\worlds\Aardwolf\Aardwolf.MCL
    * !TrayIconFileName should be .\aardwolf.ico
  1. save and close the sqlite db

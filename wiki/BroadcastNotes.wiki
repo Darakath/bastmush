@@ -1,4 +1,5 @@
 #summary Global Broadcasts
 
-1001 : The command string for a plugin changed
--1   : PluginDisabled
+ * 1001 : The command string for a plugin changed
+ * -1   : PluginDisabled
+ * -2   : PluginEnabled

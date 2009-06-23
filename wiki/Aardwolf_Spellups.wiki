@@ -75,3 +75,11 @@ spellup help    --> this message
   1 must get spells list from slist
   1 must get a statmon line, aardwolf only sends statmon lines when you would normally get a prompt, so you must do something to get a prompt (such as sending an enter/return) 
   1 must be active (no resting, sitting, sleeping, note writing, etc...)
+
+= Ideas =
+ * convert to a miniwindow
+ * use short names for spells and have the user be able to set them
+  * i.e. spellup short <spell or spellnumber> <shortname>
+ * have different views
+  * i.e. only see spells that are going to wear off in the next 60 secs
+  *  only see spells that are bad

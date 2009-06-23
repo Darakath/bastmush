@@ -50,7 +50,7 @@ spellup other (name) --> try to spellup another player with all spellups
                           (eg. spellup other johnsmith)
                         
 spellup block   --> block a spell with another spell
-                           (eg. spellup block 68 121)
+                           (eg. spellup block + 68 121)
 spellup disable --> disable a spell without taking it out of the list
 
 spellup help    --> this message 

@@ -1,5 +1,6 @@
 #summary Global Broadcasts
 
  * 1001 : The command string for a plugin changed
+ * 5000 : New Miniwindow for tab bar
  * -1   : PluginDisabled
  * -2   : PluginEnabled

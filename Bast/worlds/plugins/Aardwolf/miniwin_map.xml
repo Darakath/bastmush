@@ -10,7 +10,7 @@
    purpose="redirect map to miniwin"
    date_written="2008-07-18"
    requires="4.34"
-   version="2.0"
+   version="1.0"
    save_state="y"
    >
 <description trim="y">
@@ -28,19 +28,18 @@ Redirects the map to a mini window.
       sequence="100"
       script="process_coords"
       omit_from_output="y"
-  >
-  </trigger>
-
+      />
+      
   <trigger
    enabled="y"
-   match="&lt;MAPSTART&gt;"
+   match="<MAPSTART>"
    script="map_redirect"
    omit_from_output="y"
    name="map_start"
    sequence="100"
   >
   </trigger>
-
+  
   <trigger
    enabled="n"
    match="*"
@@ -53,14 +52,14 @@ Redirects the map to a mini window.
 
   <trigger
    enabled="y"
-   match="&lt;MAPEND&gt;"
+   match="<MAPEND>"
    script="map_redirect"
    omit_from_output="y"
    name="map_end"
    sequence="5"
   >
   </trigger>
-
+    
   <trigger
    enabled="y"
    match="You can now sense anger in your immediate area."
@@ -69,72 +68,50 @@ Redirects the map to a mini window.
   >
   <send>SendNoEcho ("map")</send>
   </trigger>
-
+    
 </triggers>
 
+<!--  Aliases  -->
 
+<!--  Aliases  -->
+
+<aliases>
+  <alias
+   name="plugin_parse"
+   script="plugin_parse"
+   match="nothing"
+   enabled="y"
+   regexp="y"
+   ignore_case="y"
+   sequence="110"
+   expand_variables="y"
+  >
+  </alias>   
+</aliases>
 <!--  Script  -->
+
 
 <script>
 <![CDATA[
-
 require 'var'
 require 'pluginhelper'
-require "miniwin"
+require "checkplugin"
+require "togglewin"
 require "tprint"
 require "commas"
 require "serialize"
 
--- pull in telnet option handling
-dofile (GetPluginInfo (GetPluginID (), 20) .. "telnet_options.lua")
 
-mapwin = Miniwin:new{name="Map"}
-mapwin:set_default('header_height', 2)
-
-legwin = Miniwin:new{name="Legend"}
-legwin:set_default('header_height', 0)
-legwin:set_default('windowpos', 12)
+mapwin = Togglewin{name="Map", header_height=2, width=31, height=19}
+mapwin:disable()
 
 map_lines = {}
 coords = nil
 
-dirmap = {
-  e = 'east',
-  w = 'west',
-  n = 'north',
-  s = 'south',
-  u = 'up',
-  d = 'down'
-}
-
-info = {
-"@WMap legend:@w",
-"",
-"  @M#@w  - You                      --- - North/south wall",
-"  @R*@w  - Other players             |  - East/west wall",
-"  @Y!@w  - Mobiles                   +  - Door (closed)",
-"  @C!@w  - Pet/other charmed mob     @B+@w  - Door (locked)",
-"  @R!@w  - Angry mob (with Sense     >  - Up exit",
-"       Anger cast)               @y>@w  - Up exit (closed)",
-"  @G!@w  - Unkillable Mob            <  - Down exit",
-"  @G$@w  - Shopkeeper                @y<@w  - Down exit (closed)",
-"",
-" @C[@W?@C]@w - Area exit                 @R#@w  - PK-flagged room",
-" @G[@W?@G]@w - Clan public hall exit     @RD@w  - Donation room",
-"",
-"@WTerrains:@w",
-"",
-" [ ]   Inside             . .   City",
-" @g, `@w   Field              @G; ;@w   Hills",
-" @y/@w     Mountain           @B~ ~@w   Water",
-" @B~ ~@w   Waternoswim        @c. .@w   Air",
-" @y~ ~@w   Desert             @Y% %@w   Quicksand",
-" @b~ ~@w   Underwater         @C~ ~@w   Ice",
-" @B. .@w   Underground        - -   East/West road",
-" . .   North/South road   @C~ ~@w   River",
-" @R/@w     Volcano            @b% %@w   Cave",
-" # #   Dungeon            @g( *@w   Forest",
-}
+-- mousedown
+function mousedown (flags, hotspotid)
+  mapwin:mousedown(flags, hotspotid)
+end -- mousedown
 
 function process_coords ( name, line, wildcards, styles )
   local tcoords = wildcards[1]
@@ -149,95 +126,30 @@ function process_coords ( name, line, wildcards, styles )
   style.backcolour = mapwin.bg_colour
   style.textcolour = 0x00D600
   style.style = 0
-  table.insert (tstyle, style)
+  table.insert (tstyle, style)    
   style = {}
   style.text = " Coords: "
   style.len = #style.text
   style.backcolour = mapwin.bg_colour
   style.textcolour = 0xF0FFFF
   style.style = 0
-  table.insert (tstyle, style)
+  table.insert (tstyle, style)    
   style = {}
   style.text = tcoords
   style.len = #style.text
   style.backcolour = mapwin.bg_colour
   style.textcolour = 0x00D600
   style.style = 0
-  table.insert (tstyle, style)
+  table.insert (tstyle, style)    
   style = {}
   style.text = "]"
   style.len = #style.text
   style.backcolour = mapwin.bg_colour
   style.textcolour = 0x00D600
   style.style = 0
-  table.insert (tstyle, style)
-
+  table.insert (tstyle, style)   
   
   coords = tstyle
-end
-
-function godir(win, flags, hotspot_id)
-  SendNoEcho(dirmap[hotspot_id:lower()])
-end
-
-function godirlocked(win, flags, hotspot_id)
-  SendNoEcho('open ' .. dirmap[hotspot_id:lower()])
-  SendNoEcho(dirmap[hotspot_id:lower()])
-end
-
-function goenter(win, flags, hotspot_id)
-    phelper:mdebug('enter', hotspot_id)
---  SendNoEcho('enter ' .. dir)
-end
-
-
-dirfunc = {}
-dirfunc['E'] = godir
-dirfunc['(E)'] = godirlocked
-dirfunc['W'] = godir
-dirfunc['(W)'] = godirlocked
-dirfunc['N'] = godir
-dirfunc['(N)'] = godirlocked
-dirfunc['S'] = godir
-dirfunc['(S)'] = godirlocked
-dirfunc['U'] = godir
-dirfunc['(U)'] = godirlocked
-dirfunc['D'] = godir
-dirfunc['(D)'] = godirlocked
-
-
-function convert_exits(styles)
-  local tstyles = {}
-  for i,v in ipairs(styles) do
-    if v.text:find(':') then
-      phelper:mdebug(v)
-      local texits = {}
-      local tvar = utils.split(v.text, " ")
-      for t,e in ipairs(tvar) do
-        local estyle = {}
-        estyle.textcolour = v.textcolour
-        estyle.text = e .. ' '
-        local test = dirfunc[e]
-        if test ~= nil then
-          if test == godirlocked then
-            local replacements = {['('] = '', [')'] = ''}
-            estyle.hotspot_id = string.gsub(e, ".", replacements)
-          else
-            estyle.hotspot_id = e
-          end
-          estyle.mousedown = test
-        end
-        table.insert(tstyles, estyle)
-      end
-    else
-      table.insert(tstyles, v)
-    end
-  end
-  
-  style = popup_style(legwin, "LG", "yellow")
-  style.hjust = "right"
-  table.insert (tstyles, style)
-  return tstyles
 end
 
 -- map redirector
@@ -251,6 +163,7 @@ function map_redirect (name, line, wildcards, styles)
       map_lines[#map_lines - 1] = coords
     end
     EnableTrigger ("multi_line_map", false)  -- no more lines to go
+    mapwin:enable()
     if #map_lines > 19 then
       if trim(map_lines[2][1].text) == "" then
         table.remove(map_lines, 2)
@@ -258,93 +171,90 @@ function map_redirect (name, line, wildcards, styles)
         table.remove(map_lines, 3)
       end
     end
-    mapwin:enable()
     mapwin:createwin(map_lines)
-    
-    legwin:enable()
-    legwin:createwin(info)
   else
-    if line:find('Exits') then
-       styles = convert_exits(styles)
-    end
     for i,v in ipairs(styles) do
       v.backcolour = "bg_colour"
     end
     table.insert (map_lines, styles)
   end -- if
 
-end -- function map_redirect
-
-]]>
-</script>
-
-<script>
-<![CDATA[
-
-function OnPluginBroadcast (msg, id, name, text)
-  phelper:OnPluginBroadcast(msg, id, name, text)
-end
+end -- function map_redirect 
 
 function OnPluginInstall ()
-  --OnPluginEnable is automatically called by pluginhelper
 
-  phelper:OnPluginInstall()
+  if GetVariable ("enabled") == "false" then
+    ColourNote ("yellow", "", "Warning: Plugin " .. GetPluginName ().. " is currently disabled.")
+    check (EnablePlugin(GetPluginID (), false))
+    mapwin:disable()
+    return
+  end -- they didn't enable us last time
+  
+  OnPluginEnable ()  -- do initialization stuff
+  
 end -- OnPluginInstall
 
-function OnPluginClose ()
-  --OnPluginDisable is automatically called by pluginhelper
-
-  phelper:OnPluginClose()
-end -- OnPluginClose
-
-function OnPluginEnable ()
-
-  phelper:OnPluginEnable()
-end -- OnPluginEnable
-
-function OnPluginDisable ()
-  if GetPluginInfo(GetPluginID (), 17) and IsConnected() then
-    TelnetOptionOff (TELOPT_MAP)
-    TelnetOptionOff (TELOPT_ROOM_NAMES)
-    TelnetOptionOff (TELOPT_EXIT_NAMES)
-  end
-
-  phelper:OnPluginDisable()
-end -- OnPluginDisable
-
+-- pull in telnet option handling
+dofile (GetPluginInfo (GetPluginID (), 20) .. "telnet_options.lua")
+  
 function OnPluginConnect ()
   TelnetOptionOn (TELOPT_AUTOMAP)
   TelnetOptionOff (TELOPT_SHORTMAP)
   TelnetOptionOn (TELOPT_MAP)
   TelnetOptionOn (TELOPT_ROOM_NAMES)
   TelnetOptionOn (TELOPT_EXIT_NAMES)
-
-  phelper:OnPluginConnect()
 end -- function OnPluginConnect
 
-function OnPluginDisconnect ()
+function OnPluginClose ()
+  -- if enabled
+  if GetPluginInfo (GetPluginID (), 17) then
+    TelnetOptionOff (TELOPT_MAP)
+    TelnetOptionOff (TELOPT_ROOM_NAMES)
+    TelnetOptionOff (TELOPT_EXIT_NAMES)
+  end -- if was enabled
+end -- OnPluginClose
 
-  phelper:OnPluginDisconnect()
-end -- function OnPluginConnect
+function OnPluginEnable ()
+ 
+  -- if we are connected when the plugin loads, it must have been reloaded whilst playing
+  if IsConnected () then
+    OnPluginConnect ()
+  end -- if already connected
+  mapwin:enable()
+  
+end -- OnPluginEnable
+
+function OnPluginDisable ()
+  TelnetOptionOff (TELOPT_MAP)
+  TelnetOptionOff (TELOPT_ROOM_NAMES)
+  TelnetOptionOff (TELOPT_EXIT_NAMES)
+  
+  mapwin:disable()  
+end -- OnPluginDisable
 
 function OnPluginSaveState ()
-
-  phelper:OnPluginSaveState()
+  SetVariable ("enabled", tostring (GetPluginInfo (GetPluginID (), 17)))
+  plugin_save_vars(options_table)
+  mapwin:savestate() 
 end -- function OnPluginSaveState
 
-]]>
-</script>
+options_table  = {
+  plugin_colour = {help="set the plugin colour", type="colour", default=verify_colour("steelblue")},
+  cmd = {help="the short command for this plugin", type="string", after=set_plugin_alias, default="mw"},
+}
 
-<script>
-<![CDATA[
+--Request, Info, Quit, Check
+cmds_table = {
+  toggle   = {func=togglewindow, help="toggle the map miniwindow"},   
+  check    = {func=nofunc, help=''}, 
+}
+  
+function plugin_parse (name, line, wildcards)
+  plugin_parse_helper(name, line, wildcards, cmds_table, options_table, mapwin)
+end -- plugin_parse
 
-phelper:set_default('cmd', 'mmap')
-phelper:set_default('plugin_colour', 'steelblue')
-
-phelper:add_pobject('win', mapwin)
-phelper:add_pobject('legend', legwin)
-
-phelper:enable()
+init_plugin_vars(options_table)
+set_plugin_alias()
 
 ]]>
 </script>

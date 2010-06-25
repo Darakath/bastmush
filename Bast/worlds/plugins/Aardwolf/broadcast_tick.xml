@@ -8,10 +8,10 @@
    id="aaa70b4680508448e19b8b25"
    language="Lua"
    purpose="Sends updates when the tick comes in from telopts"
-   save_state="y"
+   save_state="y"   
    date_written="2009-02-010"
    requires="4.37"
-   version="2.0"
+   version="1.0"
    >
 
 <description trim="y">
@@ -37,98 +37,93 @@ Example:
 
 <script>
 <![CDATA[
-
 require "var"
 require "pluginhelper"
-require "ldplugin"
 require "verify"
-
-status = {}
 
 function OnPluginTelnetOption (option)
   --- ignore not type 100.
-
+  
   if string.byte(option,1) ~= 101 then return end
 
   itype = tonumber(string.byte(option,2))
-
-  phelper:broadcast(itype)
-  phelper:mdebug(type(phelper.crontick))
-  phelper:mdebug(phelper.crontick)
-  phelper:mdebug(status.statestring)
-  if verify_bool(phelper.crontick) and (status.statestring == 'active' or
-                                 status.statestring == 'sleeping' or
-                                 status.statestring == 'resting') then
-    phelper:mdebug("Sending", "cr")
+  
+  broadcast(itype)
+  if var.crontick == "true" then
+    mdebug("Sending", "cr")
     SendNoEcho("")
   end
 
+
 end -- function
 
-]]>
-</script>
-
-<script>
-<![CDATA[
-
-function OnPluginBroadcast (msg, id, name, text)
-  if id == "aaa79afcb20fa11787c5a327" then
-    status = GetPluginVariableList("aaa79afcb20fa11787c5a327")
-  end -- if
-
-  phelper:OnPluginBroadcast(msg, id, name, text)
-end
+-- pull in telnet option handling
+dofile (GetPluginInfo (GetPluginID (), 20) .. "telnet_options.lua")
 
 function OnPluginInstall ()
-  --OnPluginEnable is automatically called by pluginhelper
-
-  phelper:OnPluginInstall()
-end -- OnPluginInstall
-
-function OnPluginClose ()
-
-  phelper:OnPluginClose()
-end -- OnPluginClose
-
-function OnPluginEnable ()
-  ldplugin("broadcast_state")
-
-  phelper:OnPluginEnable()
-end -- OnPluginEnable
-
-function OnPluginDisable ()
-
-  phelper:OnPluginDisable()
-end -- OnPluginDisable
-
-function OnPluginConnect ()
-
-  phelper:OnPluginConnect()
-end -- function OnPluginConnect
+  if GetVariable ("enabled") == "false" then
+    ColourNote ("yellow", "", "Warning: Plugin " .. GetPluginName ().. " is currently disabled.")
+    check (EnablePlugin(GetPluginID (), false))
+    return
+  end -- they didn't enable us last time
+  
+  -- if we are connected when the plugin loads, it must have been reloaded whilst playing
+  if IsConnected () then
+    TelnetOptionOn (TELOPT_AUTOTICK)  -- get actual status (eg. afk, playing)
+  end -- if already connected
+ 
+end -- function OnPluginInstall
 
 function OnPluginDisconnect ()
+  return
+end -- function OnPluginInstall
 
-  phelper:OnPluginDisconnect()
+function OnPluginConnect ()
+  return
 end -- function OnPluginConnect
 
 function OnPluginSaveState ()
-
-  phelper:OnPluginSaveState()
+  SetVariable ("enabled", tostring (GetPluginInfo (GetPluginID (), 17)))
+  plugin_save_vars(options_table)    
 end -- function OnPluginSaveState
-
 ]]>
 </script>
+
+
+<aliases>
+  <alias
+   name="plugin_parse"
+   script="plugin_parse"
+   match="nothing"
+   enabled="y"
+   regexp="y"
+   ignore_case="y"
+   sequence="110"
+   expand_variables="y"
+  >
+  </alias>   
+</aliases>
 
 <script>
 <![CDATA[
 
-phelper:add_setting('crontick', {help="send a cr to mud on a tick", type="bool", default=verify_bool(false)})
+options_table  = {
+  crontick = {help="send a cr to mud on a tick", type="bool", default=verify_bool(false)},
+  tdebug = {help="set this for debugging information", type="bool", default=verify_bool(false)},
+  plugin_colour = {help="set the plugin colour", type="colour", default=verify_colour("orange")},
+  cmd = {help="the command for this plugin", type="string", after=set_plugin_alias, default="btick"},
+}
 
-phelper:set_default('cmd', 'btick')
-phelper:set_default('plugin_colour', 'orange')
+cmds_table = {
 
-phelper:enable()
+}
+  
+function plugin_parse (name, line, wildcards)
+  plugin_parse_helper(name, line, wildcards, cmds_table, options_table)
+end -- plugin_parse
 
+init_plugin_vars(options_table)
+set_plugin_alias()
 ]]>
 </script>
 </muclient>

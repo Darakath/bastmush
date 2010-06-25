@@ -15,7 +15,7 @@
    save_state="y"
    date_written="2007-05-17 09:28:14"
    requires="4.37"
-   version="2.0"
+   version="1.5"
    >
 <description trim="y">
 <![CDATA[
@@ -56,27 +56,26 @@ Show the moons in a miniwindow
 <!--  Script  -->
 <script>
 <![CDATA[
-
 require "utils"
 require "commas"
 
 -- var is required for pluginhelper below
 require "var"
 require "pluginhelper"
-require "miniwin"
-require "ldplugin"
+
+-- required for toggle window functions
+require "togglewin"
+
 require "verify"
 
-moonwin = Miniwin:new{name="Moons"}
-moonwin:set_default('windowpos', 4)
-moonwin:set_default('font_size', 8)
-moonwin:set_default('font', 'DejaVu Sans Mono')
-moonwin:set_default('text_colour', 'gold')
-moonwin:add_setting("black_colour", {help="the colour for the black moon", type="colour", default=verify_colour("midnightblue"), sortlev=35})
-moonwin:add_setting("white_colour", {help="the colour for the white moon", type="colour", default=verify_colour("white"), sortlev=35})
-moonwin:add_setting("grey_colour", {help="the colour for the grey moon", type="colour", default=verify_colour("dimgray"), sortlev=35})
-moonwin:add_setting("three_colour", {help="the colour for the when three moons are up", type="colour", default=verify_colour("lime"), sortlev=36})
-moonwin:add_setting("three_bg_colour", {help="the colour for the background when the three moons are up", type="colour", default="bg_colour", sortlev=36})
+moonwin = Togglewin{name="Moons", windowpos=4, font_size=8, font="DejaVu Sans Mono", text_colour="gold"}
+moonwin:disable()
+moonwin:add_setting("black_colour", {help="the colour for the black moon", type="colour", default=verify_colour("midnightblue"), sortlev=1})
+moonwin:add_setting("white_colour", {help="the colour for the white moon", type="colour", default=verify_colour("white"), sortlev=1})
+moonwin:add_setting("grey_colour", {help="the colour for the grey moon", type="colour", default=verify_colour("dimgray"), sortlev=1})
+moonwin:add_setting("three_colour", {help="the colour for the when three moons are up", type="colour", default=verify_colour("lime"), sortlev=2})
+moonwin:add_setting("three_bg_colour", {help="the colour for the background when the three moons are up", type="colour", default=verify_colour("bg_colour", {window = moonwin}), sortlev=2})
+
 
 countdown = nil
 countdowndur = nil
@@ -87,6 +86,11 @@ moons = {
   white={now=nil,cycle=65,up=17}
 }
 
+-- mousedown
+function mousedown (flags, hotspotid)
+  moonwin:mousedown(flags, hotspotid)
+end -- mousedown
+
 function styleplotdata()
   local texttable = {}
   local max_width = 0
@@ -96,11 +100,12 @@ function styleplotdata()
   if (moons.black.now == nil ) or
      (moons.grey.now == nil ) or
      (moons.white.now == nil ) then
+     moonwin:disable()  
      return
   end
-
+  
   -- heading
-
+  
   style = {}
   style.text = "Moon Plot:  "
   max_width = math.max (max_width, #style.text)
@@ -108,15 +113,15 @@ function styleplotdata()
   --style.start = 20
   style.style = 0
   table.insert (texttable, {style})
-
-  local tplotdata=buildplotdata(phelper.plotlength)
+  
+  local tplotdata=buildplotdata(var.plotlength)
   for i,t in pairs(tplotdata) do
     local tstyle = {}
     style = {}
     style.text = "["
     style.len = 1
     style.style = 0
-    table.insert (tstyle, style)
+    table.insert (tstyle, style)    
     for u,v in ipairs(t) do
       style = {}
       style.backcolour = moonwin.header_colour
@@ -136,7 +141,7 @@ function styleplotdata()
       else
         style.text = "."
       end
-      table.insert (tstyle, style)
+      table.insert (tstyle, style)      
     end
     style = {}
     style.text = "]"
@@ -147,35 +152,36 @@ function styleplotdata()
   end
 
   local offset
-  local duration
+  local duration 
   offset, duration = nextunion()
   style = {}
   if offset == 0 then
-    style.text = "3 moons are up for " .. tostring(duration) .. " ticks!!"
+    style.text = "3 moons are up for " .. tostring(duration) .. " ticks!!"  
     style.textcolour = 'three_colour'
     local mstyle = {}
-    mstyle.text = ' Moons: ' .. duration .. ' '
-    mstyle.textcolour = moonwin.three_colour
-    moonwin.tabcolour = moonwin.three_bg_colour
-    moonwin:tabbroadcast(true, {mstyle})
+    mstyle.text = tostring(0) .. ":" .. tostring(duration)
+    mstyle.len = #mstyle.text
+    mstyle.start = "mid"
+    mstyle.textcolour = 'three_colour'
+    moonwin.winhide:createwin({"", {mstyle}})
   else
     style.text = "Next Union in " .. tostring(offset) .. " ticks for " .. tostring(duration) .. " ticks."
     local mstyle = {}
-    mstyle.text = ' Moons: ' .. offset .. '-' .. duration .. ' '
-    --mstyle.textcolour = moonwin.text_colour
-    --moonwin.tabcolour = moonwin.bg_colour
-    moonwin.tabcolour = nil
-    moonwin:tabbroadcast(true, {mstyle})
+    mstyle.text = tostring(offset) .. ":" .. tostring(duration)
+    mstyle.len = #mstyle.text
+    mstyle.start = "mid"
+    moonwin.winhide:createwin({"", {mstyle}})
   end
   max_width = math.max (max_width, #style.text)
   style.len = #style.text
   style.style = 0
-  table.insert (texttable, {style})
-
+  table.insert (texttable, {style})  
+  
   moonwin:enable()
-  moonwin:createwin(texttable)
-
+  moonwin:createwin(texttable)  
+  
 end -- plotdatastyle
+
 
 function plotdata()
   if (moons.black.now == nil ) or
@@ -183,7 +189,7 @@ function plotdata()
      (moons.white.now == nil ) then
     Note( "The cycle of one or more moons is unknown.")
   else
-    local tplotdata=buildplotdata(phelper.plotlength)
+    local tplotdata=buildplotdata(var.plotlength)
     for i,t in pairs(tplotdata) do
       local temp = "["
       for _,v in ipairs(t) do
@@ -198,6 +204,7 @@ function plotdata()
   end
 end
 
+
 function buildplotdata(length)
   local tplotdata={white={},grey={},black={}}
   for i = 0,length do
@@ -208,13 +215,14 @@ function buildplotdata(length)
   return tplotdata
 end
 
+
 function moonsetting( tname, tstr, wildcards )
   local moon = wildcards[1]
   local changed = false
   if moons[moon].now == nil then
     moons[moon].now = moons[moon].up - 1
     changed = true
-  end
+  end  
   if moons[moon].now ~= moons[moon].up - 1 then
     moons[moon].now = moons[moon].up - 1
     print("moonbot: lost the", moon, "moon, had to reset")
@@ -225,17 +233,18 @@ function moonsetting( tname, tstr, wildcards )
   end
 end-- moonsetting
 
+
 function moonrising( tname, tstr, wildcards)
   local moon = wildcards[1]
   local changed = false
   if moons[moon].now == nil then
     moons[moon].now = 0
     changed = true
-  end
+  end  
   if moons[moon].now ~= 0 then
     print("moonbot: lost the", moon, "moon, had to reset")
-    moons[moon].now = 0
-    changed = true
+    moons[moon].now = 0    
+    changed = true    
   end
   if changed then
     styleplotdata()
@@ -296,113 +305,106 @@ function nextunion()
   end
 end -- nextunion()
 
-function moonbot_union(cmddict)
+function OnPluginBroadcast (msg, id, name, text)
+  if id == "aaa70b4680508448e19b8b25" and msg == 1 then
+    ontick()
+  end
+end
+
+function OnPluginInstall()
+  if GetVariable ("enabled") == "false" then
+    ColourNote ("yellow", "", "Warning: Plugin " .. GetPluginName ().. " is currently disabled.")
+    check (EnablePlugin(GetPluginID (), false))
+    moonwin:disable()
+    return
+  end -- they didn't enable us last time
+  OnPluginEnable ()  -- do initialization stuff              
+  plugin_help_helper("", "", "", cmds_table)
+end -- OnPluginInstall
+
+function OnPluginClose()
+  ColourNote( "white", "black", "Plugin ",
+              RGBColourToName(var.plugin_colour),  "black",  GetPluginName(),
+          "white", "black", " closed." )
+  moonwin:disable()          
+end -- OnPluginClose
+
+function OnPluginDisable ()
+  moonwin:disable()
+end -- OnPluginDisable
+
+function OnPluginSaveState()
+  plugin_save_vars(options_table)
+  moonwin:savestate()
+end
+
+function OnPluginEnable ()
+  checkplugin ("aaa70b4680508448e19b8b25", "broadcast_tick.xml")
+  moonbot_reset() 
+end -- OnPluginEnable
+
+function OnPluginConnect ()
+  moonbot_reset()
+end -- OnPluginConnect
+]]>
+</script>
+
+<!--  Aliases  -->
+
+<aliases>
+  <alias
+   name="plugin_parse"
+   script="plugin_parse"
+   match="nothing"
+   enabled="y"
+   regexp="y"
+   ignore_case="y"
+   sequence="110"
+   expand_variables="y"
+  >
+  </alias>   
+</aliases>
+
+<script>
+<![CDATA[
+
+function moonbot_union(name, line, wildcards)
   print(nextunion())
   return true
 end -- moonbot_union
 
-function moonbot_reset(cmddict)
+function moonbot_reset()
   for i,v in pairs(moons) do
     moons[i].now = nil
   end
   countdown = nil
   countdowndur = nil
   moonwin:disable()
-  ColourNote("", "", "")
+  ColourNote("", "", "")  
   ColourNote( "orange",  "black", "Moonbot reset" )
   ColourNote("", "", "")
 end -- moonbot_reset
 
-function moonbot_report(cmddict)
-  chan = cmddict[1]
-  if not chan or chan == '' then
-    chan = phelper.reportchan
-  end
-  offset, duration = nextunion()
-  if offset == nil then
-    print('The position of one or more moons is unknown')
-    return
-  else
-    if offset == 0 then
-      SendNoEcho(chan .. ' Three moons are up for ' .. duration .. ' ticks.')
-    else
-      SendNoEcho(chan .. ' Three moons will be up in ' .. offset .. ' ticks for ' .. duration .. ' ticks.')
-    end
-  end
-end
+options_table  = {
+  plotlength = {help="set the length of the moon plot", type="number", high=80, low=0, after=styleplotdata, default=66},
+  plugin_colour = {help="set the plugin colour", type="colour", default=verify_colour("lime")},
+  cmd = {help="the command for this plugin", type="string", after=set_plugin_alias, default="mb"},
+}
 
-]]>
-</script>
+cmds_table = {
+  plot      = {func=plotdata, help="plot moons"},
+  union     = {func=moonbot_union, help="show next moons union"}, 
+  print     = {func=printmoons, help="print the current moon phase #s"},
+  toggle    = {func=togglewindow, help="toggle the moons miniwindow"}, 
+  reset     = {func=moonbot_reset, help="reset the moons"},
+}
+  
+function plugin_parse (name, line, wildcards)
+  plugin_parse_helper(name, line, wildcards, cmds_table, options_table, moonwin)
+end -- plugin_parse
 
-<script>
-<![CDATA[
-
-function OnPluginBroadcast (msg, id, name, text)
-  if id == "aaa70b4680508448e19b8b25" and msg == 1 then
-    ontick()
-  end
-  phelper:OnPluginBroadcast(msg, id, name, text)
-end
-
-function OnPluginInstall()
-
-  phelper:OnPluginInstall ()  -- do initialization stuff
-end -- OnPluginInstall
-
-function OnPluginClose()
-
-  phelper:OnPluginClose()
-end -- OnPluginClose
-
-function OnPluginEnable ()
-  ldplugin("broadcast_tick")
-
-  phelper:OnPluginEnable()
-end -- OnPluginEnable
-
-function OnPluginDisable ()
-
-  phelper:OnPluginDisable()
-end -- OnPluginDisable
-
-function OnPluginConnect ()
-
-  moonbot_reset()
-  phelper:OnPluginConnect()
-end -- OnPluginConnect
-
-function OnPluginDisconnect ()
-
-  phelper:OnPluginDisconnect()
-end -- function OnPluginConnect
-
-function OnPluginSaveState()
-
-  phelper:OnPluginSaveState()
-end
-
-]]>
-</script>
-
-<script>
-<![CDATA[
-
-phelper:add_setting('plotlength', {help="set the length of the moon plot", type="number", high=80, low=0, after=styleplotdata, default=66})
-phelper:add_setting('reportchan', {help="the default channel to do a moons report to", type="string", default='gt'})
-
-phelper:set_default('cmd', 'mb')
-phelper:set_default('plugin_colour', 'lime')
-
-phelper:add_cmd('plot', {func=plotdata, help="plot moons"})
-phelper:add_cmd('union', {func=moonbot_union, help="show next moons union"})
-phelper:add_cmd('print', {func=printmoons, help="print the current moon phase #s"})
-phelper:add_cmd('mreset', {func=moonbot_reset, help="reset the moons"})
-phelper:add_cmd('report', {func=moonbot_report, help="report the position of the moons"})
-
-phelper:add_pobject('win', moonwin)
-
-phelper:enable()
-
+init_plugin_vars(options_table)
+set_plugin_alias()
 ]]>
 </script>
 

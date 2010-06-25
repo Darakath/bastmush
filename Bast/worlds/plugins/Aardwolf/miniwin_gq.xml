@@ -11,7 +11,7 @@
    save_state="y"
    date_written="2009-02-22 21:20:25"
    requires="4.38"
-   version="2.0"
+   version="1.0"
    >
 <description trim="y">
 Redirects the gq to the miniwindow.
@@ -24,26 +24,46 @@ Redirects the gq to the miniwindow.
 
 <include name="constants.lua"/>
 
+<!--  Aliases  -->
+
+<aliases>
+  <alias
+   name="plugin_parse"
+   script="plugin_parse"
+   match="nothing"
+   enabled="y"
+   regexp="y"
+   ignore_case="y"
+   sequence="110"
+   expand_variables="y"
+  >
+  </alias>   
+</aliases>
+
+
 <!--  Script  -->
+
+
 <script>
 <![CDATA[
-
 require 'var'
 require "commas"
 require 'miniwin'
 require 'tprint'
 require 'pluginhelper'
-require 'ldplugin'
 
-gqwin = Miniwin:new{name="GQ"}
-gqwin:set_default('windowpos', 7)
-gqwin:set_default('font_size', 7)
-gqwin:set_default('font', 'Verdana')
-gqwin:set_default('header_height', 0)
---gqwin:disable()
+gqwin = Miniwin{name="GQ", windowpos=7, font_size=7, font="Verdana", header_height=0}
+gqwin:disable()
+
 
 gqmobs = {}
 gq_text = {}
+
+-- mousedown
+function mousedown (flags, hotspotid)
+  gqwin:mousedown(flags, hotspotid)
+end -- mousedown
+
 
 function build_gq ()
 
@@ -71,11 +91,11 @@ function build_gq ()
     style.style = 0
     table.insert (texttable, {style})
   end -- for
-
+  
   gq_text = texttable
   gqwin.header_height = 1
   show_gq()
-
+  
 end -- build_gq
 
 function show_gq ()
@@ -86,14 +106,7 @@ function show_gq ()
 
   gqwin:enable()
   gqwin:createwin(gq_text)
-  gqwin:show(true)
 end -- show_quest_text
-
-]]>
-</script>
-
-<script>
-<![CDATA[
 
 function OnPluginBroadcast (msg, id, name, text)
   if id == "aaa77f81c5408278ccda7100" then
@@ -101,13 +114,13 @@ function OnPluginBroadcast (msg, id, name, text)
       -- gquest available
       gqwin.header_height = 0
       gq_text = {"GQuest Available"}
-      show_gq()
+      show_gq()       
     elseif msg == 2 then
       print("gquest joined")
       -- gquest joined
-      gqwin.header_height = 0
+      gqwin.header_height = 0      
       gq_text = {"GQuest Joined - Waiting"}
-      show_gq()
+      show_gq()       
     elseif msg == 3 then
       local pvar = GetPluginVariable(  "aaa77f81c5408278ccda7100", "mobs" )
 
@@ -118,62 +131,55 @@ function OnPluginBroadcast (msg, id, name, text)
     elseif msg == 4 or msg == 5 then
       -- reward
       gqwin:disable()
-    end
-
+    end      
+     
   end -- gq broadcast
-  phelper:OnPluginBroadcast(msg, id, name, text)
 end
 
 function OnPluginInstall ()
-  --OnPluginEnable is automatically called by pluginhelper
 
-  phelper:OnPluginInstall()
+  if GetVariable ("enabled") == "false" then
+    ColourNote ("yellow", "", "Warning: Plugin " .. GetPluginName ().. " is currently disabled.")
+    check (EnablePlugin(GetPluginID (), false))
+    cpwin:disable()
+    return
+  end -- they didn't enable us last time
+  
+  OnPluginEnable ()  -- do initialization stuff
+  
+  
 end -- OnPluginInstall
 
-function OnPluginClose()
-
-  phelper:OnPluginClose()
-end -- OnPluginClose
-
-function OnPluginEnable ()
-  ldplugin("broadcast_gq")
-
-  phelper:OnPluginEnable()
-end -- OnPluginEnable
-
 function OnPluginDisable ()
-
-  phelper:OnPluginDisable()
+  gqwin:disable()
 end -- OnPluginDisable
 
-function OnPluginConnect ()
-
-  phelper:OnPluginConnect()
-end -- OnPluginConnect
-
-function OnPluginDisconnect ()
-
-  phelper:OnPluginDisconnect()
-end -- function OnPluginConnect
+function OnPluginEnable ()
+  return
+end -- OnPluginEnable
 
 function OnPluginSaveState ()
-
-  phelper:OnPluginSaveState()
+  SetVariable ("enabled", tostring (GetPluginInfo (GetPluginID (), 17)))
+  plugin_save_vars(options_table)
+  gqwin:savestate() 
 end -- function OnPluginSaveState
 
-]]>
-</script>
+options_table  = {
+  plugin_colour = {help="set the plugin colour", type="colour", default=verify_colour("steelblue")},
+  cmd = {help="the command for this plugin", type="string", after=set_plugin_alias, default="gq"},
+}
 
-<script>
-<![CDATA[
+--Request, Info, Quit, Check
+cmds_table = {
+  check    = {func=nofunc, help=''}, 
+}
+  
+function plugin_parse (name, line, wildcards)
+  plugin_parse_helper(name, line, wildcards, cmds_table, options_table, gqwin, true)
+end -- plugin_parse
 
-phelper:set_default('cmd', 'mgq')
-phelper:set_default('plugin_colour', 'steelblue')
-
-phelper:add_pobject('win', gqwin)
-
-phelper:enable()
-
+init_plugin_vars(options_table)
+set_plugin_alias()
 ]]>
 
 </script>

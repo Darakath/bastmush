@@ -8,10 +8,10 @@
    id="aaa0ab9ed92f8fc614664bd1"
    language="Lua"
    purpose="broadcast info from leveling"
-   save_state="y"
+   save_state="y"      
    date_written="2009-02-22 14:20:07"
    requires="4.38"
-   version="2.0"
+   version="1.0"
    >
 
 <description trim="y">
@@ -19,41 +19,22 @@
 [FOR PLUGIN AUTHORS ONLY]
 
 Broadcasts stats when leveling
+Broadcasts
+   1 - level info, get var.levelinfo and loadstring it
+       levelinfo = { type="pup or level", time=how_long, newlevel=newlevel, hp=hpgain, mana=managain,
+                     mov=movegain, trains=trainsgain, pracs=pracsgain, bonustrains=bonustrains, 
+                     bonusstats = {int=1, wis=1, con=1, luc=1, dex=1, str=1 } }
+
 Example
   function OnPluginBroadcast (msg, id, name, text)
-    if id == "aaa0ab9ed92f8fc614664bd1" and msg == 2 then
-      local pvar = GetPluginVariable(  "aaa0ab9ed92f8fc614664bd1", levelinfo )
+    if id == "5a00ab9ed92f8fc614664bd1" and msg == 2 then
+      local pvar = GetPluginVariable(  "4a266f81c50828bbbfda7100", levelinfo )
 
       -- get the info
       loadstring( pvar )()
       info = levelinfo
     end
   end
-
-Broadcasts
-   1 - level info, get var.levelinfo and loadstring it
-    levelinfo = {}
-        levelinfo.luc = 0
-        levelinfo.type = "level"
-        levelinfo.bonusstats = {}
-        levelinfo.pracs = "11"
-        levelinfo.trains = "4"
-        levelinfo.bonustrains = 0
-        levelinfo.hp = "33"
-        levelinfo.wis = 0
-        levelinfo.mv = "30"
-        levelinfo.con = 0
-        levelinfo.int = 0
-        levelinfo.mp = "24"
-        levelinfo.dex = 0
-        levelinfo.time = 1241310623
-        levelinfo.newlevel = "67"
-        levelinfo.str = 0
-  2 - Created
-  3 - Heroed
-  4 - SuperHeroed
-  5 - Remorted to Level 1
-  6 - Tiered
 
 ]]>
 </description>
@@ -126,93 +107,28 @@ Broadcasts
    sequence="101"
   >
   </trigger>
-  <trigger
-   enabled="y"
-   regexp="y"
-   match="^     Congratulations %1, you have now completed character creation.$"
-   name="created"
-   script="created"
-   sequence="100"
-  >
-  </trigger>
-  <trigger
-   enabled="y"
-   regexp="y"
-   match="^Congratulations! You are now a superhero!$"
-   name="superhero"
-   script="superhero"
-   sequence="100"
-  >
-  </trigger>
-  <trigger
-   enabled="y"
-   regexp="y"
-   match="^\* Remort transformation complete\!$"
-   name="remort"
-   script="remort"
-   sequence="100"
-  >
-  </trigger>
 </triggers>
 
 
 <script>
 <![CDATA[
-
 require "var"
 require "serialize"
 require "commas"
 require "pluginhelper"
 require "verify"
-require "ldplugin"
 
 -- keys - type, time, newlevel, hp, mana, mov, trains, pracs, bonustrains, bonusstats = {}
 -- bonusstats subtable keys are the bonus stat names
 levelinfo = {}
-waitcreated = false
 
-function created( name, line, wildcards )
-  waitcreated = true
-end
-
-function superhero( name, line, wildcards )
-  phelper:broadcast(4)
-end
-
-function remort(name, line, wildcards)
-  phelper:broadcast(5)
-end
-
-function resetinfo()
-  levelinfo = {}
-  levelinfo.type = ""
-  levelinfo.newlevel = -1
-  levelinfo.str = 0
-  levelinfo.int = 0
-  levelinfo.wis = 0
-  levelinfo.dex = 0
-  levelinfo.con = 0
-  levelinfo.luc = 0
-  levelinfo.time = -1
-  levelinfo.hp = 0
-  levelinfo.mp = 0
-  levelinfo.mv = 0
-  levelinfo.pracs = 0
-  levelinfo.trains = 0
-  levelinfo.bonustrains = 0
-end
 
 function level ( name, line, wildcards )
-  resetinfo()
+  levelinfo = {}
   levelinfo.type = name
-  if levelinfo.type == "level" then
-    levelinfo.newlevel = wildcards[1]
-    if tonumber(levelinfo.newlevel) == 200 then
-      phelper:broadcast(3)
-    end
-  end
-  levelinfo.time = GetInfo(304)
-  phelper:enabletriggroup( "linfo", true )
+  levelinfo.bonusstats = {}
+  levelinfo.time = GetInfo(304)  
+  enabletriggroup( "linfo", true )
 end
 
 function levelgains (name, line, wildcards)
@@ -220,9 +136,9 @@ function levelgains (name, line, wildcards)
     levelinfo.trains = wildcards[1]
   elseif name == "levelgains" then
     levelinfo.hp = wildcards[1]
-    levelinfo.mp = wildcards[2]
-    levelinfo.mv = wildcards[3]
-    levelinfo.pracs = wildcards[4]
+    levelinfo.mana = wildcards[2]
+    levelinfo.mov = wildcards[3]
+    levelinfo.prac = wildcards[4]
     levelinfo.trains = wildcards[5]
   end
 end
@@ -231,83 +147,73 @@ function levbonus (name, line, wildcards)
   if name == "bonustrains" then
     levelinfo.bonustrains = wildcards[1]
   elseif name == "bonusstat" then
-    levelinfo[string.lower(string.sub(wildcards[1], 1, 3))] = 1
+    levelinfo.bonusstats[string.lower(string.sub(wildcards[1], 1, 3))] = 1
   elseif name == "finishlevel" then
-    phelper:enabletriggroup( "linfo", false )
-    var.levelinfo = serialize.save( "levelinfo", levelinfo )
-    phelper:broadcast(1, var.levelinfo)
+    enabletriggroup( "linfo", false )   
+    var.levelinfo = serialize.save( "levelinfo", levelinfo )  
+    broadcast(1, var.levelinfo)
   end
 end
 
-]]>
-</script>
+function OnPluginEnable ()
 
-<script>
-<![CDATA[
-
-function OnPluginBroadcast (msg, id, name, text)
-  -- state change
-  if id == "aaa79afcb20fa11787c5a327" then
-    status = GetPluginVariableList("aaa79afcb20fa11787c5a327")
-    if status.statestring == 'active' and waitcreated then
-      waitcreated = false
-      broadcast(2)
-    end
-  end -- if
-
-  phelper:OnPluginBroadcast(msg, id, name, text)
 end
 
-function OnPluginInstall ()
-  --OnPluginEnable is automatically called by pluginhelper
-
-  assert (loadstring (GetVariable ("levelinfo") or "")) ()
-
-  phelper:OnPluginInstall()
-end -- OnPluginInstall
-
-function OnPluginClose ()
-
-  phelper:OnPluginClose()
-end -- OnPluginClose
-
-function OnPluginEnable ()
-  ldplugin("broadcast_state")
-
-  phelper:OnPluginEnable()
-end -- OnPluginEnable
-
 function OnPluginDisable ()
+  BroadcastPlugin(-1)
+end
 
-  phelper:OnPluginDisable()
-end -- OnPluginDisable
-
-function OnPluginConnect ()
-
-  phelper:OnPluginConnect()
-end -- function OnPluginConnect
-
-function OnPluginDisconnect ()
-
-  phelper:OnPluginDisconnect()
-end -- function OnPluginConnect
 
 function OnPluginSaveState ()
-
-  phelper:OnPluginSaveState()
+  SetVariable ("enabled", tostring (GetPluginInfo (GetPluginID (), 17)))
+  plugin_save_vars(options_table)    
 end -- function OnPluginSaveState
 
+function OnPluginInstall ()
+
+ if GetVariable ("enabled") == "false" then
+    ColourNote ("yellow", "", "Warning: Plugin " .. GetPluginName ().. " is currently disabled.")
+    check (EnablePlugin(GetPluginID (), false))
+    return
+  end -- they didn't enable us last time
+  
+end -- OnPluginInstall
 ]]>
 </script>
+
+<aliases>
+  <alias
+   name="plugin_parse"
+   script="plugin_parse"
+   match="nothing"
+   enabled="y"
+   regexp="y"
+   ignore_case="y"
+   sequence="110"
+   expand_variables="y"
+  >
+  </alias>   
+</aliases>
 
 <script>
 <![CDATA[
 
-phelper:set_default('cmd', 'blev')
-phelper:set_default('plugin_colour', 'orange')
+options_table  = {
+  tdebug = {help="set this for debugging information", type="bool", default=verify_bool(false)},
+  plugin_colour = {help="set the plugin colour", type="colour", default=verify_colour("orange")},
+  cmd = {help="the command for this plugin", type="string", after=set_plugin_alias, default="blev"},
+}
 
-phelper:enable()
+cmds_table = {
 
+}
+  
+function plugin_parse (name, line, wildcards)
+  plugin_parse_helper(name, line, wildcards, cmds_table, options_table)
+end -- plugin_parse
+
+init_plugin_vars(options_table)
+set_plugin_alias()
 ]]>
 </script>
 </muclient>

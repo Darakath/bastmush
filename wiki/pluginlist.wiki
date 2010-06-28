@@ -21,7 +21,7 @@
 
 = Screenshots =
  * output of plugin list
- http://bastmush.googlecode.com/svn/wiki/images/plugin/pluginlist.png
+ http://bastmush.googlecode.com/svn/wiki/images/pluginlist/pluginlist.png
 
 = Help =
  {{{
@@ -43,4 +43,3 @@ save           : save plugin variables
 set            : set settings
 */
  }}}
-

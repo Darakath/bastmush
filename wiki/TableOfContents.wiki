@@ -3,7 +3,7 @@
  * [Download]
  * [Troubleshooting]
  * PortableMushclient
- * [MyMushclient]
+ * [BastPortableMUSHclient]
  * Bast's Plugins
   * [Aardwolf_chats]
   * [Aardwolf_Chat_mw]

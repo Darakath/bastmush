@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE muclient>
+<!-- $Id$ -->
+<muclient>
+<plugin
+   name="xBroadcast_Tick"
+   author="Bast"
+   id="aaa70b4680508448e19b8b25"
+   language="Lua"
+   purpose="Sends updates when the tick comes in from telopts"
+   save_state="y"
+   date_written="2009-02-010"
+   requires="4.37"
+   version="2.0"
+   >
+
+<description trim="y">
+<![CDATA[
+[FOR PLUGIN AUTHORS ONLY]
+
+Detects when a tick is sent through telopts
+
+Example:
+
+  function OnPluginBroadcast (msg, id, name, text)
+    if id == "aaa70b4680508448e19b8b25" and msg == 1 then
+      -- do something on tick
+    end
+  end
+
+]]>
+</description>
+
+</plugin>
+
+<!--  Script  -->
+
+<script>
+<![CDATA[
+
+require "var"
+require "pluginhelper"
+require "ldplugin"
+require "verify"
+
+status = {}
+
+function OnPluginTelnetOption (option)
+  --- ignore not type 100.
+
+  if string.byte(option,1) ~= 101 then return end
+
+  itype = tonumber(string.byte(option,2))
+
+  phelper:broadcast(itype)
+  phelper:mdebug(type(phelper.crontick))
+  phelper:mdebug(phelper.crontick)
+  phelper:mdebug(status.statestring)
+  if verify_bool(phelper.crontick) and (status.statestring == 'active' or
+                                 status.statestring == 'sleeping' or
+                                 status.statestring == 'resting') then
+    phelper:mdebug("Sending", "cr")
+    SendNoEcho("")
+  end
+
+end -- function
+
+]]>
+</script>
+
+<script>
+<![CDATA[
+
+function OnPluginBroadcast (msg, id, name, text)
+  if id == "aaa79afcb20fa11787c5a327" then
+    status = GetPluginVariableList("aaa79afcb20fa11787c5a327")
+  end -- if
+
+  phelper:OnPluginBroadcast(msg, id, name, text)
+end
+
+function OnPluginInstall ()
+  --OnPluginEnable is automatically called by pluginhelper
+
+  phelper:OnPluginInstall()
+end -- OnPluginInstall
+
+function OnPluginClose ()
+
+  phelper:OnPluginClose()
+end -- OnPluginClose
+
+function OnPluginEnable ()
+  ldplugin("broadcast_state")
+
+  phelper:OnPluginEnable()
+end -- OnPluginEnable
+
+function OnPluginDisable ()
+
+  phelper:OnPluginDisable()
+end -- OnPluginDisable
+
+function OnPluginConnect ()
+
+  phelper:OnPluginConnect()
+end -- function OnPluginConnect
+
+function OnPluginDisconnect ()
+
+  phelper:OnPluginDisconnect()
+end -- function OnPluginConnect
+
+function OnPluginSaveState ()
+
+  phelper:OnPluginSaveState()
+end -- function OnPluginSaveState
+
+]]>
+</script>
+
+<script>
+<![CDATA[
+
+phelper:add_setting('crontick', {help="send a cr to mud on a tick", type="bool", default=verify_bool(false)})
+
+phelper:set_default('cmd', 'btick')
+phelper:set_default('plugin_colour', 'orange')
+
+phelper:enable()
+
+]]>
+</script>
+</muclient>

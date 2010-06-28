@@ -5,7 +5,7 @@
 <wiki:toc max_depth="2" />
 
 = Introduction =
- * Author: Bast
+ * Author: Nick Gammon/Bast
  * This is a modified version of Nick's Aardwolf Spellup Plugin. 
     The original is here http://www.gammon.com.au/mushclient/plugins/Aardwolf/Aardwolf_Spellups.xml 
 

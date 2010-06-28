@@ -4,7 +4,7 @@
 <wiki:toc max_depth="2" />
 
 = Introduction =
- * Author: Bast
+ * Author: Fiendish/Bast
   * originally by Fiendish from http://code.google.com/p/aardwolfclientpackage, you will need the files from [http://code.google.com/p/aardwolfclientpackage/downloads/list here]
  * redirect chats to another world window
 

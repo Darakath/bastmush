@@ -4,6 +4,7 @@
 This is a repository for [http://mushclient.com Mushclient] scripts.  Some of them are modified plugins and most of them are geared toward [http://aardwolf.com Aardwolf Mud].
 
 == miniwindow plugins notes ==
+ * if any of my miniwindows are used, you will also want to use [miniwin_tabbar]
  * can be moved by dragging from the top right of the window
  * can be customized on the fly, 
    1 {{{<plugin_cmd> objects}}} to list objects

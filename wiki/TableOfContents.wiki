@@ -7,7 +7,6 @@
  * Bast's Plugins
   * [Aardwolf_chats]
   * [Aardwolf_Chat_mw]
-  * [Aardwolf_disarm]
   * [Aardwolf_Regen]
   * [Aardwolf_Spellups]
   * [broadcast_cp]
@@ -31,7 +30,7 @@
   * [miniwin_moons]
   * [miniwin_noexp]
   * [miniwin_quest]
-  * [minwin_stats]
+  * [miniwin_stats]
   * [miniwin_tabbar]
   * [pluginlist]
   * [StatDB]

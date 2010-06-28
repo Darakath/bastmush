@@ -14,7 +14,6 @@
   * [pluginhelper] and its dependencies
   * [ldplugin]
  * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
- * to have other miniwindows show up run "<otherminiwindowcmd> <window> set use_tabwin true"
 
 = Troubleshooting =
  * if you do not see the window, "mtab tabwin toggle"
@@ -37,4 +36,3 @@ set            : set settings
 toggle         : toggle window
 */
  }}}
-

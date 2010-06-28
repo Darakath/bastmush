@@ -39,7 +39,7 @@
 = Ideas =
  * convert to a miniwindow
  * use short names for spells and have the user be able to set them
-  * i.e. spellup short <spell or spellnumber> <shortname>
+  * i.e. {{{spellup short <spell or spellnumber> <shortname>}}}
  * have different views
   * i.e. only see spells that are going to wear off in the next 60 secs
   *  only see spells that are bad
@@ -81,4 +81,3 @@ spellup disable --> disable a spell without taking it out of the list
 spellup help    --> this message 
 */
  }}}
-

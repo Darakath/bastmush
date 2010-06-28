@@ -15,7 +15,7 @@
    save_state="y"
    date_written="2009-04-11 21:11:47"
    requires="4.40"
-   version="2.0"
+   version="2.01"
    >
 
 </plugin>
@@ -398,7 +398,14 @@ function StatReport(minutes)
 end
 
 function settimer()
-   SetTimerOption ("StatReport", "minute", var.showminutes)
+   if tonumber(var.showminutes) == -1 and GetTimerInfo ("StatReport", 6) then
+     EnableTimer("StatReport", false)
+   else
+     SetTimerOption ("StatReport", "minute", var.showminutes)
+     if not GetTimerInfo ("StatReport", 6) then
+       EnableTimer("StatReport", true)        
+     end
+   end
 end
 
 function cmd_report(cmddict)
@@ -484,7 +491,7 @@ end -- function OnPluginSaveState
 phelper:set_default('cmd', 'statmon')
 phelper:set_default('plugin_colour', 'orange')
 
-phelper:add_setting('showminutes', {help="the number of minutes between StatMon output", type="number", after=settimer, default=60})
+phelper:add_setting('showminutes', {help="the number of minutes between StatMon output, -1 to disable", type="number", after=settimer, default=60})
 phelper:add_setting('reportminutes', {help="the number of minutes that Statmon reports on", type="number", default=60})
 
 phelper:add_cmd('report', {func=cmd_report, help="show stats for the last x minutes, x being what is passed as an argument"})

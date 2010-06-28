@@ -6,9 +6,9 @@ This is a repository for [http://mushclient.com Mushclient] scripts.  Some of th
 == miniwindow plugins notes ==
  * can be moved by dragging from the top right of the window
  * can be customized on the fly, 
-   1 "<plugin_cmd> objects" to list objects
-   1 "<plugin_cmd> <object> set" to see options that can be set
-   1 "<plugin_cmd> <object> set <option> <value>" to set the option
+   1 {{{<plugin_cmd> objects}}} to list objects
+   1 {{{<plugin_cmd> <object> set}}} to see options that can be set
+   1 {{{<plugin_cmd> <object> set <option> <value>}}} to set the option
  Example
  {{{
 miniwin_map 1 Settings

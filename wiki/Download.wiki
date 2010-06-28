@@ -21,7 +21,7 @@
    1 load the plugins in mushclient
 
    === Upgrading ===
-   1 When upgrading, upgrade all of my plugins, you will not be able to use old with new
+    1 *When upgrading, upgrade all of my plugins, you will not be able to use old with new*
 
 = Subversion =
  * *This is only for advanced users*

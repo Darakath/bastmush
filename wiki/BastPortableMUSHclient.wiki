@@ -35,7 +35,7 @@ This is a portable version of the mushclient that I run.  It includes the worlds
   * Spellup - For the spellup plugin
 
  * Plugins not loaded, but included
-  * AardInit - doesn't make much since to use it, since I don't use have the worlds
+  * AardInit - doesn't make much since to use it, since I don't use most of the worlds
   * Aardwolf_bigmap - doesn't work right since areas now have coords, world also included but not loaded
   * Aardwolf_Helplist - do not use
   * Aardwolf Help - not coloured, so I just use regular help

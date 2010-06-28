@@ -8,6 +8,15 @@
  * Author: Bast
  * this is a plugin that broadcasts info about  level
 
+= Installation ==
+ * Required 
+  * [pluginhelper] and its dependencies
+  * [broadcast_state]
+ * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+
+= Troubleshooting =
+ * run the command "blevel set tdebug true" to enable debugging
+
 = Help =
  {{{
 /*
@@ -53,13 +62,3 @@ Broadcasts
   6 - Tiered
 */
  }}}
-
-
-= Installation ==
- * Required 
-  * [pluginhelper] and its dependencies
-  * [broadcast_state]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
-
-= Troubleshooting =
- * run the command "blevel set tdebug true" to enable debugging

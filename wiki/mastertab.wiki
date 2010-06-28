@@ -13,9 +13,7 @@
 
 = Installation =
  * Requires
-  * [class]
   * [verify]
   * [pluginhelper]
   * [miniwin]
  * see the [Download] Page, and copy the file into the lua directory
-

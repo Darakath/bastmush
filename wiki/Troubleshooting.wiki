@@ -4,6 +4,7 @@
 == General Information ==
  * the support files are required for most of the plugins to work
  * most of the plugins have debug options and can be toggled by typing "(plugincmd) debug"
+ * delete the state file for the plugin and reload it
 
 == Getting Help ==
  * post a message in the mushclient forums (best place for help)

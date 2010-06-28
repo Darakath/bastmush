@@ -19,7 +19,7 @@ This is a portable version of the mushclient that I run.  It includes the worlds
    * Author: Nick Gammon
     * Modified by me when flags were added to consider
    * Homepage: http://www.gammon.com.au/forum/?id=8847
-  * PotionQuafferV2
+  * !PotionQuafferV2
    * Author: Onoitsu2/Bottomfeeder
     * modified by me to include all auras that can be on a potion
    * Homepage: http://www.gammon.com.au/forum/?id=8906

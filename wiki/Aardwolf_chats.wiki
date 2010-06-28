@@ -4,8 +4,7 @@
 <wiki:toc max_depth="2" />
 
 = Introduction =
- * Author: Bast
-  * originally by Nick Gammon
+ * Author: NickGammon/Bast
  * redirect chats to another world window
 
 = Differences from Nick's Plugin ==

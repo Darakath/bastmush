@@ -1,4 +1,4 @@
-﻿#summary Put gquest info into a miniwindow
+﻿#summary Example of what can be done with miniwindows
 #labels Author-Bast
 
 === Table of Contents ===
@@ -6,32 +6,34 @@
 
 = Introduction =
  * Author: Bast
- * This is a plugin that puts gq info into a miniwindow
- * It will automatically update when a gq mob is killed
+ * This is a plugin that shows some of the capabilities of the miniwin module
 
 = Installation ==
  * Required 
   * [miniwin] and its dependencies
   * [pluginhelper] and its dependencies
-  * [verify]
-  * [broadcast_gq]
  * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
 
 = Troubleshooting =
- * the miniwindow will not show until gquest info has been received
+ * "mnexam Example t" will show the first example
 
 = Screenshots =
- * gq available
- http://bastmush.googlecode.com/svn/wiki/images/gq/gquest-avail.png
- * gq joined
- http://bastmush.googlecode.com/svn/wiki/images/gq/gquest-joined.png
- * gq mobs
- http://bastmush.googlecode.com/svn/wiki/images/gq/gquest-mobs.png
+ * Example
+  http://bastmush.googlecode.com/svn/wiki/images/example/example.png
 
 = Help =
  {{{
 /*
-miniwin_gq v1 GQ Commands
+miniwin_example v1 Commands
+-----------------------------------------------
+debug          : toggle debugging
+help           : show help
+objects        : list objects associated with this plugin
+reset          : reset settings to default values
+save           : save plugin variables
+set            : set settings
+
+miniwin_example v1 Example Commands
 -----------------------------------------------
 debug          : toggle debugging
 fonts          : show fonts loaded in this miniwin
@@ -40,6 +42,6 @@ reset          : reset settings to default values
 save           : save plugin variables
 set            : set settings
 toggle         : toggle window
+
 */
  }}}
-

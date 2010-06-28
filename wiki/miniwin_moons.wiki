@@ -1,4 +1,4 @@
-#summary Aardwolf Moons Miniwindow
+﻿#summary Aardwolf Moons Miniwindow
 #labels Author-Bast
 
 === Table of Contents ===
@@ -14,29 +14,12 @@
  * uses the telopt ticks instead of the printed tick
   * this is because printed ticks are not sent when note writing, etc..
 
-= Help =
- {{{
-/*
-Aardwolf_moonbot 1.5 Options
-moonbot may be abbreviated as mb
------------------------------------------------
-plot           : plot moons
-toggle         : toggle the moons miniwindow
-union          : show next moons union
-print          : print the current moon phase #s
-reset          : reset the moons
-help           : show help
-set            : set script and window vars, show plugin vars when called with no arguments, 'window': show window vars, 'all': show all vars
-*/
- }}}
-
 
 = Installation ==
  * Required 
-  * [togglewin]
-  * [miniwin]
+  * [miniwin] and all of its dependencies
   * [class]
-  * [pluginhelper]
+  * [pluginhelper] and all of its dependencies
   * [verify]
   * [broadcast_tick] and all of its dependencies
  * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
@@ -46,17 +29,30 @@ set            : set script and window vars, show plugin vars when called with n
 
 = Screenshots =
  * the regular moonbot miniwindow
-  * click on the - to toggle the window or type mb toggle
-  * click on the ? to change the background colours of parts of the window
- http://bastmush.googlecode.com/svn/wiki/moonbot_images/moonbot.png
+ http://bastmush.googlecode.com/svn/wiki/images/moonbot/moonbot.png
  * the miniwindow when the three moons are up
- http://bastmush.googlecode.com/svn/wiki/moonbot_images/moonbot-threemoons.png
- * the toggled moonbot miniwindow
-  * click on "Show Moons" to toggle back to the full window
- http://bastmush.googlecode.com/svn/wiki/moonbot_images/moonbot-toggled.png
- * the toggled moonbot miniwindow when the 3 moons are up
- http://bastmush.googlecode.com/svn/wiki/moonbot_images/moonbot-toggled-threemoons.png
+ http://bastmush.googlecode.com/svn/wiki/images/moonbot/moonbot-threemoons.png
  * moonbot tick messages
- http://bastmush.googlecode.com/svn/wiki/moonbot_images/moonbot-attick.png
+ http://bastmush.googlecode.com/svn/wiki/images/moonbot/moonbot-attick.png
  * moonbot settings
- http://bastmush.googlecode.com/svn/wiki/moonbot_images/moonbot-settings.png
+ http://bastmush.googlecode.com/svn/wiki/images/moonbot/moonbot-settings.png
+
+= Help =
+ {{{
+/*
+miniwin_moonbot v1.5 Commands
+-----------------------------------------------
+debug          : toggle debugging
+help           : show help
+mreset         : reset the moons
+objects        : list objects associated with this plugin
+plot           : plot moons
+print          : print the current moon phase #s
+report         : report the position of the moons
+reset          : reset settings to default values
+save           : save plugin variables
+set            : set settings
+union          : show next moons union
+*/
+ }}}
+

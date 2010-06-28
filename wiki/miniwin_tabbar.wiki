@@ -1,4 +1,4 @@
-﻿#summary Put gquest info into a miniwindow
+﻿#summary Tabwindow to control other windows and show data
 #labels Author-Bast
 
 === Table of Contents ===
@@ -6,32 +6,27 @@
 
 = Introduction =
  * Author: Bast
- * This is a plugin that puts gq info into a miniwindow
- * It will automatically update when a gq mob is killed
+ * shows a miniwindow that enables toggling of other windows and some basic info
 
 = Installation ==
  * Required 
   * [miniwin] and its dependencies
   * [pluginhelper] and its dependencies
-  * [verify]
-  * [broadcast_gq]
+  * [ldplugin]
  * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * to have other miniwindows show up run "<otherminiwindowcmd> <window> set use_tabwin true"
 
 = Troubleshooting =
- * the miniwindow will not show until gquest info has been received
+ * if you do not see the window, "mtab tabwin toggle"
 
 = Screenshots =
- * gq available
- http://bastmush.googlecode.com/svn/wiki/images/gq/gquest-avail.png
- * gq joined
- http://bastmush.googlecode.com/svn/wiki/images/gq/gquest-joined.png
- * gq mobs
- http://bastmush.googlecode.com/svn/wiki/images/gq/gquest-mobs.png
+ http://bastmush.googlecode.com/svn/wiki/images/tabwin/tabwin.png
 
 = Help =
+ * "mtab tabwin toggle" to toggle the window
  {{{
 /*
-miniwin_gq v1 GQ Commands
+miniwin_tabwin v1 tabwin Commands
 -----------------------------------------------
 debug          : toggle debugging
 fonts          : show fonts loaded in this miniwin

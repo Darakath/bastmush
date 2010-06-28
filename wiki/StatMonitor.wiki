@@ -1,0 +1,72 @@
+﻿#summary Shows info on levels/pups, quests, cp, gqs
+#labels Author-Bast
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * Author: Bast
+ * This will show information in the output about
+   * Levels/Pups
+   * Campaigns
+   * Gquests
+   * Quests
+
+= Installation ==
+ * Required 
+  * [pluginhelper] and all of its dependencies
+  * [aardutils]
+  * [StatDB]
+  * [broadcast_level]
+  * [broadcast_quest]
+  * [broadcast_cp]
+  * [broadcast_gq]
+ * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ 
+= Output =
+ * statmon rep
+  {{{
+Stats for the Last 2 h
+Type       -  Tot   XP   QP   Tp   Gold
+---------------------------------------
+Quests     -    3    0   40    0  12498
+CPs        -    0    0    0    0      0
+GQs        -    0    0    0    0      0
+Mobs       -    4  120    0    0  15168
+---------------------------------------
+Totals     -       120   40    0  27666
+  }}}
+ * Other
+  {{{
+Quest finished for 15+2qp 1TP.  It took 00m:52s.  Avg: 16.82 qp/quest over 1409 quests.
+CP finished for 32qp.  It took 00d:00h:23m.
+Gained a level: 37hp 28mp 33mvs 4+1 trains 12 pracs str bonus 17 mobs killed (78.59xp/mob)
+GQ finished for 30+33qp 1TP
+  }}}
+
+= Help =
+ {{{
+/*
+StatMonitor v1 Commands
+-----------------------------------------------
+debug          : toggle debugging
+help           : show help
+objects        : list objects associated with this plugin
+report         : show stats for the last x minutes, x being what is passed as an argument
+reset          : reset settings to default values
+save           : save plugin variables
+set            : set settings
+*/
+ }}}
+
+ * settings
+  {{{
+StatMonitor v1 Settings
+-----------------------------------------------
+tdebug               : false                - show debugging info for this option
+plugin_colour        : orange               - set the plugin colour
+reportminutes        : 120                  - the number of minutes that Statmon reports on
+showminutes          : 30                   - the number of minutes between StatMon output
+cmd                  : statmon              - the command to type for this plugin
+  }}}
+

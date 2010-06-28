@@ -1,10 +1,9 @@
-#summary Troubleshooting plugins
+﻿#summary Troubleshooting plugins
 #labels Featured
 
 == General Information ==
  * the support files are required for most of the plugins to work
- * most of the plugins have debug options and can be turned on by typing "(plugincmd) set tdebug on"
- * the spellup plugin debug cmd is "spellup debug"
+ * most of the plugins have debug options and can be toggled by typing "(plugincmd) debug"
 
 == Getting Help ==
  * post a message in the mushclient forums (best place for help)

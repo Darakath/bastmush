@@ -1,0 +1,21 @@
+﻿#summary A module that has a baseclass for holding variables and other functions
+#labels Author-Bast
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * Author: Bast
+ * A module that has a baseclass for holding variables and other functions
+
+= Installation =
+ * requires
+  * [tablefuncs]
+  * [verify]
+ * see the [Download] Page, and copy the file into the lua directory
+
+= Troubleshooting =
+ * post errors on the mushclient forums, I watch those forums 
+
+= Examples =
+ * see [pluginhelper] or [miniwin]

@@ -1,4 +1,4 @@
-#summary Put map info into a miniwindow
+﻿#summary Put map info into a miniwindow
 #labels Author-Bast
 
 === Table of Contents ===
@@ -7,18 +7,6 @@
 = Introduction =
  * Author: Bast
  * This is a plugin that puts map info into a miniwindow
-
-= Help =
- {{{
-/*
-miniwin_map 1 Options
------------------------------------------------
-toggle         : toggle the map miniwindow
-help           : show help
-set            : set script and window vars, show plugin vars when called with no arguments, 'window': show window vars, 'all': show all vars
-*/
- }}}
-
 
 = Installation ==
  * Required 
@@ -33,4 +21,23 @@ set            : set script and window vars, show plugin vars when called with n
  * the miniwindow will not show until map info has been received
 
 = Screenshots =
- http://bastmush.googlecode.com/svn/wiki/map_images/map.png
+ * Map
+  http://bastmush.googlecode.com/svn/wiki/images/map/map.png
+ * Legend
+  http://bastmush.googlecode.com/svn/wiki/images/map/map_legend.png
+
+= Help =
+ {{{
+/*
+miniwin_map v1 Map Commands
+-----------------------------------------------
+debug          : toggle debugging
+fonts          : show fonts loaded in this miniwin
+help           : show help
+reset          : reset settings to default values
+save           : save plugin variables
+set            : set settings
+toggle         : toggle window
+
+*/
+ }}}

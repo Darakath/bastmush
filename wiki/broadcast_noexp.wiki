@@ -1,0 +1,39 @@
+﻿#summary Plugin to broadcast when noexp is enabled/disabled
+#labels Author-Bast
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * Author: Bast
+ * this is a plugin that broadcasts when noexp is enabled/disabled
+ * it is used for the [miniwin_noexp] plugin
+
+= Installation ==
+ * Required 
+  * [pluginhelper] and its dependencies
+ * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+
+= Troubleshooting =
+ * run the command "bnoexp debug" to enable debugging
+
+= Help =
+ {{{
+/*
+[FOR PLUGIN AUTHORS ONLY]
+
+Detects when noexp is toggled
+
+Example:
+
+  function OnPluginBroadcast (msg, id, name, text)
+    if id == "aaa65ac8122d795ad5348dcd" then
+      if msg == 1 then
+        -- noexp on
+      elseif msg == 2 then
+        -- noexp off
+      end
+    end -- noexp changed
+  end
+*/
+ }}}

@@ -1,4 +1,4 @@
-#summary Plugin to put quest info into a miniwin
+﻿#summary Plugin to put quest info into a miniwin
 #labels Author-Bast
 
 === Table of Contents ===
@@ -8,35 +8,38 @@
  * Author: Bast
  * This is a plugin that puts quest info into a miniwindow
 
-= Help =
- {{{
-/*
-miniwin_quest 1 Options
------------------------------------------------
-help           : show help
-set            : set script and window vars, show plugin vars when called with no arguments, 'window': show window vars, 'all': show all vars
-*/
- }}}
-
-
 = Installation ==
  * Required 
-  * [miniwin]
-  * [class]
-  * [pluginhelper]
+  * [miniwin] and all of its dependencies
+  * [pluginhelper] and all of its dependencies
   * [verify]
+  * [ldplugin]
   * [broadcast_quest]
  * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
 
 = Troubleshooting =
- * type "qw set tdebug true" to enable debugging
+ * type "mquest debug" to enable debugging
 
 = Screenshots =
  * Quest timer
- http://bastmush.googlecode.com/svn/wiki/quest_images/quest-timer.png
+ http://bastmush.googlecode.com/svn/wiki/images/quest/quest-timer.png
  * Quest available
- http://bastmush.googlecode.com/svn/wiki/quest_images/quest-avail.png
+ http://bastmush.googlecode.com/svn/wiki/images/quest/quest-avail.png
  * Quest info
- http://bastmush.googlecode.com/svn/wiki/quest_images/quest-info.png
+ http://bastmush.googlecode.com/svn/wiki/images/quest/quest-info.png
  * Quest mob dead
- http://bastmush.googlecode.com/svn/wiki/quest_images/quest-turnin.png
+ http://bastmush.googlecode.com/svn/wiki/images/quest/quest-turnin.png
+
+= Help =
+ {{{
+miniwin_quest v1 Quest Commands
+-----------------------------------------------
+debug          : toggle debugging
+fonts          : show fonts loaded in this miniwin
+help           : show help
+reset          : reset settings to default values
+save           : save plugin variables
+set            : set settings
+toggle         : toggle window
+ }}}
+

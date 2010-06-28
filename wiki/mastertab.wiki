@@ -1,0 +1,21 @@
+﻿#summary a lua module that contains a class for controlling other miniwindows
+#labels Author-Bast
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * Author: Bast
+ * a lua module that contains a class for controlling other miniwindows
+
+= Help =
+ * see the [miniwin_tabbar]
+
+= Installation =
+ * Requires
+  * [class]
+  * [verify]
+  * [pluginhelper]
+  * [miniwin]
+ * see the [Download] Page, and copy the file into the lua directory
+

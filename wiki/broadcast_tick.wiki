@@ -1,4 +1,4 @@
-#summary Broadcasts when a tick is sent through telopts
+﻿#summary Broadcasts when a tick is sent through telopts
 #labels Author-Bast
 
 === Table of Contents ===
@@ -7,6 +7,10 @@
 = Introduction =
  * Author: Bast
  * broadcasts when a tick is sent through telopts
+
+= Installation ==
+ * download Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/telnet_options.lua telnet_options.lua] script into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+ * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
 
 = Help =
  {{{
@@ -25,7 +29,3 @@ Example:
 
 */
 }}}
-
-= Installation ==
- * download Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/telnet_options.lua telnet_options.lua] script into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf

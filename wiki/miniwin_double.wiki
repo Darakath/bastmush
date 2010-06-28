@@ -1,4 +1,4 @@
-﻿#summary Put gquest info into a miniwindow
+﻿#summary Aardwolf Double MiniWindow
 #labels Author-Bast
 
 === Table of Contents ===
@@ -6,32 +6,28 @@
 
 = Introduction =
  * Author: Bast
- * This is a plugin that puts gq info into a miniwindow
- * It will automatically update when a gq mob is killed
+ * shows a miniwindow when double is active
 
 = Installation ==
  * Required 
   * [miniwin] and its dependencies
   * [pluginhelper] and its dependencies
-  * [verify]
-  * [broadcast_gq]
+  * [ldplugin]
+  * [broadcast_double]
  * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
 
 = Troubleshooting =
- * the miniwindow will not show until gquest info has been received
+ * the miniwindow will not show until the command "cp check" is run
+ * if you do not see the window, "bdbl Double toggle"
 
 = Screenshots =
- * gq available
- http://bastmush.googlecode.com/svn/wiki/images/gq/gquest-avail.png
- * gq joined
- http://bastmush.googlecode.com/svn/wiki/images/gq/gquest-joined.png
- * gq mobs
- http://bastmush.googlecode.com/svn/wiki/images/gq/gquest-mobs.png
+ http://bastmush.googlecode.com/svn/wiki/images/double/dbl.png
 
 = Help =
+ * "bdbl double toggle" to toggle the window
  {{{
 /*
-miniwin_gq v1 GQ Commands
+miniwin_double v1 Double Commands
 -----------------------------------------------
 debug          : toggle debugging
 fonts          : show fonts loaded in this miniwin

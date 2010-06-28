@@ -1,0 +1,45 @@
+﻿#summary Aardwolf Spellup Plugin
+#labels Author-Bast
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * Author: Bast
+ * This plugin will wear a regen ring when in a room that is added or when sleeping or when going client afk
+
+= Installation ==
+ * Required 
+  * Nick's [http://www.gammon.com.au/forum/?id=8776 ATCP_NJG.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\, included in versions of MUSHclient > 
+  * Nick's [http://www.gammon.com.au/forum/?id=8776 AFK_Detector.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf, included in versions of MUSHclient > 
+  * [broadcast_state] in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+  * [broadcast_runto] in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+  * [broadcast_invmon] in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
+  * [pluginhelper] and all its dependencies
+  * [ldplugin]
+ * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+
+= Troubleshooting =
+ * 
+
+= Help =
+ {{{
+/*
+This plugin is designed to wear the regen ring in certain rooms and when sleeping
+The regen ring must be in your inventory and not in a container
+
+It will wear the regen ring when
+  sleeping
+  when entering a regen room
+    To add a room, go to that room and type "regen add"
+  when idling
+
+It will remove the regen ring when
+  standing
+  when leaving a regen room
+  when you stop idling
+
+This plugin defaults to no action when entering a regen room. type "regen set off false" to enable that functionality
+*/
+ }}}
+

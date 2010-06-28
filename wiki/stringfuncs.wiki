@@ -1,4 +1,4 @@
-#summary a module for various string functions not included in the utils module or string class
+﻿#summary a module for various string functions not included in the utils module or string class
 #labels Author-Bast
 
 === Table of Contents ===
@@ -6,12 +6,15 @@
 
 = Introduction =
  * Author: Bast
- * a plugin for string functions, which has nothing of value in it right now
+ * a plugin for string functions
 
 = Help =
 {{{
 /*
 functions in this module
+
+wrap - usage: wrap(line, length)
+  wrap the line at length, will try to find closest comma or space
 
 */
 }}}

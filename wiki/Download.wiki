@@ -1,4 +1,4 @@
-#summary Downloading the scripts
+﻿#summary Downloading the scripts
 #labels Featured
 <wiki:toc max_depth="3" />
 
@@ -20,10 +20,13 @@
    1 copy the files from the worlds/plugins/Aardwolf into mushclient_install_dir/worlds/plugins/Aardwolf
    1 load the plugins in mushclient
 
+   === Upgrading ===
+   1 When upgrading, upgrade all of my plugins, you will not be able to use old with new
+
 = Subversion =
  * *This is only for advanced users*
  == Stable ==
-  1 checkout from http://bastmush.googlecode.com/svn/branches/stable
+  1 checkout from http://bastmush.googlecode.com/svn/branches/v2
   1 copy or link files into the appropriate directories
 
  == Bleeding Edge ==

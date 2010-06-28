@@ -1,4 +1,4 @@
-#summary Plugin to broadcast kill info
+﻿#summary Plugin to broadcast kill info
 #labels Author-Bast
 
 === Table of Contents ===
@@ -8,16 +8,22 @@
  * Author: Bast
  * this is a plugin that broadcasts info about a mob kill
 
+= Installation ==
+ * Required 
+  * [pluginhelper] and its dependencies
+  * [broadcast_invmon] and its dependencies
+  * Nick's [http://www.gammon.com.au/forum/?id=8776 Stats_Detector.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
+ * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+
+= Troubleshooting =
+ * run the command "bkill set tdebug true" to enable debugging
+
 = Help =
  {{{
 /*
 [FOR PLUGIN AUTHORS ONLY]
 
 Broadcasts when a mob is killed
-Broadcasts
-   1 - mob killed
-       kill_info = {mob = mobname, xp = xp, bonusxp = bonusxp, gold = gold
-
 Example
   function OnPluginBroadcast (msg, id, name, text)
     if id == "37a61c4570508448e19c7c14" and msg == 1 then
@@ -28,15 +34,18 @@ Example
       kill = kill_info
     end
   end
+
+xBroadcast_Kills : Broadcast 1
+kill_info = {}
+  kill_info.mob = "The miller's wife"
+  kill_info.vorpal = 0
+  kill_info.vorpal_weapon = ""
+  kill_info.time = 1275867123
+  kill_info.gold = "2267"
+  kill_info.bonusxp = "5"
+  kill_info.level = "139"
+  kill_info.xp = "5"
+  kill_info.tp = 0
 */
  }}}
 
-
-= Installation ==
- * Required 
-  * [pluginhelper] and its dependencies
-  * Nick's [http://www.gammon.com.au/forum/?id=8776 Stats_Detector.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
-
-= Troubleshooting =
- * run the command "bkill set tdebug true" to enable debugging

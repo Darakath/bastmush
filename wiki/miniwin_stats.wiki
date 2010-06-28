@@ -1,4 +1,4 @@
-﻿#summary Put gquest info into a miniwindow
+﻿#summary Aardwolf Stats MiniWindow
 #labels Author-Bast
 
 === Table of Contents ===
@@ -6,32 +6,28 @@
 
 = Introduction =
  * Author: Bast
- * This is a plugin that puts gq info into a miniwindow
- * It will automatically update when a gq mob is killed
+ * shows a miniwindow that shows stats
 
 = Installation ==
  * Required 
   * [miniwin] and its dependencies
   * [pluginhelper] and its dependencies
-  * [verify]
-  * [broadcast_gq]
+  * [ldplugin]
+  * [tablefuncs]
+  * Nick's [http://www.gammon.com.au/forum/?id=8776 Stats_Detector.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
  * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
 
 = Troubleshooting =
- * the miniwindow will not show until gquest info has been received
+ * if you do not see the window, "mstat Stats toggle"
 
 = Screenshots =
- * gq available
- http://bastmush.googlecode.com/svn/wiki/images/gq/gquest-avail.png
- * gq joined
- http://bastmush.googlecode.com/svn/wiki/images/gq/gquest-joined.png
- * gq mobs
- http://bastmush.googlecode.com/svn/wiki/images/gq/gquest-mobs.png
+ http://bastmush.googlecode.com/svn/wiki/images/stats/stats.png
 
 = Help =
+ * "mstat Stats toggle" to toggle the window
  {{{
 /*
-miniwin_gq v1 GQ Commands
+miniwin_stats v1 Stats Commands
 -----------------------------------------------
 debug          : toggle debugging
 fonts          : show fonts loaded in this miniwin

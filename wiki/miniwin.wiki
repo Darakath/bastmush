@@ -1,4 +1,4 @@
-#summary a lua module that contains a class for creating miniwindows
+﻿#summary a lua module that contains a class for creating miniwindows
 #labels Author-Bast
 
 === Table of Contents ===
@@ -11,6 +11,39 @@
 = Help =
 {{{
 forthcoming
+
+styles can have the following:
+  style.text = 'text'
+  style.textcolour
+  style.backcolour
+  style.start - absolute position to start
+  style.hjust - can be set to center to put text in the center of the window on that line (default is top)
+    values: 'left', 'center', 'right'
+  style.vjust - can be set to vertically adjust text (comes into play when a line has several sizes of text)
+    values: 'top', 'center', 'bottom'
+  style.font_name
+    if a font can't be loaded, then the default font is used
+  style.font_size
+  style.bold
+  style.italic
+  style.underline
+  style.strikeout
+  style.hotspot_id
+  style.mousedown
+  style.cancelmousedown
+  style.mouseup
+  style.mouseover
+  style.cancelmouseover
+  style.cursor
+  style.hint
+  style.leftborder (true or false)
+  style.rightborder (true or false)
+  style.bottomborder (true or false)
+  style.topborder (true or false)
+  style.bordercolour (default white)
+  style.borderstyle (default 0)
+  style.borderwidth (default 1)
+
 }}}
 
 = Installation =
@@ -21,4 +54,4 @@ forthcoming
  * see the [Download] Page, and copy the file into the lua directory
 
 = Example =
- * see the [miniwin_quest] plugin
+ * see any of the miniwin plugins, for example [miniwin_example]

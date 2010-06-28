@@ -5,17 +5,14 @@
 
 = Introduction =
  * Author: Bast
-  * originally by Nick Gammon
+  * originally by Fiendish from http://code.google.com/p/aardwolfclientpackage, you will need the files from [http://code.google.com/p/aardwolfclientpackage/downloads/list here]
  * redirect chats to another world window
 
-= Differences from Nick's Plugin ==
- * fixes the bug with cutting off some auctions
- * will save echo preference
+= Differences from Fiendish's Plugin ==
  * also redirects, Info, Global Quest, and Remort Auction
 
 = Installation ==
- * Required 
-  * Chats World in the directory <Mushclient Install Dir>\worlds\Aardwolf  (available with the Aardwolf Mushclient)
+ * it requires MUSHclient 4.51
  * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
 
 = Troubleshooting =
@@ -24,10 +21,7 @@
 = Help =
  {{{
 /*
-Redirects chats, tells and channels to the "Chats" world window.
-
 chats echo on   --> also echo in the main window
 chats echo off  --> only show in the other window
-
 */
  }}}

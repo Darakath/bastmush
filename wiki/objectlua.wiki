@@ -1,0 +1,15 @@
+﻿#summary a module for creating classes in lua
+#labels Author-Bast
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * Author: Bast
+ * a module for creating classes in lua
+
+= Installation ==
+ * see the [Download] Page, and copy the directory into the lua directory
+
+= Examples =
+ * see [phelpobject] or [miniwin]

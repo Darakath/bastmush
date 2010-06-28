@@ -1,0 +1,39 @@
+﻿#summary various functions related to aardwolf
+#labels Author-Bast
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * Author: Bast
+ * a plugin for aardwolf related functions
+
+= Help =
+{{{
+/*
+functions in this module
+
+findkeyword - usage: findkeyword(item)
+  return the first keyword of the item that is not an article
+
+getactuallevel - usage: getactuallevel(level, remorts, tier)
+  - find the actual level based on remorts, tier, and current level
+
+convertlevel - usage: convertlevel(level)
+  - opposite of getactuallevel, return a table with keys tier, remort, level
+
+classabb table
+  - a table of class abbreviations, key is the abbreviation, value is
+    the long name for the class
+
+objecttypes table
+  - table of object types
+
+wearlocs table
+  - table of wear locations
+
+*/
+}}}
+
+= Installation ==
+ * see the [Download] Page, and copy the file into the lua directory

@@ -1,0 +1,26 @@
+﻿#summary A module that loads/reloads/enables/disables plugins
+#labels Author-Bast
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * Author: Bast
+ * this module loads/reloads/enables/disables plugins
+
+= Help =
+ * see the [pluginlist] plugin
+{{{
+/*
+ldplugin - usage: ldplugin(filename, silent)
+  silent is true if no feedback is needed
+*/
+}}}
+
+= Installation =
+ * see the [Download] Page, and copy the file into the lua directory
+
+
+= Troubleshooting =
+ * post errors on the mushclient forums, I watch those forums 
+

@@ -1,4 +1,4 @@
-#summary How to create a portable mushclient for Aardwolf
+#summary A portable MUSHclient with the plugins I use
 #labels Featured
 
 = Introduction =

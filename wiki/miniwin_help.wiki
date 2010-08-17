@@ -13,7 +13,9 @@
  * Required 
   * [miniwin] and its dependencies
   * [pluginhelper] and its dependencies
-  * [ldplugin]
+  * [aardb]
+  * [aardutils]
+  * [copytable]
  * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
 
 = Troubleshooting =

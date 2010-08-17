@@ -66,8 +66,8 @@ function OnPluginEnable ()
 
   -- always enable a miniwindow after the phelper:OnPluginEnable() call  
   mwin:enable()
+  -- An optional fourth argument can be added (true or false) to automatically switch to that tab
   mwin:addtab('default', {"This is the window body"}, {"This is the window header"})
-  mwin:changetotab('default')
   mwin:show(true)
 end -- OnPluginEnable
 

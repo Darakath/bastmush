@@ -15,7 +15,6 @@
   * [pluginhelper] and its dependencies
   * [aardb]
   * [aardutils]
-  * [copytable]
  * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
 
 = Troubleshooting =

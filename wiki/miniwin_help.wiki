@@ -1,0 +1,28 @@
+﻿#summary Aardwolf Help MiniWindow
+#labels Author-Bast
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * Author: Bast
+ * shows helps in a miniwindow
+ * expiration can be set to any number of hours
+
+= Installation ==
+ * Required 
+  * [miniwin] and its dependencies
+  * [pluginhelper] and its dependencies
+  * [ldplugin]
+ * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+
+= Troubleshooting =
+ * if you do not see the window, "mnhelp AardHelp toggle"
+
+= Screenshots =
+ http://bastmush.googlecode.com/svn/wiki/images/aardhelp/aardhelp.png
+
+= Help =
+ * "mnhelp AardHelp toggle" to toggle the window
+ http://bastmush.google.com/svn/wiki/images/aardhelp/help.png
+

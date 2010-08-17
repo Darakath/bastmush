@@ -18,11 +18,11 @@
  * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
 
 = Troubleshooting =
- * if you do not see the window, "mnhelp AardHelp toggle"
+ * if you do not see the window, "mnhelp !AardHelp toggle"
 
 = Screenshots =
  http://bastmush.googlecode.com/svn/wiki/images/aardhelp/aardhelp.png
 
 = Help =
- * "mnhelp AardHelp toggle" to toggle the window
+ * "mnhelp !AardHelp toggle" to toggle the window
  http://bastmush.googlecode.com/svn/wiki/images/aardhelp/help.png

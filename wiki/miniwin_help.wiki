@@ -24,5 +24,4 @@
 
 = Help =
  * "mnhelp AardHelp toggle" to toggle the window
- http://bastmush.google.com/svn/wiki/images/aardhelp/help.png
-
+ http://bastmush.googlecode.com/svn/wiki/images/aardhelp/help.png

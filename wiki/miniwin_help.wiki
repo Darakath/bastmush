@@ -8,6 +8,7 @@
  * Author: Bast
  * shows helps in a miniwindow
  * expiration can be set to any number of hours
+ * the related helps and contents section can be mouse clicked to run those commands
 
 = Installation ==
  * Required 

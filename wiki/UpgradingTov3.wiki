@@ -1,0 +1,11 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+How to upgrade
+Also, see [Download]
+
+= Portable Mushclient =
+ * copy the files from the PortableMUSHclient zip into the location that you have previously installed the client to
+
+= Scripts =
+ * copy the scripts into the appropriate location in your mushclient install

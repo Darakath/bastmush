@@ -5,8 +5,11 @@
  * PortableMushclient
  * [BastPortableMUSHclient]
  * Bast's Plugins
+  * [Aardwolf_Bigmap_Graphical]
   * [Aardwolf_chats]
   * [Aardwolf_Chat_mw]
+  * [Aardwolf_disarm]
+  * [Aardwolf_planesmobs]
   * [Aardwolf_Regen]
   * [Aardwolf_Spellups]
   * [broadcast_cp]
@@ -26,6 +29,7 @@
   * [miniwin_double]
   * [miniwin_example]
   * [miniwin_gq]
+  * [miniwin_help]
   * [miniwin_map]
   * [miniwin_moons]
   * [miniwin_noexp]
@@ -37,6 +41,7 @@
   * [StatMonitor]
  * Bast's Support Files
   * [objectlua]
+  * [aarddb]
   * [aardutils]
   * [chardb]
   * [ldplugin]

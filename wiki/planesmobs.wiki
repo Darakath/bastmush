@@ -1,0 +1,22 @@
+﻿#summary a plugin to help locate planesmobs and the pools they are in
+#labels Author-Bast
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * Author: Bast
+ * help locate planesmobs and the pools they are in
+
+= Installation ==
+ * Required 
+  * [pluginhelper] and all its dependencies
+  * [ldplugin]
+  * [aarddb]
+ * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+
+= Troubleshooting =
+ * make sure all files are in the correct location 
+
+= Help =
+ * http://bastmush.googlecode.com/svn/wiki/images/planesmobs/help.png

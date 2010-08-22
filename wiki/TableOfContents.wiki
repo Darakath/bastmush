@@ -4,6 +4,7 @@
  * [Troubleshooting]
  * PortableMushclient
  * [BastPortableMUSHclient]
+ * [UpgradingTov3]
  * Bast's Plugins
   * [Aardwolf_Bigmap_Graphical]
   * [Aardwolf_chats]

@@ -37,6 +37,7 @@
   * [miniwin_tabbar]
   * [planesmobs]
   * [pluginlist]
+  * [PotionQuaffer]
   * [StatDB]
   * [StatMonitor]
  * Bast's Support Files

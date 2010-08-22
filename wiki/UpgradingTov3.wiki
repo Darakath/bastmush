@@ -1,8 +1,7 @@
 #summary Upgrading to v3.
 
 = Introduction =
-How to upgrade
-Also, see [Download]
+ * Also, see [Download]
 
 = Notes about stats =
  * keep the stats.db file, default location is the logs directory

@@ -7,8 +7,8 @@ This is a portable version of the mushclient that I run.  It includes the worlds
 
 
 = Details =
- * MUSHclient 4.51
- * It includes v2 of all my plugins and the plugins I have modified.
+ * MUSHclient 4.57
+ * It includes v3 of all my plugins and the plugins I have modified.
  * It also includes 
   * Aardwolf_autohunter_swalec 
    * Author:  Swalec

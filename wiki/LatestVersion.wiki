@@ -1,1 +1,1 @@
-#summary http://bastmush.googlecode.com/files/Bast-PortableMUSHclient-v3-rev813.zip
+#summary LatestVerstion: http://bastmush.googlecode.com/files/Bast-PortableMUSHclient-v3-rev813.zip

@@ -52,6 +52,7 @@ internalrevision = "$Rev$"
 
 require "var"
 require "pluginhelper"
+require "ldplugin"
 
 statestrings = {
   [1] = 'login',
@@ -101,6 +102,7 @@ function OnPluginClose ()
 end -- OnPluginClose
 
 function OnPluginEnable ()
+  ldplugin ("GMCP_handler")
 
   phelper:OnPluginEnable()
 end -- OnPluginEnable

@@ -96,54 +96,6 @@ timer = {}
 <!--  Triggers  -->
 
 <triggers>
-  <trigger
-   enabled="n"
-   match="Welcome to Aardwolf. May your adventures be mystical, challenging and rewarding."
-   send_to="12" sequence="100"
-  >
-  <send>
-  Send("quest info")
-  </send>
-  </trigger>
-
-  <trigger
-   enabled="n"
-   match="############# Reconnecting to Game #############"
-   sequence="100"
-   send_to="12"
-  >
-  <send>
-  Send("quest info")
-  </send>
-  </trigger>
-
-
- <trigger
-   enabled="n"
-   regexp="y"
-   match="^There are (.*) minutes remaining until you can go on another quest.$"
-   sequence="100"
-   script="quest_time_to_go"
-  >
-  </trigger>
-
- <trigger
-   enabled="n"
-   regexp="y"
-   match="^QUEST: You may now quest again.$"
-   sequence="100"
-   script="quest_available"
-  >
-  </trigger>
-
-  <trigger
-   enabled="n"
-   regexp="y"
-   match="^You do not have to wait to go on another quest.$"
-   sequence="100"
-   script="quest_available"
-  >
-  </trigger>
 
 </triggers>
 

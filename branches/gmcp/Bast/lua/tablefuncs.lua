@@ -2,7 +2,7 @@
 --[[
 http://code.google.com/p/bastmush
  - Documentation and examples
- 
+
 functions in this module
 tableSort
      sort the table by the keys or an internal key to each table, will sort string or integer keys
@@ -77,4 +77,17 @@ function tableExtend(t, ...)
       t[i] = values[i + offset]
     end
   end
+end
+
+function tableConcat(...)
+  local t = {}
+  for n = 1,select("#",...) do
+      local arg = select(n,...)
+      if type(arg)=="table" then
+          for k,v in pairs(arg) do
+              t[k] = v
+          end
+      end
+  end
+  return t
 end

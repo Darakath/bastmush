@@ -93,7 +93,7 @@ end
 
 function OnPluginBroadcast (msg, id, name, text)
   if id == '3e7dedbe37e44942dd46d264' then
-    if text:find("room") then
+    if text:find("room.info") then
       res, gmcparg = CallPlugin("3e7dedbe37e44942dd46d264","gmcpval","room")
       room = assert (loadstring ('return ' .. gmcparg or ""))()
 

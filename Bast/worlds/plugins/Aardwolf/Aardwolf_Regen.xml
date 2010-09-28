@@ -203,7 +203,7 @@ function OnPluginBroadcast (msg, id, name, text)
       room = assert (loadstring ('return ' .. gmcparg or ""))()
       current_room = {}
       current_room['id'] = tonumber(room.info.num)
-      current_room['name'] = room.info.brief
+      current_room['name'] = room.info.name
       oldregen  = verify_bool(phelper.inregen)
       phelper:set('inregen', check_room(current_room.id), {silent=true})
 

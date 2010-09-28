@@ -503,11 +503,11 @@ dofile (GetPluginInfo (GetPluginID (), 20) .. "telnet_options.lua")
 
 function OnPluginBroadcast (msg, id, name, text)
   if id == '3e7dedbe37e44942dd46d264' then
-    if text:find("room") then
+    if text:find("room.info") then
       res, gmcparg = CallPlugin("3e7dedbe37e44942dd46d264","gmcpval","room")
       room = assert (loadstring ('return ' .. gmcparg or ""))()
-      zone = room.info.zone
-      if continentnames[zone] ~= nil then
+      oncont = room.info.coord.cont
+      if tonumber(oncont) == 1 then
         if WindowInfo(win, 6) == false then
           in_continent = true
           WindowShow (win, true)

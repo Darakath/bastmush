@@ -5,13 +5,15 @@
  * PortableMushclient
  * [BastPortableMUSHclient]
  * [UpgradingTov3]
- * Bast's Plugins
+ * Modified Plugins from other people
   * [Aardwolf_Bigmap_Graphical]
   * [Aardwolf_chats]
   * [Aardwolf_Chat_mw]
   * [Aardwolf_disarm]
-  * [Aardwolf_Regen]
   * [Aardwolf_Spellups]
+  * [PotionQuaffer]
+ * Bast's Plugins
+  * [Aardwolf_Regen]
   * [broadcast_cp]
   * [broadcast_double]
   * [broadcast_gq]
@@ -38,7 +40,6 @@
   * [miniwin_tabbar]
   * [planesmobs]
   * [pluginlist]
-  * [PotionQuaffer]
   * [StatDB]
   * [StatMonitor]
  * Bast's Support Files

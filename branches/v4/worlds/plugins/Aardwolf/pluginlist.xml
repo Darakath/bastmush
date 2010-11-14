@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE muclient>
+<!-- $Id$ -->
+
+<muclient>
+<plugin
+   name="PluginFunctions"
+   author="Bast"
+   id="e8520531407cb4281bea544e"
+   language="Lua"
+   purpose="plugin functions such as reload, list, etc"
+   save_state="y"
+   date_written="2009-02-28 20:14:46"
+   requires="4.40"
+   version="3.0"
+   >
+
+</plugin>
+
+
+<!--  Get our standard constants -->
+
+<include name="constants.lua"/>
+
+<script>
+<![CDATA[
+internalrevision = "$Rev$"
+
+require "var"
+require "serialize"
+require "commas"
+require "pluginhelper"
+require "verify"
+require "tprint"
+require "pairsbykeys"
+require "ldplugin"
+
+phelpplugins = {}
+cached_plugins = {}
+
+function format_plugin(plugin)
+  hname = string.format("%-30s", tostring(plugin.name))
+  hver = string.format("%.2f  ", plugin.version)
+  hcmd = string.format("%-10s", tostring(plugin.cmd))
+  hdeb = string.format("%-8s", tostring(plugin.tdebug))
+  hena = string.format("%-10s", tostring(plugin.enabled))
+  ColourNote(RGBColourToName(var.plugin_colour),  "black",  hname .. hver .. hcmd .. hdeb .. hena)
+end
+
+function format_header()
+  hname = string.format("%-30s", "Name")
+  hver = string.format("%-6s", "Vers" )
+  hcmd = string.format("%-10s", "Cmd/Short")
+  hdeb = string.format("%-8s", "Debug")
+  hena = string.format("%-10s", "Enabled")
+  ColourNote(RGBColourToName(var.plugin_colour),  "black",  hname .. hver .. hcmd .. hdeb .. hena)
+end
+
+function plugins_list_helper(header, type, search)
+  phelper:plugin_header(header)
+  format_header()
+  ColourNote("white", "black", "-----------------------------------------------------------------------")
+  local pluginsall = {}
+  if search == nil then
+    search = '.*'
+  end
+  numfound, plist = getmatches(search)
+  for _, pdict in pairs(plist) do
+    pluginsall[GetPluginInfo(pdict.id, 1)] = { id = pdict.id,
+                       name = pdict.name,
+                       cmd = pdict.cmd or "",
+                       tdebug = GetPluginVariable(pdict.id, 'tdebug') or "",
+                       enabled = GetPluginInfo(pdict.id, 17),
+                       version = GetPluginInfo(pdict.id, 19),
+                     }
+     if phelpplugins[pdict.id] then
+       pluginsall[GetPluginInfo(pdict.id, 1)].phelp = true
+     end
+  end
+  for _,v in pairsByKeys(pluginsall) do
+    if type then
+      if v[type] then
+        format_plugin(v)
+      end
+    else
+      format_plugin(v)
+    end
+  end
+  ColourNote("", "", "")
+end
+
+function cmd_list(cmddict)
+  plugins_list_helper("Plugins List", nil, cmddict[1])
+end
+
+
+function cmd_phelp(cmddict)
+  plugins_list_helper("PHelper Plugins List", 'phelp', cmddict[1])
+end
+
+
+function match_plugin_name(plugin, name)
+  found = string.find(plugin, name)
+  if found == nil then
+    return false
+  end
+  return true
+end
+
+function getmatches(name)
+  local matches = {}
+  local numfound = 0
+  local loadedplugins = GetPluginList() or {}
+  for _, p in ipairs (loadedplugins) do
+    local temp = { name = GetPluginInfo (p, 1),
+                  cmd = GetPluginVariable(p, 'cmd') or "",
+                  id = p,
+                  file = GetPluginInfo (p, 6)}
+    if match_plugin_name(temp.name, name) or match_plugin_name(temp.cmd, name) then
+      matches[p] = temp
+      numfound = numfound + 1
+    end
+  end
+  return numfound, matches
+end
+
+functionlist = {
+  Reload = {all = reloadallplugins, one = reloadplugin, tstr = "reloaded"},
+  Enable = {all = enableallplugins, one = enableplugin, tstr = "enabled"},
+  Disable = {all = disableallplugins, one = disableplugin, tstr = "disabled"},
+}
+
+function dofunc(type, id)
+  local tfunc = functionlist[type]['one']
+  tfunc(id)
+end
+
+function cmd_helper(type, tomatch, other)
+  if tomatch == "all" then
+    local tfunc = functionlist[type]['all']
+    tfunc()
+    return
+  end
+  local numfound = 0
+  local matches = {}
+  numfound, matches = getmatches(tomatch)
+  if numfound > 1 and other ~= 'all' then
+    phelper:plugin_header(type)
+    ColourNote(RGBColourToName(var.plugin_colour), "black", "multiple plugins match: " .. tomatch)
+    for id, t in pairs(matches) do
+      ColourNote(RGBColourToName(var.plugin_colour), "black", " " .. t.name)
+    end
+    ColourNote("", "", "")
+    return
+  elseif numfound < 1 then
+    phelper:plugin_header(type)
+    ColourNote(RGBColourToName(var.plugin_colour), "black", "no plugins match " .. tomatch)
+    ColourNote("", "", "")
+    return
+  end
+  for id, t in pairs(matches) do
+    DoAfterSpecial(2, 'dofunc("' .. type .. '", "' .. id  .. '")', 12)
+    if other ~= 'all' then
+      return
+    end
+  end
+  ColourNote("", "", "")
+end
+
+function cmd_reload(cmddict)
+  if #cmddict < 1 then
+    phelper:plugin_header("Reload")
+    ColourNote(RGBColourToName(var.plugin_colour), "black", "I need an argument to reload something")
+    ColourNote("", "", "")
+    return
+  end
+  tomatch = cmddict[1]
+  arg2 = cmddict[2]
+  cmd_helper("Reload", tomatch, arg2)
+end
+
+function cmd_enable(cmddict)
+  if #cmddict < 1 then
+    phelper:plugin_header("Enable")
+    ColourNote(RGBColourToName(var.plugin_colour), "black", "I need an argument to enable something")
+    ColourNote("", "", "")
+    return
+  end
+  tomatch = cmddict[1]
+  arg2 = cmddict[2]
+  cmd_helper("Enable", tomatch, arg2)
+end
+
+function cmd_disable(cmddict)
+  if #cmddict < 1 then
+    phelper:plugin_header("Disable")
+    ColourNote(RGBColourToName(var.plugin_colour), "black", "I need an argument to disable something")
+    ColourNote("", "", "")
+    return
+  end
+  tomatch = cmddict[1]
+  arg2 = cmddict[2]
+  cmd_helper("Disable", tomatch, arg2)
+end
+
+
+function cmd_load(cmddict)
+  if #cmddict < 1 then
+    phelper:plugin_header("Load")
+    ColourNote(RGBColourToName(var.plugin_colour), "black", "I need an argument to load something")
+    ColourNote("", "", "")
+    return
+  end
+  for _, v in ipairs(cmddict) do
+    ldplugin(v, true)
+  end
+end
+
+function cmd_loaddir(cmddict)
+  if #cmddict < 1 then
+    phelper:plugin_header("Loaddir")
+    ColourNote(RGBColourToName(var.plugin_colour), "black", "I need an argument to load something")
+    ColourNote("", "", "")
+    return
+  end
+
+  local dir = GetInfo (60)
+
+  if cmddict[1] then
+    dir = dir .. cmddict[1] .. "\\"
+  end
+
+  -- find all xml files in directory
+  local t = utils.readdir (dir .. "*.xml")
+
+  -- build list of file names
+  local plugins = {}
+
+  -- copy from keys of the table of names, into a new table, dropping files starting with "."
+  for k in pairs (t) do
+    if k:sub (1, 1) ~= "." then
+      table.insert (plugins, k)
+    end -- not temporary files
+  end -- for adding each one
+
+  -- find installed plugins
+  local installed_plugins = GetPluginList() or {}
+
+  -- for each file, see if it is already installed
+  for i, p in ipairs (plugins) do
+    local installed = false
+
+    -- check installed list
+    for _, v in pairs (installed_plugins) do
+      if GetPluginInfo (v, 6) == (dir .. p) then
+        installed = true
+      end -- if already installed
+    end
+
+    -- not there? load it
+    if not installed then
+      ColourNote ("white", "green", "Installing plugin " .. p)
+      check (LoadPlugin (dir .. p))  -- load it
+    end -- if
+
+  end -- each plugin file
+
+
+end
+
+]]>
+</script>
+
+<script>
+<![CDATA[
+
+function OnPluginBroadcast (msg, id, name, text)
+  if msg == 1001 then
+    phelpplugins[id] = {name = GetPluginInfo(id, 1)}
+  end --
+
+  phelper:OnPluginBroadcast(msg, id, name, text)
+end
+
+function OnPluginInstall ()
+  --OnPluginEnable is automatically called by pluginhelper
+
+  phelper:OnPluginInstall()
+end -- OnPluginInstall
+
+function OnPluginClose ()
+
+  phelper:OnPluginClose()
+end -- OnPluginClose
+
+function OnPluginEnable ()
+
+  phelper:OnPluginEnable()
+end -- OnPluginEnable
+
+function OnPluginDisable ()
+
+  phelper:OnPluginDisable()
+end -- OnPluginDisable
+
+function OnPluginConnect ()
+
+  phelper:OnPluginConnect()
+end -- function OnPluginConnect
+
+function OnPluginDisconnect ()
+
+  phelper:OnPluginDisconnect()
+end -- function OnPluginConnect
+
+function OnPluginSaveState ()
+
+  phelper:OnPluginSaveState()
+end -- function OnPluginSaveState
+
+]]>
+</script>
+
+<script>
+<![CDATA[
+
+phelper:set_default('cmd', 'plugins')
+phelper:set_default('plugin_colour', 'red')
+
+phelper:add_cmd('list', {func=cmd_list, help="list all plugins", default=true})
+phelper:add_cmd('phelp', {func=cmd_phelp, help="list plugins that are installed with pluginhelper"})
+phelper:add_cmd('reload', {func=cmd_reload, help='reload a plugin, "all" will reload all plugins, "<plugin> all" will reload all plugins that match <plugin>'})
+phelper:add_cmd('load', {func=cmd_load, help="load a plugin by name"})
+phelper:add_cmd('enable', {func=cmd_enable, help='enable a plugin, "all" will enable all plugins, "<plugin> all" will enable all plugins that match <plugin>'})
+phelper:add_cmd('disable', {func=cmd_disable, help='disable a plugin, "all" will disable all plugins, "<plugin> all" will disable all plugins that match <plugin>'})
+phelper:add_cmd('loaddir', {func=cmd_loaddir, help="load all plugins in a specific dir"})
+
+phelper:enable()
+
+]]>
+</script>
+
+</muclient>

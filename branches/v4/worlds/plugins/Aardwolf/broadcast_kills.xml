@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE muclient>
+<!-- $Id$ -->
+
+<muclient>
+<plugin
+   name="xBroadcast_Kills"
+   author="Bast"
+   id="aaa61c4570508448e19c7c14"
+   language="Lua"
+   purpose="broadcast when a mob is killed"
+   save_state="y"
+   date_written="2009-02-22 18:52:27"
+   requires="4.38"
+   version="4.0"
+   >
+
+<description trim="y">
+<![CDATA[
+[FOR PLUGIN AUTHORS ONLY]
+
+Broadcasts when a mob is killed
+Example
+  function OnPluginBroadcast (msg, id, name, text)
+    if id == "aaa61c4570508448e19c7c14" and msg == 1 then
+      local pvar = GetPluginVariable(  "aaa61c4570508448e19c7c14", "kill_info")
+
+      -- get the mobs
+      loadstring( pvar )()
+      kill = kill_info
+    end
+  end
+
+xBroadcast_Kills : Broadcast 1
+kill_info = {}
+  kill_info.mob = "The miller's wife"
+  kill_info.vorpal = 0
+  kill_info.wielded_weapon = ""
+  kill_info.second_weapon = ""
+  kill_info.time = 1275867123
+  kill_info.gold = "2267"
+  kill_info.bonusxp = "5"
+  kill_info.level = "139"
+  kill_info.xp = "5"
+  kill_info.tp = 0
+
+]]>
+</description>
+</plugin>
+
+
+<!--  Get our standard constants -->
+
+<include name="constants.lua"/>
+
+<triggers>
+
+  <trigger
+   enabled="y"
+   match="^You receive (\d+(?:\+\d+)*) experience points?\.$"
+   regexp="y"
+   name="mobxp"
+   script="mobxp"
+   sequence="100"
+  >
+  </trigger>
+  <trigger
+   enabled="y"
+   match="You receive * bonus experience points *."
+   name="bonusxp"
+   script="mobxp"
+   sequence="100"
+  >
+  </trigger>
+  <trigger
+   enabled="y"
+   regexp="y"
+   match="^You get (.+) gold coins (.+) corpse of (.+)\.$"
+   name="mobgold"
+   script="mobgold"
+   sequence="100"
+  >
+  </trigger>
+  <trigger
+   enabled="y"
+   regexp="y"
+   match="^(\w+) splits? (\d+) gold coins?. Your share is (\d+) gold\.$"
+   name="splitgold"
+   script="mobgold"
+   sequence="100"
+  >
+  </trigger>
+  <trigger
+   enabled="y"
+   regexp="y"
+   match="^You killed a Triv bonus mob!! Triv point added\.$"
+   name="trivmob"
+   script="trivmob"
+   sequence="100"
+  >
+  </trigger>
+  <trigger
+   enabled="y"
+   regexp="y"
+   match="^Deep magic stirs within your weapon. It seems to have a life of its own.$"
+   name="vorpmob"
+   script="vorpmob"
+   sequence="100"
+  >
+  </trigger>
+  <trigger
+   enabled="n"
+   match="^$"
+   regexp="y"
+   sequence="100"
+   script="broadcast_kill"
+   name="deadtrig"
+   group="deadtrig"
+  >
+  </trigger>
+
+</triggers>
+
+
+<script>
+<![CDATA[
+internalrevision = "$Rev$"
+
+require "var"
+require "serialize"
+require "commas"
+require "pluginhelper"
+require "verify"
+require "ldplugin"
+
+kill_info = {}
+kill_info.tp = 0
+kill_info.vorpal = 0
+kill_info.wielded_weapon = ''
+kill_info.second_weapon = ''
+kill_info.bcasted = true
+
+var.cur_weapon = ''
+
+function mobxp( name, line, wildcards )
+  if name == 'mobxp' then
+    kill_info.bonusxp = 0
+    kill_info.xp = wildcards[1]
+    kill_info.time = GetInfo(304)
+    kill_info.bcasted = false
+    --DoAfterSpecial(.2, 'broadcast_kill()', 12)
+    EnableTrigger ("deadtrig", true)
+    -- enable deadtrig
+  elseif name == 'bonusxp' then
+    kill_info.bonusxp = wildcards[1]
+  end
+end
+
+function vorpmob( name, line, wildcards)
+  kill_info.vorpal = 1
+  kill_info.wielded_weapon = phelper.weaponsn
+  kill_info.second_weapon = phelper.secondsn
+end
+
+function mobgold( name, line, wildcards )
+  if kill_info.mob == nil then
+    kill_info = {}
+    kill_info.tp = 0
+    return
+  end
+  if name == 'mobgold' then
+    kill_info.gold = wildcards[1]
+  elseif name == 'splitgold' then
+    kill_info.gold = wildcards[2]
+  end
+  kill_info.gold = string.gsub(kill_info.gold, ",", "")
+end
+
+function broadcast_kill()
+  if kill_info.bcasted == false then
+    var.kill_info = serialize.save( "kill_info", kill_info )
+    phelper:broadcast(1, var.kill_info)
+    --disable deadtrig
+  end
+  EnableTrigger ("deadtrig", false)
+  kill_info = {}
+  kill_info.tp = 0
+  kill_info.vorpal = 0
+  kill_info.wielded_weapon = ''
+  kill_info.second_weapon = ''
+  kill_info.bcasted = true
+  kill_info.mob = ""
+end
+
+function trivmob( name, line, wildcards )
+  kill_info.tp = 1
+end
+
+]]>
+</script>
+
+<script>
+<![CDATA[
+
+function OnPluginBroadcast (msg, id, name, text)
+
+  if id == '3e7dedbe37e44942dd46d264' then
+    if text:find("char") then
+      res, gmcparg = CallPlugin("3e7dedbe37e44942dd46d264","gmcpval", "char")
+      tt = assert (loadstring ('return ' .. gmcparg or ""))()
+
+      if tt['status'] then
+        kill_info.level = tt.status.level
+        if tt.status.enemy ~= "" then
+          kill_info.mob = tt.status.enemy
+        end
+      end
+
+    end
+  end
+
+  if id == "aaa7dc9ed92ffc6146964abc" then
+    if msg == 2 then
+      loadstring(text)()
+      local eqitem = item
+      if eqitem.place == 'wielded' then
+        phelper:set('weaponsn', eqitem.itemsn, {silent=true})
+      end
+      if eqitem.place == 'second' then
+        phelper:set('secondsn', eqitem.itemsn, {silent=true})
+      end
+
+    end
+  end
+
+  phelper:OnPluginBroadcast(msg, id, name, text)
+end
+
+function OnPluginInstall ()
+  --OnPluginEnable is automatically called by pluginhelper
+
+  phelper:OnPluginInstall()
+end -- OnPluginInstall
+
+function OnPluginClose ()
+
+  phelper:OnPluginClose()
+end -- OnPluginClose
+
+function OnPluginEnable ()
+  ldplugin("GMCP_Handler")
+  ldplugin("broadcast_invmon")
+
+  phelper:OnPluginEnable()
+end -- OnPluginEnable
+
+function OnPluginDisable ()
+
+  phelper:OnPluginDisable()
+end -- OnPluginDisable
+
+function OnPluginConnect ()
+
+  phelper:OnPluginConnect()
+end -- function OnPluginConnect
+
+function OnPluginDisconnect ()
+
+  phelper:OnPluginDisconnect()
+end -- function OnPluginConnect
+
+function OnPluginSaveState ()
+
+  phelper:OnPluginSaveState()
+end -- function OnPluginSaveState
+
+]]>
+</script>
+
+<script>
+<![CDATA[
+
+phelper:set_default('cmd', 'bkill')
+phelper:set_default('plugin_colour', 'orange')
+
+phelper:add_setting('weaponsn', {help="the sn of the weapon that is currently wielded", type="string", default="", readonly=true})
+phelper:add_setting('secondsn', {help="the sn of the weapon that is currently wielded", type="string", default="", readonly=true})
+
+phelper:enable()
+
+]]>
+</script>
+</muclient>

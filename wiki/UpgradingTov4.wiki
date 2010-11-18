@@ -1,7 +1,7 @@
 #summary Upgrading to v4
 
 * Portable Mushclient
- * Save the following files =
+ * Save the following files
   * In your Mushclient dir
     * Aardwolf.db and Aardwolf_bookmarks.db if you use the GMCP_Mapper already
   * In worlds/Aardwolf

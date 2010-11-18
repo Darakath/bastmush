@@ -6,8 +6,12 @@
     * Aardwolf.db and Aardwolf_bookmarks.db if you use the GMCP_Mapper already
    * In worlds/Aardwolf
     * Aardwolf.MCL
+   * In the logs dir
+    * stats.db
+    * aardinfo.db
   * Copy the zip over your current install
   * Copy the Aardwolf.db and Aardwolf_bookmarks.db back into your Mushclient dir
+  * copy the stats.db and aardinfo.db into the logs directory
   * In Aardwolf.MCL
    * Copy the aliases/triggers/macros from the saved Aardwolf.MCL into the new Aardwolf.MCL
   * Start Mushclient

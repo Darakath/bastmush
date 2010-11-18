@@ -1,18 +1,18 @@
 #summary Upgrading to v4
 
-* Portable Mushclient
- * Save the following files
-  * In your Mushclient dir
+ * Portable Mushclient
+  * Save the following files
+   * In your Mushclient dir
     * Aardwolf.db and Aardwolf_bookmarks.db if you use the GMCP_Mapper already
-  * In worlds/Aardwolf
+   * In worlds/Aardwolf
     * Aardwolf.MCL
 
- * Copy the zip over your current install
- * Copy the Aardwolf.db and Aardwolf_bookmarks.db back into your Mushclient dir
- * In Aardwolf.MCL
-  * Copy the aliases/triggers/macros from the saved Aardwolf.MCL into the new Aardwolf.MCL
- * Start Mushclient
- * Load any 3rd party plugins you use
+  * Copy the zip over your current install
+  * Copy the Aardwolf.db and Aardwolf_bookmarks.db back into your Mushclient dir
+  * In Aardwolf.MCL
+   * Copy the aliases/triggers/macros from the saved Aardwolf.MCL into the new Aardwolf.MCL
+  * Start Mushclient
+  * Load any 3rd party plugins you use
 
  
   

@@ -6,7 +6,6 @@
     * Aardwolf.db and Aardwolf_bookmarks.db if you use the GMCP_Mapper already
    * In worlds/Aardwolf
     * Aardwolf.MCL
-
   * Copy the zip over your current install
   * Copy the Aardwolf.db and Aardwolf_bookmarks.db back into your Mushclient dir
   * In Aardwolf.MCL

@@ -4,3 +4,4 @@
  * 5000 : New Miniwindow for tab bar
  * -1   : PluginDisabled
  * -2   : PluginEnabled
+ * 5050 : global settings changed for miniwindow

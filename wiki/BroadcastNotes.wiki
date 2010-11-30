@@ -5,3 +5,4 @@
  * -1   : PluginDisabled
  * -2   : PluginEnabled
  * 5050 : global settings changed for miniwindow
+ * 999  : repaint (from Fiendish)

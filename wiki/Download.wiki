@@ -26,7 +26,7 @@
 = Subversion =
  * *This is only for advanced users*
  == Stable ==
-  1 checkout from http://bastmush.googlecode.com/svn/branches/v2
+  1 checkout from http://bastmush.googlecode.com/svn/branches/v4
   1 copy or link files into the appropriate directories
 
  == Bleeding Edge ==

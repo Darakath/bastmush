@@ -1,4 +1,5 @@
 #summary How to install v5 and above
+#labels Featured
 
 
 = Installation in the New Aardwolf MUSHclient =

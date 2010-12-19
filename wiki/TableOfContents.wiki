@@ -1,6 +1,5 @@
 ﻿#summary Table of Contents
  * [Intro]
- * [Download]
  * [Installation]
  * [Troubleshooting]
  * Modified Plugins from other people

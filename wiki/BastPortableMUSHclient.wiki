@@ -1,5 +1,7 @@
 #summary A portable MUSHclient with the plugins I use
-#labels Featured
+#labels Featured,Deprecated
+
+This is now Deprecated, drop my plugins into the new Aardwolf MUSHclient.
 
 = Introduction =
 

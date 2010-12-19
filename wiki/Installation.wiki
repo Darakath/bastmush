@@ -1,0 +1,21 @@
+#summary How to install v5 and above
+
+
+= Installation in the New Aardwolf MUSHclient =
+ * Download from the [http://code.google.com/p/bastmush/downloads/list Downloads] page.
+ * Unzip into your plugins directory
+ * Use File->Plugins to Add the plugins you want to use
+
+= Upgrading from v4 =
+ * I would recommend moving data from v4 into the new Aardwolf MUSHclient
+
+== Process ==
+ * Download the new Aardwolf MUSHclient from http://www.aardwolf.com
+ * Unzip the new client and start it, connect to Aardwolf, logout and close the client
+
+=== Moving data ===
+ * Copy and overwrite
+  * all files in OldMUSHInstallDir/logs to NewMUSHInstallDir/logs
+  * Aardwolf_bookmarks.db and Aardwolf.db from the OldMUSHInstallDir to NewMUSHInstallDir
+
+  

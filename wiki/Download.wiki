@@ -1,5 +1,5 @@
 ﻿#summary Downloading the scripts
-#labels Featured
+#labels Featured,Deprecated
 <wiki:toc max_depth="3" />
 
 = Stable Version =

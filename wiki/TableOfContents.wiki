@@ -1,10 +1,8 @@
 ﻿#summary Table of Contents
  * [Intro]
  * [Download]
+ * [Installation]
  * [Troubleshooting]
- * PortableMushclient
- * [BastPortableMUSHclient]
- * [UpgradingTov4]
  * Modified Plugins from other people
   * [Aardwolf_Bigmap_Graphical]
   * [Aardwolf_disarm]

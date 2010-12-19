@@ -7,10 +7,8 @@
  * [UpgradingTov4]
  * Modified Plugins from other people
   * [Aardwolf_Bigmap_Graphical]
-  * [Aardwolf_chats]
-  * [Aardwolf_Chat_mw]
   * [Aardwolf_disarm]
-  * [Aardwolf_Spellups]
+  * [Aardwolf_Spellups_mw_Bast]
   * [PotionQuaffer]
  * Bast's Plugins
   * [Aardwolf_Regen]

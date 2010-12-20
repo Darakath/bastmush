@@ -3,6 +3,7 @@
 
 
 = Installation in the New Aardwolf MUSHclient =
+ * Download the Aardwolf Client from http://www.aardwolf.com and unzip it
  * Download from the [http://code.google.com/p/bastmush/downloads/list Downloads] page.
  * Unzip into your plugins directory
  * Use File->Plugins to Add the plugins you want to use

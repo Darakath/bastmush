@@ -3,13 +3,11 @@
 
 
 = Installation in the New Aardwolf MUSHclient =
- * Download the Aardwolf Client from http://www.aardwolf.com and unzip it
- * start the Aardwolf MUSHclient and then close it
  * Download from the [http://code.google.com/p/bastmush/downloads/list Downloads] page.
  * Unzip into your plugins directory
  * Use File->Plugins to Add the plugins you want to use
 
-= Upgrading from v4 =
+= Migrating data from v4 =
  * I would recommend moving data from v4 into the new Aardwolf MUSHclient
 
 == Process ==

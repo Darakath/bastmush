@@ -9,11 +9,7 @@
  * shows a miniwindow that enables toggling of other windows and some basic info
 
 = Installation ==
- * Required 
-  * [miniwin] and its dependencies
-  * [pluginhelper] and its dependencies
-  * [ldplugin]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
 
 = Troubleshooting =
  * if you do not see the window, "mtab tabwin toggle"

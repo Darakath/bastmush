@@ -9,33 +9,23 @@
  * shows a miniwindow that shows stats
 
 = Installation ==
- * Required 
-  * [miniwin] and its dependencies
-  * [pluginhelper] and its dependencies
-  * [ldplugin]
-  * [tablefuncs]
-  * Nick's [http://www.gammon.com.au/forum/?id=8776 Stats_Detector.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
+ * You must have [StatDB] installed to see the extra tabs
 
 = Troubleshooting =
  * if you do not see the window, "mstat Stats toggle"
 
 = Screenshots =
+ * Regular
  http://bastmush.googlecode.com/svn/wiki/images/stats/stats.png
+ * Levels
+ http://bastmush.googlecode.com/svn/wiki/images/stats/stats-level.png
+ * Quests
+ http://bastmush.googlecode.com/svn/wiki/images/stats/stats-quest.png
+ * CP
+ http://bastmush.googlecode.com/svn/wiki/images/stats/stats-cp.png
+ * GQ
+ http://bastmush.googlecode.com/svn/wiki/images/stats/stats-gq.png
 
 = Help =
- * "mstat Stats toggle" to toggle the window
- {{{
-/*
-miniwin_stats v1 Stats Commands
------------------------------------------------
-debug          : toggle debugging
-fonts          : show fonts loaded in this miniwin
-help           : show help
-reset          : reset settings to default values
-save           : save plugin variables
-set            : set settings
-toggle         : toggle window
-*/
- }}}
-
+ http://bastmush.googlecode.com/svn/wiki/images/stats/help.png

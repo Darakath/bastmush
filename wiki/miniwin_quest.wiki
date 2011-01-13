@@ -9,13 +9,7 @@
  * This is a plugin that puts quest info into a miniwindow
 
 = Installation ==
- * Required 
-  * [miniwin] and all of its dependencies
-  * [pluginhelper] and all of its dependencies
-  * [verify]
-  * [ldplugin]
-  * [broadcast_quest]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
 
 = Troubleshooting =
  * type "mquest debug" to enable debugging
@@ -31,15 +25,4 @@
  http://bastmush.googlecode.com/svn/wiki/images/quest/quest-turnin.png
 
 = Help =
- {{{
-miniwin_quest v1 Quest Commands
------------------------------------------------
-debug          : toggle debugging
-fonts          : show fonts loaded in this miniwin
-help           : show help
-reset          : reset settings to default values
-save           : save plugin variables
-set            : set settings
-toggle         : toggle window
- }}}
-
+ http://bastmush.googlecode.com/svn/wiki/images/quest/help.png

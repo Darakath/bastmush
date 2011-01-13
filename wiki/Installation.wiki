@@ -2,7 +2,7 @@
 #labels Featured
 
 
-= Installation in the New Aardwolf MUSHclient =
+= Installation in the New Aardwolf MUSHclient (Or any MUSHclient install) =
  * Download from the [http://code.google.com/p/bastmush/downloads/list Downloads] page.
  * Unzip into your plugins directory
  * Use File->Plugins to Add the plugins you want to use

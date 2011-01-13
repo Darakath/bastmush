@@ -16,13 +16,7 @@
 
 
 = Installation ==
- * Required 
-  * [miniwin] and all of its dependencies
-  * [class]
-  * [pluginhelper] and all of its dependencies
-  * [verify]
-  * [broadcast_tick] and all of its dependencies
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ *see the [Installation] Page
 
 = Troubleshooting =
  * the miniwindow will not show until you have seen all 3 of the moons rise or fall at least once
@@ -34,25 +28,6 @@
  http://bastmush.googlecode.com/svn/wiki/images/moonbot/moonbot-threemoons.png
  * moonbot tick messages
  http://bastmush.googlecode.com/svn/wiki/images/moonbot/moonbot-attick.png
- * moonbot settings
- http://bastmush.googlecode.com/svn/wiki/images/moonbot/moonbot-settings.png
 
 = Help =
- {{{
-/*
-miniwin_moonbot v1.5 Commands
------------------------------------------------
-debug          : toggle debugging
-help           : show help
-mreset         : reset the moons
-objects        : list objects associated with this plugin
-plot           : plot moons
-print          : print the current moon phase #s
-report         : report the position of the moons
-reset          : reset settings to default values
-save           : save plugin variables
-set            : set settings
-union          : show next moons union
-*/
- }}}
-
+ http://bastmush.googlecode.com/svn/wiki/images/moonbot/help.png

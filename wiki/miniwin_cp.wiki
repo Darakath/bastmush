@@ -8,16 +8,10 @@
  * Author: Bast
  * This is a plugin that puts campaign objectives into a miniwindow
  * It will automatically update when a cp mob is killed
- * It will show mobs that are dead in yellow
+ * It will show mobs that are dead in red
 
 = Installation ==
- * Required 
-  * [miniwin] and its dependencies
-  * [pluginhelper] and its dependencies
-  * [verify]
-  * [aardutils]
-  * [broadcast_cp]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * See the [Installation] Page
 
 = Troubleshooting =
  * the miniwindow will not show until the command "cp check" is run
@@ -41,4 +35,3 @@ set            : set settings
 toggle         : toggle window
 */
  }}}
-

@@ -9,32 +9,13 @@
  * shows a miniwindow when noexp is toggled
 
 = Installation ==
- * Required 
-  * [miniwin] and its dependencies
-  * [pluginhelper] and its dependencies
-  * [ldplugin]
-  * [broadcast_noexp]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
 
 = Troubleshooting =
- * if you do not see the window, "bnoexp Noexp toggle"
+ * if you do not see the window, "mnoexp Noexp toggle"
 
 = Screenshots =
  http://bastmush.googlecode.com/svn/wiki/images/noexp/noexp.png
 
 = Help =
- * "bnoexp Noexp toggle" to toggle the window
- {{{
-/*
-miniwin_noexp v1 Noexp Commands
------------------------------------------------
-debug          : toggle debugging
-fonts          : show fonts loaded in this miniwin
-help           : show help
-reset          : reset settings to default values
-save           : save plugin variables
-set            : set settings
-toggle         : toggle window
-*/
- }}}
-
+ http://bastmush.googlecode.com/svn/wiki/images/noexp/help.png

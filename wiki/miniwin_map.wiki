@@ -7,16 +7,11 @@
 = Introduction =
  * Author: Bast
  * This is a plugin that puts map info into a miniwindow
- * you can use the map to move around by clicking on the exits in the Exits row
+ * Exits in the exits row can be clicked to move
+ * Shows flags from gmcp
 
 = Installation ==
- * Required 
-  * [togglewin]
-  * [miniwin]
-  * [class]
-  * [pluginhelper]
-  * [verify]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
 
 = Troubleshooting =
  * the miniwindow will not show until map info has been received
@@ -28,17 +23,4 @@
   http://bastmush.googlecode.com/svn/wiki/images/map/map_legend.png
 
 = Help =
- {{{
-/*
-miniwin_map v1 Map Commands
------------------------------------------------
-debug          : toggle debugging
-fonts          : show fonts loaded in this miniwin
-help           : show help
-reset          : reset settings to default values
-save           : save plugin variables
-set            : set settings
-toggle         : toggle window
-
-*/
- }}}
+  http://bastmush.googlecode.com/svn/wiki/images/map/help.png

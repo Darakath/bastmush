@@ -7,32 +7,11 @@ This is a repository for [http://mushclient.com Mushclient] scripts.  Some of th
 
 == miniwindow plugins notes ==
  * if any of my miniwindows are used, you will also want to use [miniwin_tabbar]
- * can be moved by dragging from the top right of the window
- * can be customized on the fly, 
-   1 {{{<plugin_cmd> objects}}} to list objects
-   1 {{{<plugin_cmd> <object> set}}} to see options that can be set
-   1 {{{<plugin_cmd> <object> set <option> <value>}}} to set the option
- Example
- {{{
-miniwin_map 1 Settings
------------------------------------------------
-windowpos            : 6                    - position for this window: see http://www.gammon.com.au/scripts/function.php?name=WindowCreate
-text_colour          : gainsboro            - text colour for this window
-bg_colour            : #0E2200              - background colour for this window
-header_text_colour   : lime                 - header text colour for this window
-header_bg_colour     : dimgray              - header colour for this window
-footer_bg_colour     : dimgray              - footer colour for this window
-footer_text_colour   : lime                 - footer text colour for this window
-font_size            : 8                    - font_size for this window
-font                 : courier new          - change the font for this window
-width_padding        : 5                    - width padding for this window
-width                : 31                   - width of this window, 0 = auto
-height               : 19                   - height of this window, 0 = auto
-height_padding       : 5                    - height padding for this window
-show_hyperlinks      : 1                    - show the default hyperlinks
-hyperlink_colour     : yellow               - hyperlink colour for this window
-}}}
-  * colour values can take colours of the form "#AABBCC", a colour number, and a colour name
-   * if no colour is passed, the colour chooser dialog will be shown
-  * text_colour is only used if the text is not styled or the style has no textcolour
-  * bg_colour is only used if the text is not styled or the style has no bgcolour
+ * can be moved by dragging from the titlebar
+ * the titlebar and tabbar can be hidden
+ * can have tabs for different information
+ * The miniwindows come with two popup menus
+  * Left click for the miniwindow menu where features of the miniwindow can be changed, commands can be run, and the miniwindow reset
+  http://bastmush.googlecode.com/svn/wiki/images/miniwin/windowmenu.png
+  * Right click for the plugin menu where variables can be changed, commands can be run, and the plugin can be reset
+  http://bastmush.googlecode.com/svn/wiki/images/miniwin/pluginmenu.png

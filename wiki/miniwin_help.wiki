@@ -11,12 +11,7 @@
  * the related helps and contents section can be mouse clicked to run those commands
 
 = Installation ==
- * Required 
-  * [miniwin] and its dependencies
-  * [pluginhelper] and its dependencies
-  * [aardb]
-  * [aardutils]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * Please see the [Installation] Page
 
 = Troubleshooting =
  * if you do not see the window, "mnhelp !AardHelp toggle"

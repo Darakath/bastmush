@@ -10,3 +10,4 @@
 == Getting Help ==
  * post a message in the mushclient forums (best place for help)
  * add an issue in the issue tracker on this web page
+ * catch me on the mud

@@ -5,13 +5,24 @@ This is a repository for [http://mushclient.com Mushclient] scripts.  Some of th
 
 * These plugins require at least version MUSHclient version 4.4, but I would suggest the latest version *
 
+  http://bastmush.googlecode.com/svn/wiki/images/miniwin/miniwin.png
+
 == miniwindow plugins notes ==
  * if any of my miniwindows are used, you will also want to use [miniwin_tabbar]
  * can be moved by dragging from the titlebar
  * the titlebar and tabbar can be hidden
  * can have tabs for different information
- * The miniwindows come with two popup menus
+ * If the titlebar is hidden, then the mouse menus will be in the top left corner of the window
+
+== Screenshots ==
+  http://bastmush.googlecode.com/svn/wiki/images/miniwin/miniwin-label.png
+
+ * A: The miniwindows come with two popup menus
   * Left click for the miniwindow menu where features of the miniwindow can be changed, commands can be run, and the miniwindow reset
   http://bastmush.googlecode.com/svn/wiki/images/miniwin/windowmenu.png
   * Right click for the plugin menu where variables can be changed, commands can be run, and the plugin can be reset
   http://bastmush.googlecode.com/svn/wiki/images/miniwin/pluginmenu.png
+ * B: The tabbar, where different tabs can be clicked on to see different information
+ * C: The button to shade the window
+  http://bastmush.googlecode.com/svn/wiki/images/miniwin/miniwin-shade.png
+ * D: The button to close the window

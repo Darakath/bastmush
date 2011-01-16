@@ -10,12 +10,7 @@
  * It will automatically update when a gq mob is killed
 
 = Installation ==
- * Required 
-  * [miniwin] and its dependencies
-  * [pluginhelper] and its dependencies
-  * [verify]
-  * [broadcast_gq]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
 
 = Troubleshooting =
  * the miniwindow will not show until gquest info has been received
@@ -29,17 +24,4 @@
  http://bastmush.googlecode.com/svn/wiki/images/gq/gquest-mobs.png
 
 = Help =
- {{{
-/*
-miniwin_gq v1 GQ Commands
------------------------------------------------
-debug          : toggle debugging
-fonts          : show fonts loaded in this miniwin
-help           : show help
-reset          : reset settings to default values
-save           : save plugin variables
-set            : set settings
-toggle         : toggle window
-*/
- }}}
-
+ http://bastmush.googlecode.com/svn/wiki/images/gq/help.png

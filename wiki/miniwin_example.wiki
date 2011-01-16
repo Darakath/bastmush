@@ -9,39 +9,13 @@
  * This is a plugin that shows some of the capabilities of the miniwin module
 
 = Installation ==
- * Required 
-  * [miniwin] and its dependencies
-  * [pluginhelper] and its dependencies
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
 
 = Troubleshooting =
  * "mnexam Example t" will show the first example
 
 = Screenshots =
- * Example
   http://bastmush.googlecode.com/svn/wiki/images/example/example.png
 
 = Help =
- {{{
-/*
-miniwin_example v1 Commands
------------------------------------------------
-debug          : toggle debugging
-help           : show help
-objects        : list objects associated with this plugin
-reset          : reset settings to default values
-save           : save plugin variables
-set            : set settings
-
-miniwin_example v1 Example Commands
------------------------------------------------
-debug          : toggle debugging
-fonts          : show fonts loaded in this miniwin
-help           : show help
-reset          : reset settings to default values
-save           : save plugin variables
-set            : set settings
-toggle         : toggle window
-
-*/
- }}}
+  http://bastmush.googlecode.com/svn/wiki/images/example/help.png

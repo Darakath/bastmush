@@ -9,33 +9,13 @@
  * shows a miniwindow when double is active
 
 = Installation ==
- * Required 
-  * [miniwin] and its dependencies
-  * [pluginhelper] and its dependencies
-  * [ldplugin]
-  * [broadcast_double]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see [Installation] page
 
 = Troubleshooting =
- * the miniwindow will not show until the command "cp check" is run
  * if you do not see the window, "bdbl Double toggle"
 
 = Screenshots =
  http://bastmush.googlecode.com/svn/wiki/images/double/dbl.png
 
 = Help =
- * "bdbl double toggle" to toggle the window
- {{{
-/*
-miniwin_double v1 Double Commands
------------------------------------------------
-debug          : toggle debugging
-fonts          : show fonts loaded in this miniwin
-help           : show help
-reset          : reset settings to default values
-save           : save plugin variables
-set            : set settings
-toggle         : toggle window
-*/
- }}}
-
+ http://bastmush.googlecode.com/svn/wiki/images/double/help.png

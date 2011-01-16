@@ -13,25 +13,9 @@
 = Installation ==
  * See the [Installation] Page
 
-= Troubleshooting =
- * the miniwindow will not show until the command "cp check" is run
- * if you do not see the window, "mcp CP toggle"
-
 = Screenshots =
  http://bastmush.googlecode.com/svn/wiki/images/cp/cp.png
 
 = Help =
  * "mcp CP toggle" to toggle the window
- {{{
-/*
-miniwin_cp v1 CP Commands
------------------------------------------------
-debug          : toggle debugging
-fonts          : show fonts loaded in this miniwin
-help           : show help
-reset          : reset settings to default values
-save           : save plugin variables
-set            : set settings
-toggle         : toggle window
-*/
- }}}
+ http://bastmush.googlecode.com/svn/wiki/images/cp/help.png

@@ -6,6 +6,7 @@
  * most of the plugins have debug options and can be toggled by typing "(plugincmd) debug"
  * delete the state file for the plugin and reload it
  * put a %c at the end of your prompt (and bprompt) and turn off promptflags
+ * type "tags" and make sure Global Tags is on
 
 == Miniwindows not showing ==
  * Several Options 

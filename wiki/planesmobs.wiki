@@ -9,11 +9,7 @@
  * help locate planesmobs and the pools they are in
 
 = Installation ==
- * Required 
-  * [pluginhelper] and all its dependencies
-  * [ldplugin]
-  * [aarddb]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * See the [Installation] Pagef
 
 = Troubleshooting =
  * make sure all files are in the correct location 

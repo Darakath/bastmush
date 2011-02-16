@@ -21,6 +21,7 @@
   * The A/Add link can be clicked to go to the Spells tab
   * Most items can be clicked in the window to go to other tabs
   * Brief Summary mode (with titlebar turned off)
+   http://bastmush.googlecode.com/svn/wiki/images/spellup/brief.png
    * The #s from left to write are:
     * 1 # of Good Spells/Skills
     * 2 # of Bad Spells/Skills
@@ -31,7 +32,7 @@
     * 7 # of Requested Self Spellups that can be activated
     * 8 # of Requested Other Spellups
     * 9 # of Requested Other Spellups that can be activated
-   http://bastmush.googlecode.com/svn/wiki/images/spellup/brief.png
+
   * Full Summary Mode
    http://bastmush.googlecode.com/svn/wiki/images/spellup/summary.png
 

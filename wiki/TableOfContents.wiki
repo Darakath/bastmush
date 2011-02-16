@@ -9,6 +9,7 @@
   * [PotionQuaffer]
  * Bast's Plugins
   * [Aardwolf_Regen]
+  * [bast_spellup]
   * [broadcast_cp]
   * [broadcast_double]
   * [broadcast_gq]
@@ -24,6 +25,7 @@
   * [broadcast_whois]
   * [miniwin_cp]
   * [miniwin_double]
+  * [miniwin_events]
   * [miniwin_example]
   * [miniwin_gq]
   * [miniwin_help]
@@ -31,6 +33,7 @@
   * [miniwin_moons]
   * [miniwin_noexp]
   * [miniwin_quest]
+  * [miniwin_spellup]
   * [miniwin_stats]
   * [miniwin_tabbar]
   * [planesmobs]

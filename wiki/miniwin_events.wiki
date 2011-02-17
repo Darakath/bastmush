@@ -7,6 +7,7 @@
 = Introduction =
  * Author: Bast
  * This is a plugin that puts quests/gqs/cps into a tabbed miniwindow
+ * For Quests - see [miniwin_quests]
  * For CPs - see [miniwin_cp]
   * It will automatically update when a cp mob is killed
   * It will show mobs that are dead in red
@@ -16,4 +17,7 @@
  * See the [Installation] Page
 
 = Screenshots =
- http://bastmush.googlecode.com/svn/wiki/images/events/event.png
+
+ http://bastmush.googlecode.com/svn/wiki/images/events/quest-time.png
+
+ http://bastmush.googlecode.com/svn/wiki/images/events/cp.png

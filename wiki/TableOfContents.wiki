@@ -20,7 +20,6 @@
   * [broadcast_quest]
   * [broadcast_runto]
   * [broadcast_spellsskills]
-  * [broadcast_tick]
   * [broadcast_whois]
   * [miniwin_cp]
   * [miniwin_double]

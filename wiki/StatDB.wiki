@@ -16,17 +16,7 @@
 
 
 = Installation ==
- * Required 
-  * [pluginhelper] and all of its dependencies
-  * [aardutils]
-  * [chardb]
-  * [broadcast_level]
-  * [broadcast_quest]
-  * [broadcast_cp]
-  * [broadcast_whois]
-  * [broadcast_kills]
-  * [broadcast_gq]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
  * default location of database is in the logs directory, this can be changed by creating a variable in the Aardwolf world called dblocation with a path to the directory you would like to store it
  * Note: this does not differentiate between characters, change the dblocation variable for each character
 
@@ -47,4 +37,3 @@ save           : save plugin variables
 set            : set settings
 */
  }}}
-

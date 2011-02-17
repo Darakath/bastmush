@@ -13,7 +13,7 @@
  * see the [Installation] page
 
 = Troubleshooting =
- * run the command "bgq set tdebug true" to enable debugging
+ * run the command "bgq debug" to enable debugging
 
 = Help =
  {{{

@@ -1,0 +1,19 @@
+#summary a plugin to help fix things such as prompt/bprompt
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * Author: Bast
+ * a utility plugin to change mudside things
+
+= Installation ==
+ * See the [Installation] Page
+
+= Troubleshooting =
+ * make sure all files are in the correct location 
+
+= Help =
+ * Currently supports
+  * "fix prompt"
+   * adds a %c to the end of the prompt and battle prompt

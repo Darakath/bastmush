@@ -1,5 +1,5 @@
 ﻿#summary Broadcasts when a tick is sent through telopts
-#labels Author-Bast
+#labels Author-Bast,Deprecated
 
 === Table of Contents ===
 <wiki:toc max_depth="2" />

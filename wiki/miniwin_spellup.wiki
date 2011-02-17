@@ -7,7 +7,7 @@
  * The miniwindow front end to the bast_spellup plugin
 
 = Features =
- * can do most of the things in the miniwindow
+ * can do most of the things from the spellup plugin through the miniwindow
  * see [bast_spellup] for features and a walkthrough of the capabilities of the spellup plugin
  * Everything that can be clicked has a hint that will popup when you mouseover the item
 
@@ -65,6 +65,7 @@
 
 == Spells Tab ==
   * The spells tab were spells can be added to either self or other
+  * Right click menu for each item
   * Column headers can be clicked to sort the output
    * R = Requested - this column can be clicked next to a spell to request it for self
    * S = Skill/Spell that is flagged as spellup on the mud side

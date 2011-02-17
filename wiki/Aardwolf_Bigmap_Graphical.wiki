@@ -1,5 +1,5 @@
 ﻿#summary Send the bigmap to a miniwindow
-#labels Author-Bast
+#labels Author-Bast,Deprecated
 === Table of Contents ===
 <wiki:toc max_depth="2" />
 

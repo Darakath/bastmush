@@ -9,13 +9,10 @@
  * this is a plugin that broadcasts info about  level
 
 = Installation ==
- * Required 
-  * [pluginhelper] and its dependencies
-  * [broadcast_state]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
 
 = Troubleshooting =
- * run the command "blevel set tdebug true" to enable debugging
+ * run the command "blevel debug" to enable debugging
 
 = Help =
  {{{

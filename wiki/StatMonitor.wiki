@@ -13,15 +13,7 @@
    * Quests
 
 = Installation ==
- * Required 
-  * [pluginhelper] and all of its dependencies
-  * [aardutils]
-  * [StatDB]
-  * [broadcast_level]
-  * [broadcast_quest]
-  * [broadcast_cp]
-  * [broadcast_gq]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
  
 = Output =
  * statmon rep
@@ -69,4 +61,3 @@ reportminutes        : 120                  - the number of minutes that Statmon
 showminutes          : 30                   - the number of minutes between StatMon output
 cmd                  : statmon              - the command to type for this plugin
   }}}
-

@@ -7,7 +7,7 @@
 = Introduction =
  * Author: Bast
  * This is a plugin that puts quests/gqs/cps into a tabbed miniwindow
- * For Quests - see [miniwin_quests]
+ * For Quests - see [miniwin_quest]
  * For CPs - see [miniwin_cp]
   * It will automatically update when a cp mob is killed
   * It will show mobs that are dead in red

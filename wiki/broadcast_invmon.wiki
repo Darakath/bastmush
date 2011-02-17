@@ -9,10 +9,7 @@
  * broadcasts when items are worn or removed with invmon
 
 = Installation ==
- * Required 
-  * [pluginhelper] and its dependencies
-  * [aardutils]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
 
 = Troubleshooting =
  * run the command "bimon debug" to enable debugging

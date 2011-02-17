@@ -1,0 +1,19 @@
+#summary Miniwindow that contains quests/cps/gqs
+#labels Author-Bast
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * Author: Bast
+ * This is a plugin that puts quests/gqs/cps into a tabbed miniwindow
+ * For CPs - see [miniwin_cp]
+  * It will automatically update when a cp mob is killed
+  * It will show mobs that are dead in red
+ * For GQs - see [miniwin_gq]
+
+= Installation ==
+ * See the [Installation] Page
+
+= Screenshots =
+ http://bastmush.googlecode.com/svn/wiki/images/events/event.png

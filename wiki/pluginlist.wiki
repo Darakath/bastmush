@@ -1,4 +1,4 @@
-﻿#summary list plugins that are using plugin manager
+﻿#summary list/load/reload plugins
 #labels Author-Bast
 
 === Table of Contents ===

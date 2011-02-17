@@ -20,6 +20,7 @@
   * [broadcast_runto]
   * [broadcast_spellsskills]
   * [broadcast_whois]
+  * [fix]
   * [miniwin_cp]
   * [miniwin_double]
   * [miniwin_events]

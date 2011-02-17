@@ -10,9 +10,7 @@
  * it is used for the [miniwin_noexp] plugin
 
 = Installation ==
- * Required 
-  * [pluginhelper] and its dependencies
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
 
 = Troubleshooting =
  * run the command "bnoexp debug" to enable debugging

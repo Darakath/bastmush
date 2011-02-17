@@ -11,6 +11,13 @@
 = Installation ==
  * see the [Installation] page
 
+= Usage =
+ * will automatically get regen id when worn the first time
+ * {{{
+add             : add current room as a regen room
+remove          : remove current room as a regen room
+show            : show rooms
+}}}
 
 = Help =
  {{{

@@ -9,10 +9,7 @@
  * this is a plugin that broadcasts spelltags
 
 = Installation ==
- * Required 
-  * [pluginhelper] and its dependencies
-  * [aardutils]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
 
 = Troubleshooting =
  * run the command "bstag debug" to enable debugging

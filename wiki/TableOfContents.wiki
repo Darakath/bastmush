@@ -19,7 +19,7 @@
   * [broadcast_noexp]
   * [broadcast_quest]
   * [broadcast_runto]
-  * [broadcast_spelltags]
+  * [broadcast_spellsskills]
   * [broadcast_state]
   * [broadcast_tick]
   * [broadcast_whois]

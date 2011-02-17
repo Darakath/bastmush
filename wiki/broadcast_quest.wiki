@@ -10,12 +10,10 @@
  * [miniwin_quest] uses it
 
 = Installation ==
- * Required 
-  * [pluginhelper] and its dependencies
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
 
 = Troubleshooting =
- * run the command "bqu set tdebug true" to enable debugging
+ * run the command "bqu debug" to enable debugging
 
 = Help =
  {{{

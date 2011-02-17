@@ -9,10 +9,7 @@
  * this is a plugin that broadcasts when using runto
 
 = Installation ==
- * Required 
-  * [pluginhelper] and its dependencies
-  * [ldplugin] and its dependencies
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
 
 = Troubleshooting =
  * run the command "brunto debug" to enable debugging

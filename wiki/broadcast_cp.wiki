@@ -10,10 +10,7 @@
  * it is used for the [miniwin_cp] plugin
 
 = Installation ==
- * Required 
-  * [pluginhelper] and its dependencies
-  * Nick's [http://www.gammon.com.au/forum/?id=8776 Stats_Detector.xml] Plugin in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
 
 = Troubleshooting =
  * run the command "bcp set tdebug true" to enable debugging

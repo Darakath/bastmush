@@ -1,4 +1,4 @@
-#summary miniwindow front end to bast_Spellup
+#summary miniwindow front end to bast_spellup
 
 === Table of Contents ===
 <wiki:toc max_depth="2" />
@@ -33,21 +33,42 @@
     * 8 # of Requested Other Spellups
     * 9 # of Requested Other Spellups that can be activated
 
-  * Full Summary Mode
+  * Full Summary Mode (with titlebar turned off)
    http://bastmush.googlecode.com/svn/wiki/images/spellup/summary.png
 
 == Affected Tab ==
-  * Affected tab
+  * Shows all spells/skills/recoveries that are currently active
+  * Each spell can be clicked on to get a menu
+  * For bad spells, you can right click on the spell for options
+    * disrupt (if you have it)
+    * if a spell to remove the affect is known, you can cast it from the menu
+    http://bastmush.googlecode.com/svn/wiki/images/spellup/affected-menu.png
    http://bastmush.googlecode.com/svn/wiki/images/spellup/affected.png
 
 == Self Tab ==
-  * Self tab for self requested spellup spells
+  * Self tab for self requested spellups
+  * Column headers can be clicked to sort the output
+   * P  = Pending - In the queue to be activated
+   * B  = Blocked - Blocked by a recovery or another spell
+   * D  = Disabled - this column can be clicked in the same row as an item to disable it
+   * NP = Not Practiced
+   * NL = Not Learned
    http://bastmush.googlecode.com/svn/wiki/images/spellup/self.png
 
 == Other Tab ==
-  * Other tab for spells requested to be cast on others
+  * Other tab for requested spellups on others
+  * Column headers can be clicked to sort the output
+   * D  = Disabled - this column can be clicked in the same row as an item to disable it
+   * NP = Not Practiced
+   * NL = Not Learned
    http://bastmush.googlecode.com/svn/wiki/images/spellup/other.png
 
 == Spells Tab ==
   * The spells tab were spells can be added to either self or other
+  * Column headers can be clicked to sort the output
+   * R = Requested - this column can be clicked next to a spell to request it for self
+   * S = Skill/Spell that is flagged as spellup on the mud side
+   * C = this column can be clicked on to flag a skill/spell as a spellup through the client
+   * RO = Requested Other - this column can be clicked on to request the spellup be cast on others with the other command
+   * FO = Fast Other - this spell will be used if fast is used when casting on others
    http://bastmush.googlecode.com/svn/wiki/images/spellup/spells.png

@@ -1,5 +1,5 @@
 ﻿#summary Broadcasts when the telopts state changes
-#labels Author-Bast
+#labels Author-Bast,Deprecated
 
 === Table of Contents ===
 <wiki:toc max_depth="2" />

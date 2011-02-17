@@ -6,13 +6,13 @@
 
 = Introduction =
  * Author: Bast
- * this is a plugin that broadcasts spelltags
+ * this is a plugin that broadcasts spelltags and slist
 
 = Installation ==
  * see the [Installation] page
 
 = Troubleshooting =
- * run the command "bstag debug" to enable debugging
+ * run the command "bsst debug" to enable debugging
 
 = Help =
  {{{
@@ -44,9 +44,6 @@ Broadcast 1
 Broadcast 2
  spelltag = {}
   spelltag.sn = 554
- 
-
-
 
 */
  }}}

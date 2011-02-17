@@ -9,10 +9,7 @@
  * this is a plugin that broadcasts whois info
 
 = Installation ==
- * Required 
-  * [pluginhelper] and its dependencies
-  * [aardutils]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * see the [Installation] page
 
 = Troubleshooting =
  * run the command "bwhois debug" to enable debugging

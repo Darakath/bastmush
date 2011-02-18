@@ -10,9 +10,6 @@
 = Installation ==
  * See the [Installation] Page
 
-= Troubleshooting =
- * make sure all files are in the correct location 
-
 = Help =
  * Currently supports
   * "fix prompt"

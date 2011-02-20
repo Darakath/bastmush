@@ -16,7 +16,7 @@
  * see the [Installation] page
  
 = Output =
- * statmon rep
+ * statmn rep
   {{{
 Stats for the Last 2 h
 Type       -  Tot   XP   QP   Tp   Gold

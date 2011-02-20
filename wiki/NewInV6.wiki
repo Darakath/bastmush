@@ -1,0 +1,48 @@
+#summary New Features in V6
+
+= Plugins Added =
+ * [bast_spellup]
+ * [miniwin_spellup]
+ * [miniwin_events]
+ * [fix]
+
+= Plugins removed =
+ * [broadcast_state]
+ * [broadcast_tick]
+
+= Enhancements =
+ * [StatDB]
+  * added a dontlevelnocampaign and campaignxp
+ * [miniwin_moons]
+  * changed to use gmcp for tick
+ * [miniwin_cp]
+  * will now automatically show when a cp is requested the first time
+ * [broadcast_invmon]
+  * added commands showstuff which shows all the tags and hidestuff which hides all the tags
+ * [broadcast_spellsskills]
+  * now gets all info about spells/skills and saves it into a sqlite db
+ * [miniwin_help]
+  * now uses gmcp instead of [broadcast_state]
+ * Internal
+  * event system in [pluginhelper]
+  * wrapped all sql statements in transactions
+  * speedup improvements in the [miniwin] code
+  * all plugins now have a "help text" option which prints help to the output window instead of the miniwin
+
+= Bug Fixes =
+ * [StatMonitor]
+  * no longer shows the same info over and over for each pup
+ * [broadcast_invmon]
+  * no longer sends an invdetails for every item that is bought
+ * [broadcast_runto]
+  * no longer loads with errors
+ * [PotionQuaffer]
+  * no longer errors on buying multiple potions
+ * [Aardwolf_disarm]
+  * now works
+ * [broadcast_kills]
+  * now sets vorpal weapons correctly
+ * [Aardwolf_Regen]
+  * now works
+
+

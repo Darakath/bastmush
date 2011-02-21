@@ -1,6 +1,8 @@
 #summary How to install v5 and above
 #labels Featured
 
+= READ THIS FIRST =
+ * Do not pick and choose from the download, many of the plugins depend on other plugins which are automatically loaded.  Copy the *ENTIRE* zip file when following these instructions
 
 = Installation in the New Aardwolf MUSHclient (Or any MUSHclient install) =
  * Download from the [http://code.google.com/p/bastmush/downloads/list Downloads] page.

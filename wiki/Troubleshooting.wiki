@@ -18,6 +18,8 @@
 == whois command over and over, or tabs not showing in miniwin_stats ==
  * set pagesize to 0 or something > 150
  * set nopretitle to "You will no longer see pretitles."
+ * "whois"
+ * "statdb comp" to see if the stat db was seeded
 
 == Getting Help ==
  * post a message in the mushclient forums (best place for help)

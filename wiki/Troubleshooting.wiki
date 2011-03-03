@@ -15,7 +15,7 @@
   1. type {{{plugincmd> objects}}}, find the non help object and then type {{{<plugincmd> <object> toggle}}}
   1. V6 and beyond: type {{{<plugincmd> windows}}} and it will show you if a window is hidden or not
 
-== whois command over and over ==
+== whois command over and over, or tabs not showing in miniwin_stats ==
  * set pagesize to 0 or something > 150
  * set nopretitle to "You will no longer see pretitles."
 

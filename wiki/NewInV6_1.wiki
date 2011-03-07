@@ -1,4 +1,7 @@
 #summary New Features in V6.1
+<wiki:comment>
+up to rev 1252
+</wiki:comment>
 
 <wiki:toc max_depth="1" />
 

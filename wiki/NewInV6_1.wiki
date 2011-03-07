@@ -30,6 +30,6 @@ This is mainly a bugfix release.
  * [StatDB]
   * fix for leveling and having no campaign which would set noexp when it wasn't needed
  * [broadcast_area]
-  * fixes for this, no only broadcasts 1, you have to !GetVariable the result
+  * fixes for this, now only broadcasts 1, you have to !GetVariable the result
  * [Aardwolf_Regen]
   * now works

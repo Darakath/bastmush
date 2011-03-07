@@ -3,6 +3,8 @@
 up to rev 1252
 </wiki:comment>
 
+This is mainly a bugfix release.
+
 <wiki:toc max_depth="1" />
 
 = Enhancements =

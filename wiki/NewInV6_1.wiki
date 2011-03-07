@@ -4,7 +4,7 @@
 
 = Enhancements =
  * Internal
-  * miniwindows have layers, see 
+  * miniwindows have layers, see [Intro]
   * miniwindows will always be shown the first time the plugin is loaded and data is added to the window
   * miniwindows will now stick to the left or top of the mushclient window when moving them and the mouse goes out of the window
 

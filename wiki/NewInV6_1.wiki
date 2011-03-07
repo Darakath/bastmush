@@ -1,0 +1,30 @@
+#summary New Features in V6.1
+
+<wiki:toc max_depth="1" />
+
+= Enhancements =
+ * Internal
+  * miniwindows have layers, see 
+  * miniwindows will always be shown the first time the plugin is loaded and data is added to the window
+  * miniwindows will now stick to the left or top of the mushclient window when moving them and the mouse goes out of the window
+
+
+= Bug Fixes =
+ * [bast_spellup]
+  * fixed help (had wrong command)
+ * [miniwin_stats]
+  * fix bug for avegold being nill
+  * fixed bug for not showing levels tab
+  * everything defaults to 0 if it wasn't found in the tables
+ * [broadcast_level]
+  * fix for having "Info" showing levels and not getting levelgains
+ * [broadcast_kills]
+  * fix for one hit kills, autogold has to be on though
+ * [broadcast_gq]
+  * gq tab is now removed if you quit from a gq
+ * [statdb]
+  * fix for leveling and having no campaign which would set noexp when it wasn't needed
+ * [broadcast_area]
+  * fixes for this, no only broadcasts 1, you have to !GetVariable the result
+ * [Aardwolf_Regen]
+  * now works

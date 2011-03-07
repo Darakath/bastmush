@@ -22,7 +22,7 @@
   * fix for one hit kills, autogold has to be on though
  * [broadcast_gq]
   * gq tab is now removed if you quit from a gq
- * [statdb]
+ * [StatDB]
   * fix for leveling and having no campaign which would set noexp when it wasn't needed
  * [broadcast_area]
   * fixes for this, no only broadcasts 1, you have to !GetVariable the result

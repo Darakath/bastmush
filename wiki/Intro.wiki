@@ -1,20 +1,27 @@
 ﻿#summary An intro to the scripts that are here.
 #labels featured
 
+<wiki:toc max_depth="3" />
+
 This is a repository for [http://mushclient.com Mushclient] scripts.  Some of them are modified plugins and most of them are geared toward [http://aardwolf.com Aardwolf Mud].
 
 * These plugins require at least version MUSHclient version 4.6 or greater, but I would suggest the latest version *
 
   http://bastmush.googlecode.com/svn/wiki/images/miniwin/miniwin.png
 
-== miniwindow plugins notes ==
+
+= miniwindow plugins notes =
  * if any of my miniwindows are used, you will also want to use [miniwin_tabbar]
  * can be moved by dragging from the titlebar
  * the titlebar and tabbar can be hidden
  * can have tabs for different information
  * If the titlebar is hidden, then the mouse menus will be in the top left corner of the window
+== Layers ==
+ * each miniwindow has a layer, the default is 5
+  * Layer 1 is the highest layer and will be above any level 2-10 miniwindows
+  * Layer 10 is the lowest layer and will be below all miniwindows
 
-== Screenshots ==
+= Screenshots =
   http://bastmush.googlecode.com/svn/wiki/images/miniwin/miniwin-label.png
 
  * A: The miniwindows come with two popup menus

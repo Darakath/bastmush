@@ -1,16 +1,53 @@
 #summary New Features in V6
 
-= Plugins Added =
+=== Table Of Contents ===
+<wiki:toc max_depth="2" />
+
+= V 6.1 =
+This is mainly a bugfix release.
+
+== Enhancements ==
+ * Internal
+  * miniwindows have layers, see [Intro]
+  * miniwindows will always be shown the first time the plugin is loaded and data is added to the window
+  * miniwindows will now stick to the left or top of the mushclient window when moving them and the mouse goes out of the window
+
+
+== Bug Fixes ==
+ * [bast_spellup]
+  * fixed help (had wrong command)
+ * [miniwin_stats]
+  * fix bug for avegold being nill
+  * fixed bug for not showing levels tab
+  * everything defaults to 0 if it wasn't found in the tables
+ * [broadcast_level]
+  * fix for having "Info" showing levels and not getting levelgains
+ * [broadcast_kills]
+  * fix for one hit kills, autogold has to be on though
+ * [broadcast_gq]
+  * gq tab is now removed if you quit from a gq
+ * [StatDB]
+  * fix for leveling and having no campaign which would set noexp when it wasn't needed
+ * [broadcast_area]
+  * fixes for this, now only broadcasts 1, you have to !GetVariable the result
+ * [Aardwolf_Regen]
+  * now works
+ * [miniwin_tabbar]
+  * horizontal mode now works, set orientation to 0
+
+
+= V6 =
+== Plugins Added ==
  * [bast_spellup]
  * [miniwin_spellup]
  * [miniwin_events]
  * [fix]
 
-= Plugins removed =
+== Plugins removed ==
  * [broadcast_state]
  * [broadcast_tick]
 
-= Enhancements =
+== Enhancements ==
  * [StatDB]
   * added a dontlevelnocampaign and campaignxp
  * [miniwin_moons]
@@ -29,7 +66,7 @@
   * speedup improvements in the [miniwin] code
   * all plugins now have a "help text" option which prints help to the output window instead of the miniwin
 
-= Bug Fixes =
+== Bug Fixes ==
  * [StatMonitor]
   * no longer shows the same info over and over for each pup
  * [broadcast_invmon]
@@ -42,7 +79,3 @@
   * now works
  * [broadcast_kills]
   * now sets vorpal weapons correctly
- * [Aardwolf_Regen]
-  * now works
-
-

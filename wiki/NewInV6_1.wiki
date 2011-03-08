@@ -33,3 +33,5 @@ This is mainly a bugfix release.
   * fixes for this, now only broadcasts 1, you have to !GetVariable the result
  * [Aardwolf_Regen]
   * now works
+ * [miniwin_tabbar]
+  * horizontal mode now works, set orientation to 0

@@ -9,10 +9,9 @@
  * Unzip into your plugins directory
  * Use File->Plugins to Add the plugins you want to use
 
-= Upgrading from v5 to v6 =
+= Upgrading =
  * Close mushclient
- * delete all the files in the directory that my plugins are in
- * copy the files from the new zip into the directory
+ * copy the files from the new zip into the directory that my plugins are in
  * open mushclient, you will get warnings that some plugins could not be found, those will be ones that were removed
 
 = Migrating data from v4 =

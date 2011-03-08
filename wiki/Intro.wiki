@@ -20,6 +20,7 @@ This is a repository for [http://mushclient.com Mushclient] scripts.  Some of th
  * each miniwindow has a layer, the default is 5
   * Layer 1 is the highest layer and will be above any level 2-10 miniwindows
   * Layer 10 is the lowest layer and will be below all miniwindows
+ * can be set from the window menu -> Other -> Layer
 
 = Screenshots =
   http://bastmush.googlecode.com/svn/wiki/images/miniwin/miniwin-label.png

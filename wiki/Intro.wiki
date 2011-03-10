@@ -9,6 +9,13 @@ This is a repository for [http://mushclient.com Mushclient] scripts.  Some of th
 
   http://bastmush.googlecode.com/svn/wiki/images/miniwin/miniwin.png
 
+= Shout Outs =
+ * Nick Gammon  - for MUSHclient and some of my plugin code is based on his
+ * Fiendish     - for the Aardwolf MUSHclient and for some plugin code that I used from that
+ * Balaam       - for the moonbot algorithms
+ * Onoitsu2     - for the PotionQuaffer and Disarm plugins
+ * Bottomfeeder - for the PotionQuaffer plugin
+ * Swalec       - for the autohunter plugins
 
 = miniwindow plugins notes =
  * if any of my miniwindows are used, you will also want to use [miniwin_tabbar]
@@ -16,6 +23,7 @@ This is a repository for [http://mushclient.com Mushclient] scripts.  Some of th
  * the titlebar and tabbar can be hidden
  * can have tabs for different information
  * If the titlebar is hidden, then the mouse menus will be in the top left corner of the window
+
 == Layers ==
  * each miniwindow has a layer, the default is 5
   * Layer 1 is the highest layer and will be above any level 2-10 miniwindows

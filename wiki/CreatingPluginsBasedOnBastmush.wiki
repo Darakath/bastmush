@@ -41,7 +41,7 @@ end
 nfile = scan_dir_for_file (GetInfo(60), "miniwin.lua", true)
 
 if nfile then
-  -- pull in telnet option handling
+  -- add the lua directory from Bast's plugins to the lua search path
   package.path = nfile .. "?;" .. nfile .. "?.lua;" .. package.path
 else
   print("Could not find Bast's scripts, please install Bast's scripts into a directory under worlds/plugins.")
@@ -52,11 +52,10 @@ end
 {{{
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE muclient>
-<!-- $Id: miniwin_example.xml 1272 2011-03-08 19:10:30Z endavis $ -->
 
 <muclient>
 <plugin
-   name="miniwin_example_for_plugin_authors"
+   name="miniwin_ex_for_plugin_authors"
    author="Bast"
    id="eee8adec415c1bbb534ef093"
    language="Lua"

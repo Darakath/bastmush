@@ -3,6 +3,7 @@
  * [Installation]
  * [Troubleshooting]
  * [NewInV6]
+ * [CreatingPluginsBasedOnBastmush]
  * Modified Plugins from other people
   * [Aardwolf_disarm]
   * [Aardwolf_Spellups_mw_Bast]

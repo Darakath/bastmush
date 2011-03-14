@@ -3,7 +3,6 @@
 = Introduction =
 Creating your own plugins based on Bastmush
 
-
 = Process =
  * Create a directory under worlds/plugins for the new plugins (such as Test)
  * add this file into the directory named as findbast.lua
@@ -49,7 +48,7 @@ else
   print("the website is http://bastmush.googlecode.com")
 end
 }}}
- * Use this sample plugin and save it to the same directory
+ * Use this sample plugin and save it to the same directory and see [miniwin] for help on styles
 {{{
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE muclient>

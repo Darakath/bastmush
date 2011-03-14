@@ -5,7 +5,7 @@ Creating your own plugins based on Bastmush
 
 
 = Process =
- * Create a directory under worlds/plugins for the new plugins
+ * Create a directory under worlds/plugins for the new plugins (such as Test)
  * add this file into the directory named as findbast.lua
 {{{
 -- finds Bast's plugins

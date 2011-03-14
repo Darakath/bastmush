@@ -119,7 +119,6 @@ Added for miniwin
 
 = Installation =
  * Requires
-  * [class]
   * [verify]
   * [pluginhelper]
  * see the [Download] Page, and copy the file into the lua directory

@@ -20,6 +20,13 @@
  * default location of database is in the logs directory, this can be changed by creating a variable in the Aardwolf world called dblocation with a path to the directory you would like to store it
  * Note: this does not differentiate between characters, change the dblocation variable for each character
 
+= Variables of Interest =
+ * Campaign related
+  * dontlevelnocampaign - set this to true to automatically set noexp at <campaignxp tnl if you haven't done a campaign this level
+  * campaignxp - tnl to check to set noexp if you haven't done a campaign this level
+  * For example, if you set campaignxp to 500 and dontlevelnocampaign to true then if a campaign hasn't been taken for this level then noexp will be set when xp to the next level is < 500.
+
+
 = Troubleshooting =
  * continual whois
   * set pagesize to 0

@@ -20,13 +20,6 @@
  * default location of database is in the logs directory, this can be changed by creating a variable in the Aardwolf world called dblocation with a path to the directory you would like to store it
  * Note: this does not differentiate between characters, change the dblocation variable for each character
 
-= Variables of Interest =
- * Campaign related
-  * dontlevelnocampaign - set this to true to automatically set noexp at <campaignxp tnl if you haven't done a campaign this level
-  * campaignxp - tnl to check to set noexp if you haven't done a campaign this level
-  * For example, if you set campaignxp to 500 and dontlevelnocampaign to true then if a campaign hasn't been taken for this level then noexp will be set when xp to the next level is < 500.
-
-
 = Troubleshooting =
  * continual whois
   * set pagesize to 0
@@ -35,16 +28,19 @@
 = Help =
  {{{
 /*
-StatDB v1 Commands
------------------------------------------------
-addmilestone   : add a milestone
-comparemilstone: compare two milestones
-debug          : toggle debugging
-help           : show help
-listmilestones : list all milestones
-objects        : list objects associated with this plugin
-reset          : reset settings to default values
-save           : save plugin variables
-set            : set settings
+addmilestone    : add a milestone
+backup          : backup the database, the only argument is the extension
+campaignxp      : set noexp if a campaign hasn't been taken and tnl is less than the argument to this function, use 'off' (no quotes) disable
+comparemilstone : compare two milestones
+debug           : toggle debugging
+help            : show help
+listmilestones  : list all milestones
+objects         : list objects associated with this plugin
+reset           : reset settings to default values
+save            : save plugin variables
+set             : set settings
+showevents      : show functions registered for all events
+showvars        : show plugin variables
+windows         : list windows and some info associated with this plugin
 */
  }}}

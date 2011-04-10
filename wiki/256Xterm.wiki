@@ -2,6 +2,7 @@
 
 = Introduction =
  * an alias to see all the xterm colors
+ * *You will need a version of the Aardwolf MUSHclient later than March 30th.*
 
 
 = Details =

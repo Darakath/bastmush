@@ -55,3 +55,8 @@ ColourNote("", "", "")</send>
   </alias>
 </aliases>
 }}}
+
+= Images =
+http://bastmush.googlecode.com/svn/wiki/images/xterm/xtermnum.png
+
+http://bastmush.googlecode.com/svn/wiki/images/xterm/xtermnonum.png

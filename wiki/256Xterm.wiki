@@ -5,7 +5,7 @@
 
 
 = Details =
- * copy this and then hit the paste button in the alias window
+ * copy this and then hit the paste button in the Game->Configure->Aliases window
  * "{{{showxterm}}}" will show the colors with the numbers
  * "{{{showxterm no}}}" will show the colors without the numbers
 

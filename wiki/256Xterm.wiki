@@ -2,8 +2,8 @@
 
 = Introduction =
  * an alias to see all the xterm colors
- * *You will need a version of the Aardwolf MUSHclient later than March 30th.*
-
+ * *This alias is now included in r443 of the Aardwolf MUSHclient, the colors are not correct otherwise*
+ 
 
 = Details =
  * Copy the script from the page, then go to Game->Configure->Aliases and hit the "Paste" button

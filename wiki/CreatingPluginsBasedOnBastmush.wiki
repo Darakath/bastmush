@@ -236,28 +236,6 @@ style.hint = serialize.save_simple(style)
 style.mouseover = nofunc
 table.insert(tstyle, style)
 
--- Fillall
-style = {}
-style.circleOp = {}
-style.circleOp.width = 8
-style.circleOp.height = 8
-style.circleOp.pencolour = 'blue' -- fore_colour
-style.circleOp.penstyle = miniwin.pen_null
-style.circleOp.penwidth = 0
-style.circleOp.brushcolour = 'red' -- back_colour
-style.circleOp.brushstyle = miniwin.brush_waves_vertical
-style.circleOp.extra1 = null
-style.circleOp.extra2 = null
-style.circleOp.extra3 = null
-style.circleOp.extra4 = null
-style.backcolour = "cyan"
-style.textcolour = "red"
-style.vjust = 'center'
-style.fillall = true
-style.hint = serialize.save_simple(style)
-style.mouseover = nofunc
-table.insert(tstyle, style)
-
 -- insert the second line
 --table.insert(styles, tstyle)
 

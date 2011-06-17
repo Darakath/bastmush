@@ -20,8 +20,21 @@
 
 = Upgrading an existing install =
  * Close mushclient
- * copy the files from the new zip into the same directory that my plugins are already installed in
+ * Download from the [http://code.google.com/p/bastmush/downloads/list Downloads] page.
+ * Find the bastmush.zip file
+  * In this example it was in the Desktop folder
+  http://bastmush.googlecode.com/svn/wiki/images/install/findzip.png
+ * Double click the bastmush.zip file, there should be a Bast folder
+  http://bastmush.googlecode.com/svn/wiki/images/install/openzip.png
+ * Find the plugins folder for MUSHclient
+  * In this example, it is C:\games\MUSHclient\worlds\plugins
+  http://bastmush.googlecode.com/svn/wiki/images/install/mushclientpluginsfolder.png
+ * Delete the folder the bastmush plugins reside in.  It should be Bast, but could be v6.0 or v6.1 if you are using an older version
+ * Drag the Bast folder from the zipfile into the plugins directory
+  http://bastmush.googlecode.com/svn/wiki/images/install/afterdrag.png
  * open mushclient, you will get warnings that some plugins could not be found, those will be ones that were removed
+ * Use File->Add to add new plugins
+  * If the old plugins were not in a Bast folder, all plugins that you were using will need to be Added 
 
 = Migrating data to a new installation =
  * Copy all files in OldMUSHInstallDir/logs to NewMUSHInstallDir/logs

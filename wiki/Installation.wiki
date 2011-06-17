@@ -6,7 +6,16 @@
 
 = New Installation in the Aardwolf MUSHclient (Or any MUSHclient) =
  * Download from the [http://code.google.com/p/bastmush/downloads/list Downloads] page.
- * Copy the Folder from the zip into MUSHclient>Worlds>Plugins
+ * Find the bastmush.zip file
+  * In this example it was in the Desktop folder
+  http://bastmush.googlecode.com/svn/wiki/images/install/findzip.png
+ * Double click the bastmush.zip file, there should be a Bast folder
+  http://bastmush.googlecode.com/svn/wiki/images/install/openzip.png
+ * Find the plugins folder for MUSHclient
+  * In this example, it is C:\games\MUSHclient\worlds\plugins
+  http://bastmush.googlecode.com/svn/wiki/images/install/mushclientpluginsfolder.png
+ * Drag the Bast folder from the zipfile into the plugins directory
+  http://bastmush.googlecode.com/svn/wiki/images/install/afterdrag.png
  * Use File->Plugins to Add the plugins you want to use
 
 = Upgrading an existing install =

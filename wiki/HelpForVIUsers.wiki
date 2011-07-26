@@ -1,0 +1,9 @@
+#summary Some tips for VI Users
+#labels Featured
+
+= Help output =
+ * If you want help sent to the output screen, add "text" after the help command for a plugin
+  * so for bast_hunt, it would be "bh help text"
+
+= Spellup Plugin =
+ * The miniwin_spellup plugin actually just calls all commands from the bast_spellup plugin. So most anything that the miniwin_spellup plugin does can be done from the command line with bast_spellup.

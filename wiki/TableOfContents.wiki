@@ -3,7 +3,6 @@
  * [Installation]
  * [Troubleshooting]
  * [TipsForVIUsers Tips for VI Users]
- * [NewInV6]
  * [CreatingPluginsBasedOnBastmush Creating plugins based on Bastmush]
  * Modified Plugins from other people
   * [Aardwolf_disarm]

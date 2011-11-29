@@ -8,7 +8,7 @@
  * Author: Bast
  * this is a plugin that broadcasts info about a mob kill
 
-= Installation ==
+= Installation =
  * see the [Installation] page
 
 = Troubleshooting =

@@ -8,7 +8,7 @@
  * Author: Bast
  * shows a miniwindow that enables toggling of other windows and some basic info
 
-= Installation ==
+= Installation =
  * see the [Installation] page
 
 = Troubleshooting =

@@ -9,7 +9,7 @@
  * this is a plugin that broadcasts when noexp is enabled/disabled
  * it is used for the [miniwin_noexp] plugin
 
-= Installation ==
+= Installation =
  * see the [Installation] page
 
 = Troubleshooting =

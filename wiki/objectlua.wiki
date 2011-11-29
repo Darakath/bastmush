@@ -9,10 +9,10 @@
  * Author: Sébastien Rocca-Serra
  * Version: 0.4.4
  * Webpage: http://luaforge.net/projects/objectlua/
-  
 
-= Installation ==
- * see the [Download] Page, and copy the directory into the lua directory
+
+= Installation =
+ * see the [Installation] page
 
 = Examples =
  * see [phelpobject] or [miniwin]

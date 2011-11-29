@@ -9,7 +9,7 @@
  * This is a modified version of Nick's Aardwolf Spellup Plugin.
     The original is here http://www.gammon.com.au/mushclient/plugins/Aardwolf/Aardwolf_Spellups.xml
 
-= Differences from Nick's Plugin ==
+= Differences from Nick's Plugin =
  * no more spell timer, it looks for the specific spell that it tried to cast and waits for the spell tags.  I have had no issues with this
  * You can have spells that are blocked by other spells
   * For example "spellup block + 68 121" will block casting of "protection good" if "inertial barrier" is active.  Therefore, if you have "protection good" before "inertial barrier" in your spellup list, it will only cast "protection good" when "inertial barrier" wears off.
@@ -18,7 +18,7 @@
  * Add a spell to a specific place in the list
  * Will also work with spellup skills, such as nimble cunning, sneak, etc..
 
-= Installation ==
+= Installation =
  * Required
   * Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/telnet_options.lua telnet_options.lua] script in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
  * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf

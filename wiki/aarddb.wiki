@@ -8,7 +8,7 @@
  * Author: Bast
  * This will save general aardwolf information into a sqlite database
 
-= Installation ==
+= Installation =
  * See the [Installation] Page
  * default location of database is in the logs directory, this can be changed by creating a variable in the Aardwolf world called dblocation with a path to the directory you would like to store it
  * Note: this does not differentiate between characters, change the dblocation variable for each character

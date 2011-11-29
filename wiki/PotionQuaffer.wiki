@@ -7,14 +7,14 @@
  * Author: Onoitsu2/Bottomfeeder/Bast
  * Potion quaffing, buying and keeping
 
-= Differences from Onoitsu2's Plugin ==
+= Differences from Onoitsu2's Plugin =
  * can have any flags on potions
 
-= Installation ==
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+= Installation =
+ * See the [Installation] Page
 
 = Troubleshooting =
- * 
+ *
 
 = Help =
  {{{

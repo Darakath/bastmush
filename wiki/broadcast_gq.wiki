@@ -9,7 +9,7 @@
  * this is a plugin that broadcasts info about a gq
  * it is used for the [miniwin_gq] plugin
 
-= Installation ==
+= Installation =
  * see the [Installation] page
 
 = Troubleshooting =
@@ -102,6 +102,6 @@ gq_info = {}
   gq_info.level = "69"
   gq_info.trains = 0
   gq_info.qp = 0
-  
+
 */
  }}}

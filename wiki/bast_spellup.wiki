@@ -18,10 +18,10 @@
   * fast option which is basically the mud version of the spellup, It looks through all your spellups and casts the ones that can be cast on others and you have practiced
  * Can toggle spells/skills to be spellups clientside although they are not spellups on the mudside, For example, stealth.
 
-= Installation ==
+= Installation =
  * See the [Installation] Page
 
-= Help = 
+= Help =
  * the default cmd alias is bsp
  * For spells with multiple words, surround the spell with single quotes or use the sn
  * Commands for spellups on self
@@ -62,7 +62,7 @@
  * This is the export of my current spellups
 {{{
 # remove all self spellups
-bsp sremove all 
+bsp sremove all
 
 # add spellups that I have, I have even added spellups for my entire mort
 bsp sadd 155 157 4 5 31 32 33 34 49 51 53 57 68 72 76 91 97 112 116 118 119 121 123 126 235 168 484 252 253 248 249 185 554 133 135 422 421 427 425 424 431 430 429 428 435 439 437 317 423 335 164 333 434 171 250 152 255 259 442 174 254 559 58
@@ -121,15 +121,15 @@ DoAfter(.2, 'visible')</send>
 {{{
 bast_spellup v6 Spells requested (9)
 -----------------------------------------------
-#. Name                        P  B  D  NP  NL 
+#. Name                        P  B  D  NP  NL
 ____________________________________________________
-1. aid                         P                   
-2. detect evil                       D            
-3. frenzy                                         
-4. giant strength                                
-5. haste                                NP        
-6. night vision                                  
-7. toxic resistance                         NL    
+1. aid                         P
+2. detect evil                       D
+3. frenzy
+4. giant strength
+5. haste                                NP
+6. night vision
+7. toxic resistance                         NL
 8. stealth                        B              Blocked by Recovery: stealth
-9. invis                             D            
+9. invis                             D
  }}}

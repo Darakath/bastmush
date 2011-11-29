@@ -8,7 +8,7 @@
  * Author: Bast
  * broadcasts when Aardwolf sends the telopts state change
 
-= Installation ==
+= Installation =
  * Required
   * download Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/telnet_options.lua telnet_options.lua] script into the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf
   * [pluginhelper] and its dependencies
@@ -33,7 +33,7 @@ Example:
 To test if you are currently playing (after a reinstall):
 
   state = GetPluginVariable ("3448fed8734053327438a4df", "state")
-  
+
 and then get the values by:
   state.state
   state.statestring

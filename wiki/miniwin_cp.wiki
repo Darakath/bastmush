@@ -10,7 +10,7 @@
  * It will automatically update when a cp mob is killed
  * It will show mobs that are dead in red
 
-= Installation ==
+= Installation =
  * See the [Installation] Page
 
 = Screenshots =

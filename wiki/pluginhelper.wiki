@@ -8,6 +8,15 @@
  * Author: Bast
  * this module is a helper module that tracks variables, settings and commands for plugins
 
+= Installation =
+ * See the [Installation] Page
+
+= Troubleshooting =
+ * post errors on the mushclient forums, I watch those forums
+
+= Sample Script =
+ * see [miniwin_example] or any other scripts
+
 = Help =
 {{{
 /*
@@ -55,16 +64,3 @@ commands already included (these do not need to be manually added)
 
 */
 }}}
-
-= Installation =
- * requires
-  * [phelpobject]
-  * [verify]
- * see the [Download] Page, and copy the file into the lua directory
-
-
-= Troubleshooting =
- * post errors on the mushclient forums, I watch those forums 
-
-= Sample Script =
- * see [miniwin_example] or any other scripts

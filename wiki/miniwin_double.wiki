@@ -8,7 +8,7 @@
  * Author: Bast
  * shows a miniwindow when double is active
 
-= Installation ==
+= Installation =
  * see [Installation] page
 
 = Troubleshooting =

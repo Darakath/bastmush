@@ -8,6 +8,9 @@
  * Author: Bast
  * a module to verify data types
 
+= Installation =
+ * See the [Installation] Page
+
 = Help =
 {{{
 /*
@@ -23,7 +26,7 @@ verify_colour
     arguments with " or ' in them are automatically invalid
   stuff to put in args table
     silent - if true, will not show PickColour dialog
-    
+
 verify_string
   Accepts
     anything that can be turned into a string
@@ -35,7 +38,7 @@ verify_number
     low  - the lowest value the data can be
     high - the highest value the data can be
     silent - if true, will not print any errors
-    
+
 verify_bool
   Accepts
     booleans
@@ -43,6 +46,3 @@ verify_bool
     the string false and the number 0 will convert to the boolean false
 */
 }}}
-
-= Installation ==
- * see the [Download] Page, and copy the file into the lua directory

@@ -1,4 +1,4 @@
-﻿#summary a module for various table functions 
+﻿#summary a module for various table functions
 #labels Author-Bast
 
 === Table of Contents ===
@@ -7,6 +7,9 @@
 = Introduction =
  * Author: Bast
  * a plugin for table functions
+
+= Installation =
+ * See the [Installation] Page
 
 = Help =
 {{{
@@ -45,5 +48,3 @@ tableExtend
 */
 }}}
 
-= Installation ==
- * see the [Download] Page, and copy the file into the lua directory

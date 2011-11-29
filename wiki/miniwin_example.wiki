@@ -8,7 +8,7 @@
  * Author: Bast
  * This is a plugin that shows some of the capabilities of the miniwin module
 
-= Installation ==
+= Installation =
  * see the [Installation] page
 
 = Troubleshooting =

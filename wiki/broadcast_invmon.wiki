@@ -8,7 +8,7 @@
  * Author: Bast
  * broadcasts when items are worn or removed with invmon
 
-= Installation ==
+= Installation =
  * see the [Installation] page
 
 = Troubleshooting =

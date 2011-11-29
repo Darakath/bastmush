@@ -8,7 +8,7 @@
  * Author: Bast
  * shows a miniwindow when noexp is toggled
 
-= Installation ==
+= Installation =
  * see the [Installation] page
 
 = Troubleshooting =

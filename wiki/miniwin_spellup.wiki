@@ -12,7 +12,7 @@
  * see [bast_spellup] for features and a walkthrough of the capabilities of the spellup plugin
  * Everything that can be clicked has a hint that will popup when you mouseover the item
 
-= Installation ==
+= Installation =
  * See the [Installation] Page
 
 = Tabs =

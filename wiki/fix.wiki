@@ -7,7 +7,7 @@
  * Author: Bast
  * a utility plugin to change mudside things
 
-= Installation ==
+= Installation =
  * See the [Installation] Page
 
 = Help =

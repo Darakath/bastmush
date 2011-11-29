@@ -6,16 +6,15 @@
 
 = Introduction =
  * Author: Bast
- * This is a modified version of Balaam's moonbot Plugin to use a miniwindow. 
+ * This is a modified version of Balaam's moonbot Plugin to use a miniwindow.
   The original is here http://www.gammon.com.au/forum/bbshowpost.php?id=8146&page=2
 
-= Differences from Balaam's Plugin ==
+= Differences from Balaam's Plugin =
  * can now show moons as a miniwindow
  * uses the telopt ticks instead of the printed tick
   * this is because printed ticks are not sent when note writing, etc..
 
-
-= Installation ==
+= Installation =
  *see the [Installation] Page
 
 = Troubleshooting =

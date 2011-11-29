@@ -12,9 +12,9 @@
    * Gquests
    * Quests
 
-= Installation ==
+= Installation =
  * see the [Installation] page
- 
+
 = Output =
  * statmn rep
   {{{

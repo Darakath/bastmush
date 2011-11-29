@@ -7,13 +7,9 @@
 = Introduction =
  * Author: Bast
  * module with a base class for interacting with sqlite dbs
- 
 
-= Installation ==
- * Required 
-  * [pluginhelper] and all of its dependencies
-  * [verify]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+= Installation =
+ * See the [Installation] Page
 
 = Examples =
  * see [chardb]

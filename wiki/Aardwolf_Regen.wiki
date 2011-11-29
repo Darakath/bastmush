@@ -11,7 +11,7 @@
  * Author: Bast
  * This plugin will wear a regen ring when in a room that is added or when sleeping or when going client afk
 
-= Installation ==
+= Installation =
  * see the [Installation] page
 
 = Usage =

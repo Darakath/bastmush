@@ -13,7 +13,7 @@
   * It will show mobs that are dead in red
  * For GQs - see [miniwin_gq]
 
-= Installation ==
+= Installation =
  * See the [Installation] Page
 
 = Screenshots =

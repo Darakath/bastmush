@@ -9,7 +9,7 @@
  * this is a plugin that broadcasts when double is active, it broadcasts a timer every 30 seconds
  * it is used for the [miniwin_double] plugin
 
-= Installation ==
+= Installation =
  * see the [Installation] page
 
 = Troubleshooting =

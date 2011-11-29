@@ -6,10 +6,13 @@
 = Introduction =
 
 
-= Differences from Original Plugin ==
+= Differences from Original Plugin =
 
+= Installation =
+
+= Troubleshooting =
+
+= Examples =
 
 = Help =
 
-
-= Installation ==

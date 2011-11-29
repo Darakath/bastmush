@@ -11,13 +11,8 @@
  * Notes:
    * the load and loaddir functions do not work yet
 
-
-= Installation ==
- * Required 
-  * [pluginhelper] and all of its dependencies
-  * [tablefuncs]
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
-
+= Installation =
+ * See the [Installation] Page
 
 = Screenshots =
  * output of plugin list

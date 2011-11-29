@@ -10,7 +10,7 @@
  * Exits in the exits row can be clicked to move
  * Shows flags from gmcp
 
-= Installation ==
+= Installation =
  * see the [Installation] page
 
 = Troubleshooting =

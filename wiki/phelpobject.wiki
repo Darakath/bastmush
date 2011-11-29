@@ -9,13 +9,10 @@
  * A module that has a baseclass for holding variables and other functions
 
 = Installation =
- * requires
-  * [tablefuncs]
-  * [verify]
- * see the [Download] Page, and copy the file into the lua directory
+ * See the [Installation] Page
 
 = Troubleshooting =
- * post errors on the mushclient forums, I watch those forums 
+ * post errors on the mushclient forums, I watch those forums
 
 = Examples =
  * see [pluginhelper] or [miniwin]

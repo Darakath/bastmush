@@ -8,7 +8,7 @@
  * Author: Bast
  * broadcasts when a tick is sent through telopts
 
-= Installation ==
+= Installation =
  * see the [Installation] page
 
 = Help =

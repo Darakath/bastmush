@@ -9,7 +9,7 @@
  * this is a plugin that broadcasts items when a cp is updated, includes a timer function that updates the cp timer every 30 seconds
  * it is used for the [miniwin_cp] plugin
 
-= Installation ==
+= Installation =
  * see the [Installation] page
 
 = Troubleshooting =
@@ -119,7 +119,7 @@ timer = {}
   timer.text = "1 w"
   timer.days = 6
   timer.hours = 23
-  
+
 xBroadcast_CP : Broadcast 3
 cp_info = {}
   cp_info.mobs = {}

@@ -8,10 +8,10 @@
  * Author: NickGammon/Bast
  * redirect the bigmap to a miniwindow
 
-= Differences from Nick's Plugin ==
+= Differences from Nick's Plugin =
  * uses ATCP to figure out if you are on a continent so it hides when it is suppose to
 
-= Installation ==
+= Installation =
  * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
 
 = Troubleshooting =

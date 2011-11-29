@@ -10,9 +10,9 @@
  * type "tags" and make sure Global Tags is on
 
 == Miniwindows not showing ==
- * Several Options 
+ * Several Options
   1. Load miniwin_tabbar, it will show if a window is loaded
-  1. type {{{plugincmd> objects}}}, find the non help object and then type {{{<plugincmd> <object> toggle}}}
+  1. type {{{plugincmd> objects}}}, find the non help object and then type {{{<plugincmd> <object> show}}} and then {{{<plugincmd> <object> front}}}
   1. V6 and beyond: type {{{<plugincmd> windows}}} and it will show you if a window is hidden or not
 
 == whois command over and over, or tabs not showing in miniwin_stats ==
@@ -31,38 +31,38 @@
  * my prompt is off
  * config
  {{{
-Command      Description                                     Status    
------------- ----------------------------------------------- ------   
-AUTOASSIST   Assist group members in mob combat              NO 
-AUTODESC     See descriptions when using the whois command   NO 
+Command      Description                                     Status
+------------ ----------------------------------------------- ------
+AUTOASSIST   Assist group members in mob combat              NO
+AUTODESC     See descriptions when using the whois command   NO
 AUTOEQ       Check for better equipment when you level.      YES
 AUTOEXIT     Show exits when rooms are displayed             YES
 AUTOGOLD     Automatically take gold from enemy corpses      YES
 AUTOKEEP     Automatically keep items bought from shops      YES
 AUTOLOOT     Automatically take equipment from enemy corpses YES
 AUTOMAP      Automatically see the Aardwolf map when moving  YES
-AUTONOSUM    Automatically set nosummon after each summoning NO 
-AUTOPK       Assist group members in PK combat               NO 
+AUTONOSUM    Automatically set nosummon after each summoning NO
+AUTOPK       Assist group members in PK combat               NO
 AUTOREC      Attempt to recall if you lose link              YES
 AUTOSAC      Automatically sacrifice enemy corpses           YES
 AUTOSAVEMSG  See a message when your character autosaves     YES
-AUTOSHARE    Automatically split gold with group members     NO 
-AUTOTICK     Display a message each mud 'tick'               NO 
-BATTLESPAM   See combat messages of people not grouped with  NO 
-BLOCKEXIT    Prevents Blockexit skill from working           NO 
-CATCHTELLS   Save all tells that are sent to you             NO 
+AUTOSHARE    Automatically split gold with group members     NO
+AUTOTICK     Display a message each mud 'tick'               NO
+BATTLESPAM   See combat messages of people not grouped with  NO
+BLOCKEXIT    Prevents Blockexit skill from working           NO
+CATCHTELLS   Save all tells that are sent to you             NO
 COLORPATHS   Include colors in find output                   YES
-COMPACT      Remove the blank line between commands          NO 
-DUEL         See player vs player duels                      NO 
+COMPACT      Remove the blank line between commands          NO
+DUEL         See player vs player duels                      NO
 ECHODEATHS   Sense / Hear deaths around you                  YES
-EXPRATE      Show exprate wish bonus separately              NO 
+EXPRATE      Show exprate wish bonus separately              NO
 GROUPSPAM    See combat messages of people in your group     YES
 KEYLOOT      Will only loot keys from enemy corpses          YES
 LEVELHINTS   Show hints when you level                       YES
-MAPRUN       See the Aardwolf map when using run             NO 
-NOCANCEL     Allow other players to cancel your spells       NO 
-NOCHALLENGE  Accept duel challenges                          NO 
-NOCURSE      See curse channels, curse socials, etc          NO 
+MAPRUN       See the Aardwolf map when using run             NO
+NOCANCEL     Allow other players to cancel your spells       NO
+NOCHALLENGE  Accept duel challenges                          NO
+NOCURSE      See curse channels, curse socials, etc          NO
 NODELIVER    Accept deliveries from various stores           YES
 NOEXP        Receive experience for mob kills/skill gains    YES
 NOFOLLOW     Allow people / mobs to follow you               YES
@@ -70,35 +70,35 @@ NOFRIENDS    Allow others to friend you                      YES
 NOGIVE       Allow other players to give items to you        YES
 NOGRACE      PK protection / half exp after being PKed       YES
 NOGROUP      Allow others to invite you into groups          YES
-NOHELP       See additional help when using commands         NO 
+NOHELP       See additional help when using commands         NO
 NONIGHT      Use Night vision abilities if available         YES
-NOLOOT       Allow people to loot your corpse                NO 
+NOLOOT       Allow people to loot your corpse                NO
 NOOBJLEVEL   Show level of items in inventory                YES
-NOPAGE       Allow people to page (beep) you                 NO 
+NOPAGE       Allow people to page (beep) you                 NO
 NOPEEK       Automatically use 'peek' when looking at others YES
 NOPREFIX     Show prefixes to prevent trigger abuse          YES
-NOPRETITLE   See pretitles on players                        NO 
+NOPRETITLE   See pretitles on players                        NO
 NOSPELLUPSP  See other player spellups                       YES
-NOSTATUS     Display enemy health each round of combat       NO 
-NOSPAM       Display parry/dodge/etc messages during combat  NO 
+NOSTATUS     Display enemy health each round of combat       NO
+NOSPAM       Display parry/dodge/etc messages during combat  NO
 NOSUMMON     Allow people to summon you / gate to you        YES
 NOTITLES     See other player's titles in room               YES
-NOWARINFO    Remove total wars/losses from your warinfo      NO 
+NOWARINFO    Remove total wars/losses from your warinfo      NO
 NOWEATHER    Be informed of changes in the weather.          YES
 PAGEREPEAT   Show Paging prompt after all output.            YES
 PKOFF        Can attack other players.                       YES
-PROMPTFLAG   Show Quiet / Afk / Noexp mode in prompt         NO 
-QUIET        Quiet mode                                      NO 
+PROMPTFLAG   Show Quiet / Afk / Noexp mode in prompt         NO
+QUIET        Quiet mode                                      NO
 QUIETSELL    See haggle/tax messages when selling to stores  YES
 QUIETSPELLS  See spell chanting when others cast             YES
-RAWCOLORS    See color codes in output                       NO 
+RAWCOLORS    See color codes in output                       NO
 RSOCIAL      Allow people to use remote socials on you       YES
-SAVETELLS    Save tells while fighting/running               NO 
+SAVETELLS    Save tells while fighting/running               NO
 SEEGRAY      Show the gray color code                        YES
 SHORTFLAGS   Show mob/object flags in shortened form         YES
-SKIPNEXT     Doesn't loot your next mobkill                  NO 
-STATMON      Show tagged stats after every prompt            NO 
-TICKINFO     See additional information with autotick        NO 
+SKIPNEXT     Doesn't loot your next mobkill                  NO
+STATMON      Show tagged stats after every prompt            NO
+TICKINFO     See additional information with autotick        NO
 PAGESIZE     Sets number of lines per page (0 = off)         NO
 -----------------------------------------------------------------------
 Your game prompt is  : [%h/%Hhp %m/%Mmn %v/%Vmv %qqt %Xtnl] > %c
@@ -115,9 +115,9 @@ Classchanges    OFF
 Deaths          OFF
 Levels          OFF
 Newbies         OFF
-Notes           ON 
-Other           ON 
-Quests          ON 
+Notes           ON
+Other           ON
+Quests          ON
 PKDeaths        OFF
 Raiding         OFF
 ----------------------------

@@ -8,7 +8,7 @@
  * Author: Bast
  * shows a miniwindow that shows stats
 
-= Installation ==
+= Installation =
  * see the [Installation] page
  * You must have [StatDB] installed to see the extra tabs
 

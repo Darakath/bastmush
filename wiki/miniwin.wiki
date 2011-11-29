@@ -8,6 +8,12 @@
  * Author: Bast
  * a lua module that contains a class for creating miniwindows
 
+= Installation =
+ * see the [Installation] page
+
+= Example =
+ * see any of the miniwin plugins, for example [miniwin_example]
+
 = Help =
 {{{
 forthcoming
@@ -30,7 +36,7 @@ quickest way to create a window
  table.insert(lstyle, {style})
  mwin:addtab('default', lstyle, {{text="Window Header"}} )
  mwin:show(true)
- 
+
 
 The global line can have the following
   lstyle.backcolour
@@ -116,12 +122,3 @@ Added for miniwin
   style.circleOp.extra4
 
 }}}
-
-= Installation =
- * Requires
-  * [verify]
-  * [pluginhelper]
- * see the [Download] Page, and copy the file into the lua directory
-
-= Example =
- * see any of the miniwin plugins, for example [miniwin_example]

@@ -7,10 +7,10 @@
  * Author: Onoitsu2/Bast
  * disarm and weaponswitch plugin
 
-= Differences from Onoitsu2's Plugin ==
+= Differences from Onoitsu2's Plugin =
  * uses invmon to tell what the current weapon is
 
-= Installation ==
+= Installation =
  * See the [Installation] Page
 
 = Troubleshooting =

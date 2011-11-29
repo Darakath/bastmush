@@ -8,6 +8,12 @@
  * Author: Bast
  * this module loads/reloads/enables/disables plugins
 
+= Installation =
+ * See the [Installation] Page
+
+= Troubleshooting =
+ * post errors on the mushclient forums, I watch those forums
+
 = Help =
  * see the [pluginlist] plugin
 {{{
@@ -17,10 +23,4 @@ ldplugin - usage: ldplugin(filename, silent)
 */
 }}}
 
-= Installation =
- * see the [Download] Page, and copy the file into the lua directory
-
-
-= Troubleshooting =
- * post errors on the mushclient forums, I watch those forums 
 

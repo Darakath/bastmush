@@ -8,12 +8,8 @@
  * Author: Bast
  * a lua module that contains a class for controlling other miniwindows
 
+= Installation =
+ * see the [Installation] page
+
 = Help =
  * see the [miniwin_tabbar]
-
-= Installation =
- * Requires
-  * [verify]
-  * [pluginhelper]
-  * [miniwin]
- * see the [Download] Page, and copy the file into the lua directory

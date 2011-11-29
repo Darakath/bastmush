@@ -8,6 +8,9 @@
  * Author: Bast
  * a plugin for string functions
 
+= Installation =
+ * See the [Installation] Page
+
 = Help =
 {{{
 /*
@@ -22,5 +25,3 @@ strjoin - usage: strjoin(delimiter, list)
 */
 }}}
 
-= Installation ==
- * see the [Download] Page, and copy the file into the lua directory

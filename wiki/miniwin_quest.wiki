@@ -8,7 +8,7 @@
  * Author: Bast
  * This is a plugin that puts quest info into a miniwindow
 
-= Installation ==
+= Installation =
  * see the [Installation] page
 
 = Troubleshooting =

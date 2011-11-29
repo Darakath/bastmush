@@ -9,7 +9,7 @@
  * This is a plugin that puts gq info into a miniwindow
  * It will automatically update when a gq mob is killed
 
-= Installation ==
+= Installation =
  * see the [Installation] page
 
 = Troubleshooting =

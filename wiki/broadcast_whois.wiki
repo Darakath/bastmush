@@ -8,7 +8,7 @@
  * Author: Bast
  * this is a plugin that broadcasts whois info
 
-= Installation ==
+= Installation =
  * see the [Installation] page
 
 = Troubleshooting =

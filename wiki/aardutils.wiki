@@ -8,7 +8,7 @@
  * Author: Bast
  * a plugin for aardwolf related functions
 
-= Installation ==
+= Installation =
  * See the [Installation] Page
 
 = Help =

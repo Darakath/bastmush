@@ -8,7 +8,7 @@
  * Author: Bast
  * this is a plugin that broadcasts spelltags and slist
 
-= Installation ==
+= Installation =
  * see the [Installation] page
 
 = Troubleshooting =

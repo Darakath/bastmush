@@ -24,11 +24,14 @@ This is a repository for [http://mushclient.com Mushclient] scripts.  Some of th
  * can have tabs for different information
  * If the titlebar is hidden, then the mouse menus will be in the top left corner of the window
 
-== Layers ==
+== Layering ==
+=== No Aardwolf MUSHclient ===
  * each miniwindow has a layer, the default is 5
   * Layer 1 is the highest layer and will be above any level 2-10 miniwindows
   * Layer 10 is the lowest layer and will be below all miniwindows
  * can be set from the window menu -> Other -> Layer
+=== Aardwolf MUSHclient ===
+ * Use the "Send to Back" or "Bring to Front" menu options
 
 = Screenshots =
   http://bastmush.googlecode.com/svn/wiki/images/miniwin/miniwin-label.png

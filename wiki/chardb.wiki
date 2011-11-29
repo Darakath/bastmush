@@ -62,17 +62,6 @@ CREATE TABLE gquests (
       level INT,
       won INT
      );
-CREATE TABLE items(
-      serial INTEGER NOT NULL PRIMARY KEY,
-      shortflags TEXT,
-      level NUMBER,
-      name TEXT,
-      plainname TEXT,
-      type NUMBER,
-      containerid INTEGER,
-      wearslot INTEGER,
-      place INTEGER
-     );
 CREATE TABLE levels (
       level_id INTEGER PRIMARY KEY,
       type TEXT,
@@ -192,4 +181,3 @@ CREATE TABLE version(
 
 = Help =
  * see the [StatDB] plugin
-

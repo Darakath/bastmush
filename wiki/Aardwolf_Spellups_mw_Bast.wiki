@@ -1,12 +1,13 @@
 #summary Aardwolf Spellup Miniwin Plugin
+#labels Deprecated
 
 === Table of Contents ===
 <wiki:toc max_depth="2" />
 
 = Introduction =
  * Author: Nick Gammon/Bast
- * This is a modified version of Nick's Aardwolf Spellup Plugin. 
-    The original is here http://www.gammon.com.au/mushclient/plugins/Aardwolf/Aardwolf_Spellups.xml 
+ * This is a modified version of Nick's Aardwolf Spellup Plugin.
+    The original is here http://www.gammon.com.au/mushclient/plugins/Aardwolf/Aardwolf_Spellups.xml
 
 = Differences from Nick's Plugin ==
  * no more spell timer, it looks for the specific spell that it tried to cast and waits for the spell tags.  I have had no issues with this
@@ -18,7 +19,7 @@
  * Will also work with spellup skills, such as nimble cunning, sneak, etc..
 
 = Installation ==
- * Required 
+ * Required
   * Nick's [http://www.gammon.com.au/mushclient/plugins/Aardwolf/telnet_options.lua telnet_options.lua] script in the directory <Mushclient Install Dir>\worlds\plugins\Aardwolf (included in the Aardwolf Mushclient)
  * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
 
@@ -28,7 +29,7 @@
  * paste whatever errors and debugging information you get into a post on the mushclient site
  * there are several things that have to happen before spellups will begin
   1 must get spells list from slist
-  1 must get a statmon line, aardwolf only sends statmon lines when you would normally get a prompt, so you must do something to get a prompt (such as sending an enter/return) 
+  1 must get a statmon line, aardwolf only sends statmon lines when you would normally get a prompt, so you must do something to get a prompt (such as sending an enter/return)
   1 must be active (no resting, sitting, sleeping, note writing, etc...)
 
 = Ideas =
@@ -47,11 +48,11 @@ spellups            --> display current spellups in output window
 spellup all         --> cast all possible spellups
 spellup none        --> remove all spellups
 
-spellup a,b,c       --> add spells a, b, c in that order 
+spellup a,b,c       --> add spells a, b, c in that order
                       (eg. spellup shield, blur, detect magic)
                       (or: spellup 72, 171, 35)
 (or)
-Spellups: a, b, c   --> add spells a, b, c 
+Spellups: a, b, c   --> add spells a, b, c
                       (you can copy and paste output from current list)
 
 spellup + blur, avoid:3    --> add more to the current list
@@ -68,11 +69,11 @@ spellup full    --> show full details
 
 spellup other (name) --> try to spellup another player with all spellups
                           (eg. spellup other johnsmith)
-                        
+
 spellup block   --> block a spell with another spell
                            (eg. spellup block 68 121)
 spellup disable --> disable a spell without taking it out of the list
 
-spellup help    --> this message 
+spellup help    --> this message
 */
  }}}

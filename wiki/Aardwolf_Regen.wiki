@@ -1,8 +1,11 @@
-﻿#summary Aardwolf Spellup Plugin
+﻿#summary Aardwolf Regen Plugin
 #labels Author-Bast
 
 === Table of Contents ===
 <wiki:toc max_depth="2" />
+
+= README =
+ * This plugin is not currently working
 
 = Introduction =
  * Author: Bast

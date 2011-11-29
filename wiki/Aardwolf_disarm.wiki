@@ -11,10 +11,10 @@
  * uses invmon to tell what the current weapon is
 
 = Installation ==
- * see the [Download] Page, and copy the file into worlds\plugins\Aardwolf
+ * See the [Installation] Page
 
 = Troubleshooting =
- * 
+ *
 
 = Help =
  {{{

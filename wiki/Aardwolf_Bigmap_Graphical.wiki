@@ -1,5 +1,6 @@
 ﻿#summary Send the bigmap to a miniwindow
-#labels Author-Bast,Deprecated
+#labels Deprecated
+
 === Table of Contents ===
 <wiki:toc max_depth="2" />
 
@@ -23,7 +24,7 @@ Commands:
 
 bigmap remove map cache  --> removes the cache, forcing maps to be downloaded
                                (only do this after a major continent upgrade)
-                      
+
 bigmap auto              --> toggle auto-minimize map
 bigmap auto on           --> auto-hide map when you enter an area
 bigmap auto off          --> manually hide map

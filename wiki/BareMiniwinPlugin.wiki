@@ -1,4 +1,7 @@
 #summary A start of a miniwindow plugin
+#labels Author-Bast,Deprecated
+
+= Please see [CreatingPluginsBasedOnBastmush] =
 
 {{{
 <?xml version="1.0" encoding="iso-8859-1"?>
@@ -36,8 +39,8 @@ require "tprint"
 require "miniwin"
 
 -- create an instance of the miniwindow
-mwin =  Miniwin:new{name="NewWin"}     
-  
+mwin =  Miniwin:new{name="NewWin"}
+
 
 ]]>
 </script>
@@ -61,10 +64,10 @@ function OnPluginClose ()
   phelper:OnPluginClose()
 end -- OnPluginClose
 
-function OnPluginEnable ()     
+function OnPluginEnable ()
   phelper:OnPluginEnable()
 
-  -- always enable a miniwindow after the phelper:OnPluginEnable() call  
+  -- always enable a miniwindow after the phelper:OnPluginEnable() call
   mwin:enable()
   -- An optional fourth argument can be added (true or false) to automatically switch to that tab
   mwin:addtab('default', {"This is the window body"}, {"This is the window header"})

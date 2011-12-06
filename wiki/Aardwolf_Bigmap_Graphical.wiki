@@ -1,6 +1,10 @@
 ﻿#summary Send the bigmap to a miniwindow
 #labels Deprecated
 
+----
+<em> * Note: This plugin has been replaced by the mapper in the new Aardwolf MUSHclient</em>
+----
+
 === Table of Contents ===
 <wiki:toc max_depth="2" />
 

@@ -1,8 +1,9 @@
 #summary Aardwolf Spellup Miniwin Plugin
 #labels Deprecated
 
-<font size="12"> * Note: This plugin has been replaced by [bast_spellup] and [miniwin_spellup]</font>
-
+----
+<em> * Note: This plugin has been replaced by [bast_spellup] and [miniwin_spellup]</em>
+----
 === Table of Contents ===
 <wiki:toc max_depth="2" />
 

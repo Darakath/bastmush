@@ -5,7 +5,7 @@
 <wiki:toc max_depth="2" />
 
 = README =
- * This plugin is not currently working
+ * *This plugin is not currently working*
 
 = Introduction =
  * Author: Bast

@@ -1,10 +1,11 @@
 ﻿#summary Downloading the scripts
 #labels Deprecated
-<wiki:toc max_depth="3" />
 
 ----
 <em> * This is now Deprecated, drop my plugins into the new Aardwolf MUSHclient.  See [Installation] </em>
 ----
+
+<wiki:toc max_depth="3" />
 
 = Stable Version =
  == Download ==

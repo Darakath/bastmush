@@ -49,6 +49,7 @@
 
  * Info/action commands
  {{{
+ toggleclan      : toggle a spell/skill to be a clan skill
  togglespellup   : toggle a spell to be a spellup regardless of what the mud says
  check           : lists everything that needs to be checked before spellups begin
  export          : export current spell settings as list of commands

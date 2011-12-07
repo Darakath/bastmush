@@ -55,6 +55,7 @@
    * D  = Disabled - this column can be clicked in the same row as an item to disable it
    * NP = Not Practiced
    * NL = Not Learned
+   * C = Critical Spell - will show duration in the summary and brief mode
    http://bastmush.googlecode.com/svn/wiki/images/spellup/self.png
 
 == Other Tab ==

@@ -73,6 +73,7 @@
    * R = Requested - this column can be clicked next to a spell to request it for self
    * S = Skill/Spell that is flagged as spellup on the mud side
    * C = this column can be clicked on to flag a skill/spell as a spellup through the client
+   * CS = Clan Skill/Spell - set this skill to be a clan skill
    * RO = Requested Other - this column can be clicked on to request the spellup be cast on others with the other command
    * FO = Fast Other - this spell will be used if fast is used when casting on others
    http://bastmush.googlecode.com/svn/wiki/images/spellup/spells.png

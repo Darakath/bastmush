@@ -24,15 +24,16 @@
   * Brief Summary mode (with titlebar turned off)
    http://bastmush.googlecode.com/svn/wiki/images/spellup/brief.png
    * The #s from left to write are:
-    * 1 # of Good Spells/Skills
-    * 2 # of Bad Spells/Skills
-    * 3 # of Spellups in requested list that have recoveries
-    * 4 # of Total recoveries
-    * 5 # of Pending spellups
-    * 6 # of Requested Self Spellups
-    * 7 # of Requested Self Spellups that can be activated
-    * 8 # of Requested Other Spellups
-    * 9 # of Requested Other Spellups that can be activated
+    * 1  # of Good Spells/Skills
+    * 2  # of Good Spells/Skills that will wear off in less than 60 seconds
+    * 3  # of Bad Spells/Skills
+    * 4  # of Spellups in requested list that have recoveries
+    * 5  # of Total recoveries
+    * 6  # of Pending spellups
+    * 7  # of Requested Self Spellups
+    * 8  # of Requested Self Spellups that can be activated
+    * 9  # of Requested Other Spellups
+    * 10 # of Requested Other Spellups that can be activated
 
   * Full Summary Mode (with titlebar turned off)
    http://bastmush.googlecode.com/svn/wiki/images/spellup/summary.png

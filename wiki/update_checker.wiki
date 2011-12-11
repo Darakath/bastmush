@@ -1,0 +1,21 @@
+#summary checks to see if any updates are available
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * This plugin checks for updates for bastmush
+
+= Installation =
+ * See the [Installation] Page
+ * The command for this plugin is "bup"
+
+= Troubleshooting =
+ * check to make sure there is a BastmushChanges.txt file in the Bast folder
+
+= Examples =
+
+= Help =
+{{{
+check           : check for an update for the Bastmush script package
+}}}

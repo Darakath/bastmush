@@ -9,10 +9,10 @@
 = Differences from Original Plugin =
 
 = Installation =
+ * See the [Installation] Page
 
 = Troubleshooting =
 
 = Examples =
 
 = Help =
-

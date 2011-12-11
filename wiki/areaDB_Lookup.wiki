@@ -17,7 +17,6 @@
  * {{{arlu name cat}}}
 
 = Help =
- *
 {{{
 Commands
 keyword         : get areas by keyword

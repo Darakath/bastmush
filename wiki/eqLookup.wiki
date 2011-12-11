@@ -35,29 +35,7 @@ Serial          Container       Level Score Name
 ---------------------------------------------------------------
 6285179         Inventory       1     192   Aardwolf Breastplate of magic resistance
 10337366        Worn            100   392   Aardwolf Breastplate of magic resistance
-
-+-----------------------------------------------------------------+
-| Name       : Aardwolf Breastplate of magic resistance           |
-| Id         : 10337366                                           |
-| Type       : Armor                    Level  : 100              |
-| Worth      : 100,000                  Weight : 5                |
-| Wearable   : torso                                              |
-| Score      : 392                                                |
-| Flags      : unique, glow, hum, magic, dohskill, held,          |
-|            : burn-proof, solidified, illuminated, v3, precious  |
-| Owned by   : Bast                                               |
-+-----------------------------------------------------------------+
-|     DR   HR    Str Int Wis Dex Con Luc   Sav   HP   MN   MV     |
-|     25   20    2   2   4   2   2   2     -     125  125  125    |
-+-----------------------------------------------------------------+
-|     Bash  Pierce  Slash    All Phys  All Mag   Diss  Poisn      |
-|      -      -       -         25       -        -     -         |
-+-----------------------------------------------------------------+
-|     Acid   Air   Cold  Earth   Eltrc   Enrgy   Fire    Holy     |
-|     100    100   100   100     100     100     100     100      |
-|     Light  Magic Mntl  Ngtv    Shdw    Sonic   Water            |
-|     100    100   100   100     100     100     100              |
-+-----------------------------------------------------------------+
 }}}
+ http://bastmush.googlecode.com/svn/wiki/images/eqlookup/eqlookup.png
 
 = Help =

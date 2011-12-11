@@ -11,6 +11,7 @@
   * [Aardwolf_Regen]
   * [AreaDB]
   * [AreaLookup]
+  * [bast_hunt]
   * [bast_spellup]
   * [broadcast_cp]
   * [broadcast_double]

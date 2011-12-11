@@ -16,6 +16,7 @@
   * [broadcast_cp]
   * [broadcast_double]
   * [broadcast_gq]
+  * [broadcast_idle]
   * [broadcast_invmon]
   * [broadcast_kills]
   * [broadcast_level]

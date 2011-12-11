@@ -25,7 +25,6 @@
  * {{{bh stop}}} - stop doing the autohunt/hunt trick 
 
 = Help =
- *
 {{{
 auto            : autohunt a mob
 stop            : stop the autohunt

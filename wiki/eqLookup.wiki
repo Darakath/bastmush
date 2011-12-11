@@ -39,3 +39,9 @@ Serial          Container       Level Score Name
  http://bastmush.googlecode.com/svn/wiki/images/eqlookup/eqlookup.png
 
 = Help =
+{{{
+close           : close the db
+getitem         : print info on item with id
+lu              : lookup stuff in the db
+translate       : show what strings mean for certain types of flags
+}}}

@@ -1,0 +1,18 @@
+#summary an eq miniwindow
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * This plugin is a inventory miniwindow, click around and find stuff
+
+= Installation =
+ * See the [Installation] Page
+ * The command for this plugin is "meq"
+
+= Troubleshooting =
+ * to show the window: {{{mneq eq front}}} then {{{mneq eq show}}}
+
+= Examples =
+ http://bastmush.googlecode.com/svn/wiki/images/eqwin/eqwin.png
+ http://bastmush.googlecode.com/svn/wiki/images/eqwin/eqidwin.png

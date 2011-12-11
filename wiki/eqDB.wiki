@@ -1,0 +1,40 @@
+#summary an eq sqlite database interface
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * This plugins saves inventory into a sqlite database
+ * Also see [eqdb] and [miniwin_eq]
+
+= Installation =
+ * See the [Installation] Page
+ * The command for this plugin is "eqdb"
+
+= Extras in the plugin =
+ * add an identifier to an item
+  * {{{eqdb addid <serial> <identifer>}}}
+ * {{{get 49495858}}} will get the item from whatever container it is in
+ * for the following mud commands: get, put, remove, wear, ident
+  * will substitute identifiers for item serial #s
+
+= Troubleshooting =
+ * To reset all eq
+  * {{{eqdb refresh}}} then {{{eqbd clean}}}
+  * or delete the eqdb.db file in the logs directory and reload the plugin
+
+= Examples =
+ * This is how I do portals
+  * {{{eqdb addid <bagserial> portbag}}}
+  * Then to use a portal I can get it with: {{{get share portbag}}}
+  * Also {{{get <serial#forshare>}}} would work
+
+= Help =
+{{{
+addid           : add an identifier to an item
+listid          : list items with identifiers
+remid           : remove an identifier from an item
+refresh         : refresh the db
+clean           : clean the db of stale items
+close           : close the db
+}}}

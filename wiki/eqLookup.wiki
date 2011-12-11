@@ -1,0 +1,63 @@
+#summary lookup items in the eq database
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * This plugin looks up items in the eq database
+
+= Installation =
+ * See the [Installation] Page
+ * The command for this plugin is "eqlu"
+
+= Troubleshooting =
+ * The argument to the lookup command must be a valid sql statement
+
+= Examples =
+ * {{{eqlu level between 151 and 161}}}
+  * will get all eq between level 151 and level 161
+ * {{{eqlu containerid = 'Worn'}}}
+  * will get all worn eq
+ * {{{eqlu containerid = 'Inventory' and type = 11}}}
+  * will show all containers in Inventory
+  * find the type # with {{{eqlu translate object}}}
+ * {{{eqlu wearloc = 0}}}
+  * find what is worn as a light
+  * find the wear # with {{{eqlu translate wear}}}
+ * {{{eqlu name like '%breastplate%'}}}
+  * find all items with breastplate in their name
+
+= Sample output =
+ * for {{{eqlu name like '%breastplate%'}}}
+ * click on the serial number to get the details if they are available
+{{{
+Serial          Container       Level Score Name
+---------------------------------------------------------------
+6285179         Inventory       1     192   Aardwolf Breastplate of magic resistance
+10337366        Worn            100   392   Aardwolf Breastplate of magic resistance
+
++-----------------------------------------------------------------+
+| Name       : Aardwolf Breastplate of magic resistance           |
+| Id         : 10337366                                           |
+| Type       : Armor                    Level  : 100              |
+| Worth      : 100,000                  Weight : 5                |
+| Wearable   : torso                                              |
+| Score      : 392                                                |
+| Flags      : unique, glow, hum, magic, dohskill, held,          |
+|            : burn-proof, solidified, illuminated, v3, precious  |
+| Owned by   : Bast                                               |
++-----------------------------------------------------------------+
+|     DR   HR    Str Int Wis Dex Con Luc   Sav   HP   MN   MV     |
+|     25   20    2   2   4   2   2   2     -     125  125  125    |
++-----------------------------------------------------------------+
+|     Bash  Pierce  Slash    All Phys  All Mag   Diss  Poisn      |
+|      -      -       -         25       -        -     -         |
++-----------------------------------------------------------------+
+|     Acid   Air   Cold  Earth   Eltrc   Enrgy   Fire    Holy     |
+|     100    100   100   100     100     100     100     100      |
+|     Light  Magic Mntl  Ngtv    Shdw    Sonic   Water            |
+|     100    100   100   100     100     100     100              |
++-----------------------------------------------------------------+
+}}}
+
+= Help =

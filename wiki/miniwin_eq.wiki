@@ -13,6 +13,10 @@
 = Troubleshooting =
  * to show the window: {{{mneq eq front}}} then {{{mneq eq show}}}
 
+= Tips =
+ * left click an item for a menu
+ * right click an item to lock the id window, otherwise it autohides when you move away from an item
+
 = Examples =
  http://bastmush.googlecode.com/svn/wiki/images/eqwin/eqwin.png
  http://bastmush.googlecode.com/svn/wiki/images/eqwin/eqidwin.png

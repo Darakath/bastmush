@@ -11,6 +11,9 @@
 = Installation =
  * see the [Installation] page
 
+= Other things to look for =
+ * left click on a tabname to bring up a menu of actions for that particular window
+
 = Troubleshooting =
  * if you do not see the window, "mtab tabwin toggle"
 

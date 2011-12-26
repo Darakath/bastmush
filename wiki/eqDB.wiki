@@ -14,9 +14,10 @@
 = Extras in the plugin =
  * add an identifier to an item
   * {{{eqdb addid <serial> <identifer>}}}
- * {{{get 49495858}}} will get the item from whatever container it is in
- * for the following mud commands: get, put, remove, wear, ident
+  * {{{get 49495858}}} will get the item from whatever container it is in
+  * for the following mud commands: get, put, remove, wear, ident
   * will substitute identifiers for item serial #s
+ * {{{lget/lput <serialorident> <level1> <level2(opt)>}}} - get/put items between level1 and level2 from/into a container  
 
 = Troubleshooting =
  * To reset all eq
@@ -35,6 +36,8 @@ addid           : add an identifier to an item
 listid          : list items with identifiers
 remid           : remove an identifier from an item
 refresh         : refresh the db
+lget            : get items from container between level1 and level2
+lput            : put items in container between level1 and level2
 clean           : clean the db of stale items
 close           : close the db
 }}}

@@ -12,6 +12,7 @@
 
 = Installation =
  * see the [Installation] page
+ * The default command for this plugin is "mmap" 
 
 = Troubleshooting =
  * the miniwindow will not show until map info has been received

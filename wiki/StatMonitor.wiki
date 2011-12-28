@@ -14,6 +14,7 @@
 
 = Installation =
  * see the [Installation] page
+ * The default command for this plugin is "statmn" 
 
 = Output =
  * statmn rep

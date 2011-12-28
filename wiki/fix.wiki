@@ -9,6 +9,7 @@
 
 = Installation =
  * See the [Installation] Page
+ * The default command for this plugin is "fix" 
 
 = Help =
  * Currently supports

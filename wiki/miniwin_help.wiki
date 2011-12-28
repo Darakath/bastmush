@@ -12,6 +12,7 @@
 
 = Installation =
  * Please see the [Installation] Page
+ * The default command for this plugin is "mnhelp" 
 
 = Troubleshooting =
  * if you do not see the window, "mnhelp !AardHelp toggle"

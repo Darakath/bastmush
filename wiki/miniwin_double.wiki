@@ -10,9 +10,10 @@
 
 = Installation =
  * see [Installation] page
+ * The default command for this plugin is "mdbl" 
 
 = Troubleshooting =
- * if you do not see the window, "bdbl Double toggle"
+ * if you do not see the window, "mdbl Double show" then "mdbl Double front"
 
 = Screenshots =
  http://bastmush.googlecode.com/svn/wiki/images/double/dbl.png

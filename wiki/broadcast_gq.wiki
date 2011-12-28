@@ -11,6 +11,7 @@
 
 = Installation =
  * see the [Installation] page
+ * The default command for this plugin is "bgq" 
 
 = Troubleshooting =
  * run the command "bgq debug" to enable debugging

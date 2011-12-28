@@ -20,6 +20,8 @@
 
 = Installation =
  * See the [Installation] Page
+ * The default command for this plugin is "bsp" 
+
 
 = Help =
  * the default cmd alias is bsp

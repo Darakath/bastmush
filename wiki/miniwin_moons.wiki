@@ -16,6 +16,7 @@
 
 = Installation =
  *see the [Installation] Page
+ * The default command for this plugin is "mb" 
 
 = Troubleshooting =
  * the miniwindow will not show until you have seen all 3 of the moons rise or fall at least once

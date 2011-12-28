@@ -10,6 +10,7 @@
 
 = Installation =
  * See the [Installation] Page
+ * The default command for this plugin is "plookup" 
 
 = Troubleshooting =
  * make sure all files are in the correct location

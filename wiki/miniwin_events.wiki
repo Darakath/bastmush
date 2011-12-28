@@ -15,6 +15,7 @@
 
 = Installation =
  * See the [Installation] Page
+ * The default command for this plugin is "meq" 
 
 = Screenshots =
 

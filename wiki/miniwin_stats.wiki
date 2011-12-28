@@ -11,6 +11,7 @@
 = Installation =
  * see the [Installation] page
  * You must have [StatDB] installed to see the extra tabs
+ * The default command for this plugin is "mstat" 
 
 = Troubleshooting =
  * if you do not see the window, "mstat Stats toggle"

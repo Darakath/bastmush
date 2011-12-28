@@ -12,6 +12,8 @@
 
 = Installation =
  * See the [Installation] Page
+ * The default command for this plugin is "mcp" 
+
 
 = Screenshots =
  http://bastmush.googlecode.com/svn/wiki/images/cp/cp.png

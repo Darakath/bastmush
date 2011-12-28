@@ -31,14 +31,12 @@ The regen ring must be in your inventory and not in a container
 
 It will wear the regen ring when
   sleeping
-  when entering a regen room
+  when idling in a regen room for more than 1 minute
     To add a room, go to that room and type "regen add"
-  when idling
 
 It will remove the regen ring when
   standing
   when leaving a regen room
-  when you stop idling
 
 This plugin defaults to no action when entering a regen room. type "regen set off false" to enable that functionality
 */

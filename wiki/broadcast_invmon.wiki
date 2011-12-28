@@ -10,6 +10,8 @@
 
 = Installation =
  * see the [Installation] page
+ * The default command for this plugin is "bimon" 
+
 
 = Troubleshooting =
  * run the command "bimon debug" to enable debugging

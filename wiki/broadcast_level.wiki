@@ -10,6 +10,7 @@
 
 = Installation =
  * see the [Installation] page
+ * The default command for this plugin is "blev" 
 
 = Troubleshooting =
  * run the command "blevel debug" to enable debugging

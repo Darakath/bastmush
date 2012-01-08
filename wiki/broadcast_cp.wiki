@@ -7,7 +7,7 @@
 = Introduction =
  * Author: Bast
  * this is a plugin that broadcasts items when a cp is updated, includes a timer function that updates the cp timer every 30 seconds
- * it is used for the [miniwin_cp] plugin
+ * it is used for the [miniwin_cp], [miniwin_events], [StatDB], etc plugins
 
 = Installation =
  * see the [Installation] page

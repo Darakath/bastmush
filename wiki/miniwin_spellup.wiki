@@ -14,7 +14,10 @@
 
 = Installation =
  * See the [Installation] Page
- * The default command for this plugin is "msp" 
+ * The default command for this plugin is "mspell" 
+
+= Troubleshooting =
+ * to show the window: {{{mspell spellup front}}} then {{{mspell spellup show}}}
 
 = Tabs =
 == Summary Tab ==

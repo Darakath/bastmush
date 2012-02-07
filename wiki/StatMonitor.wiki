@@ -11,6 +11,8 @@
    * Campaigns
    * Gquests
    * Quests
+ * reporting to channels
+   * {{{statmn set}}} and set the *chan variables
 
 = Installation =
  * see the [Installation] page
@@ -54,11 +56,19 @@ set            : set settings
 
  * settings
   {{{
-StatMonitor v1 Settings
+StatMonitor v1800 phelp Settings
 -----------------------------------------------
-tdebug               : false                - show debugging info for this option
-plugin_colour        : orange               - set the plugin colour
-reportminutes        : 120                  - the number of minutes that Statmon reports on
-showminutes          : 30                   - the number of minutes between StatMon output
-cmd                  : statmon              - the command to type for this plugin
+tdebug                         : false                - show debugging info for this option
+plugin_colour                  : orange               - set the plugin colour
+ignorebsetting                 : false                - ignore setting of options through broadcast
+reportminutes                  : 60                   - the number of minutes that Statmon reports on
+showminutes                    : 10                   - the number of minutes between StatMon output, -1 to disable
+questchan                      : commlog              - the channel to put quest results on
+levelchan                      : commlog              - the channel to put level/pup results on
+cpchan                         : commlog              - the channel to put cp results on
+statcolour                     : @w                   - colour of stats in a statmonitor display, this only takes Aardwolf colour codes
+infocolour                     : @x172                - colour of info in a statmonitor colour, this only takes Aardwolf colour codes
+gqchan                         : commlog              - the channel to put gq results on
+time                           : false                - show function timers
+cmd                            : statmn               - the command to type for this plugin
   }}}

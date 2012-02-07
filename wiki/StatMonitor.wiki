@@ -12,7 +12,7 @@
    * Gquests
    * Quests
  * reporting to channels
-   * {{{statmn set}}} and set the *chan variables
+   * {{{statmn set}}} and set the chan variables
 
 = Installation =
  * see the [Installation] page

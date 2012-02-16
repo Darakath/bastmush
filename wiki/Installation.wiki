@@ -3,6 +3,7 @@
 
 = READ THIS FIRST =
  * Do not pick and choose from the download, many of the plugins depend on other plugins which are automatically loaded.  Copy the *ENTIRE* zip file when following these instructions
+ * Do not have multiple folders with my plugins under the MUSHclient directory
 
 = New Installation in the Aardwolf MUSHclient (Or any MUSHclient) =
  * Download from the [http://code.google.com/p/bastmush/downloads/list Downloads] page.

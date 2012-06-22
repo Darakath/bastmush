@@ -21,8 +21,6 @@
 [FOR PLUGIN AUTHORS ONLY]
 
 Broadcasts stats when leveling
-Broadcasts
-Broadcasts stats when leveling
 Example
   function OnPluginBroadcast (msg, id, name, text)
     if id == "aaa0ab9ed92f8fc614664bd1" and msg == 2 then
@@ -37,26 +35,29 @@ Example
 Broadcasts
    1 - level info, get var.levelinfo and loadstring it
     levelinfo = {}
-        levelinfo.luc = 0
-        levelinfo.type = "level"
-        levelinfo.bonusstats = {}
-        levelinfo.pracs = "11"
-        levelinfo.trains = "4"
-        levelinfo.bonustrains = 0
-        levelinfo.hp = "33"
-        levelinfo.wis = 0
-        levelinfo.mv = "30"
-        levelinfo.con = 0
-        levelinfo.int = 0
-        levelinfo.mp = "24"
-        levelinfo.dex = 0
-        levelinfo.time = 1241310623
-        levelinfo.newlevel = "67"
-        levelinfo.str = 0
+      levelinfo.starttime = 1340385935
+      levelinfo.hp = "30"
+      levelinfo.mv = "31"
+      levelinfo.luc = 0
+      levelinfo.blessingtrains = 0
+      levelinfo.pracs = "10"
+      levelinfo.level = "126"
+      levelinfo.str = 1
+      levelinfo.con = 0
+      levelinfo.totallevels = 1734
+      levelinfo.bonustrains = 0
+      levelinfo.mp = "25"
+      levelinfo.int = 0
+      levelinfo.type = "level"
+      levelinfo.trains = "4"
+      levelinfo.wis = 1
+      levelinfo.dex = 0
   2 - Created
   3 - Heroed
   4 - SuperHeroed
-  5 - Remorted to Level 1
-  6 - Tiered
+  5 - Preremort
+  6 - Remorted to Level 1
+  7 - Pre-Tiered
+  8 - Tiered
 */
  }}}

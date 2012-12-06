@@ -21,7 +21,7 @@
 
 = Troubleshooting =
  * To reset all eq
-  * {{{eqdb refresh}}} then {{{eqbd clean}}}
+  * {{{eqdb refresh}}} then {{{eqdb clean}}}
   * or delete the eqdb.db file in the logs directory and reload the plugin
 
 = Examples =

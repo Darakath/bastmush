@@ -41,34 +41,20 @@ GQ finished for 30+33qp 1TP
 
 = Help =
  {{{
-/*
-StatMonitor v1 Commands
------------------------------------------------
-debug          : toggle debugging
-help           : show help
-objects        : list objects associated with this plugin
-report         : show stats for the last x minutes, x being what is passed as an argument
-reset          : reset settings to default values
-save           : save plugin variables
-set            : set settings
-*/
+------- Plugin -------
+report          : show stats for the last x minutes, x being what is passed as an argument
  }}}
 
- * settings
+= Variables =
   {{{
-StatMonitor v1800 phelp Settings
------------------------------------------------
-tdebug                         : false                - show debugging info for this option
-plugin_colour                  : orange               - set the plugin colour
-ignorebsetting                 : false                - ignore setting of options through broadcast
+Specific settings for this plugin
 reportminutes                  : 60                   - the number of minutes that Statmon reports on
 showminutes                    : 10                   - the number of minutes between StatMon output, -1 to disable
+statcolour                     : @w                   - colour of stats in a statmonitor display, this only takes Aardwolf colour codes
 questchan                      : commlog              - the channel to put quest results on
 levelchan                      : commlog              - the channel to put level/pup results on
-cpchan                         : commlog              - the channel to put cp results on
-statcolour                     : @w                   - colour of stats in a statmonitor display, this only takes Aardwolf colour codes
-infocolour                     : @x172                - colour of info in a statmonitor colour, this only takes Aardwolf colour codes
 gqchan                         : commlog              - the channel to put gq results on
-time                           : false                - show function timers
-cmd                            : statmn               - the command to type for this plugin
+cpchan                         : commlog              - the channel to put cp results on
+exppermin                      : 20                   - the threshhold that when leveling, exp per min is shown
+infocolour                     : @x172                - colour of info in a statmonitor colour, this only takes Aardwolf colour codes
   }}}

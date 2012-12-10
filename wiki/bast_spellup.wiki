@@ -21,45 +21,51 @@
 = Installation =
  * See the [Installation] Page
  * The default command for this plugin is "bsp" 
-
+  * for help on a specific command, {{{bsp <cmd> help}}}
 
 = Help =
  * the default cmd alias is bsp
  * For spells with multiple words, surround the spell with single quotes or use the sn
  * Commands for spellups on self
- {{{
- fast            : cast all spells requested in one go, no waiting
- sadd            : add a spell, use 'all' to add all spellups, for spells with multiple words, surround with ' or use the sn
- save            : save plugin variables
- sba             : add blockers, Ex. 'protection good:inertial barrier'
- sbr             : remove blockers
- sdisable        : disable a spell
- senable         : enable a spell
- slist           : list requested spells
- sremove         : remove a spell, use 'all' to clear table
+{{{
+------- self -------
+slist           : list requested spells for self
+sadd            : add a spell to cast on self, use 'all' to add all spellups
+sremove         : remove a spell, use 'all' to clear table
+senable         : enable a spell
+sdisable        : disable a spell
+sba             : add blockers, Ex. 'protection good:inertial barrier'
+sbr             : remove blockers
+fast            : cast all spells requested in one go
+
+------- other -------
+olist           : list spells to be cast on other
+oadd            : add spells to cast on other
+oremove         : remove spells to cast on other
+oenable         : enable a spell
+odisable        : disable a spell
+other           : cast spells on another char, use 'fast' to cast all spellup spells, otherwise it only casts the ones added with oadd
+
+------- Spells -------
+togglespellup   : toggle a spell to be a spellup regardless of what the mud says
+toggleclan      : toggle a spell/skill to be a clan skill
+searg           : add an argument to be cast with a spell
+
+------- Misc -------
+export          : export current spell list as list of commands
+info            : show info on a spell
+check           : lists everything that needs to be checked before spellups begin
+pause           : pause spellup
+resume          : resume spellup
+refresh         : refresh affected spells
  }}}
 
- * Commands for spellups on others
- {{{
- oadd            : add spells to cast on other, for spells with multiple words, surround with ' or use the sn
- odisable        : disable a spell
- oenable         : enable a spell
- olist           : remove spells to cast on other
- oremove         : remove spells to cast on other
- other           : cast spells on another char, use 'fast' to cast all spellup spells, otherwise it only casts the ones added with oadd
- }}}
-
- * Info/action commands
- {{{
- toggleclan      : toggle a spell/skill to be a clan skill
- togglespellup   : toggle a spell to be a spellup regardless of what the mud says
- check           : lists everything that needs to be checked before spellups begin
- export          : export current spell settings as list of commands
- info            : show info on a spell
- refresh         : refresh affected spells
- pause           : pause spellup
- resume          : resume spellup
- }}}
+= Variables =
+{{{
+Specific settings for this plugin
+autoprac                       : false                - auto practice skills/spells in your spellup list
+practo                         : 85                   - the percentage to practice spells to
+}}}
 
 = Walkthrough =
  * This is the export of my current spellups

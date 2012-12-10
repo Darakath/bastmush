@@ -1,4 +1,4 @@
-#summary Brief description of plugin
+#summary a plugin to create eq sets
 
 === Table of Contents ===
 <wiki:toc max_depth="2" />

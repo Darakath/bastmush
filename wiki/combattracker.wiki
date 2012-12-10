@@ -1,0 +1,21 @@
+#summary a simple combat tracker
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * a plugin to track simple combat stats
+
+= Installation =
+ * See the [Installation] Page
+ * The command for this plugin is "btr"
+
+= Troubleshooting =
+
+= Examples =
+
+= Help =
+{{{
+------- Get information about damage -------
+last            : show stats for last combat
+}}}

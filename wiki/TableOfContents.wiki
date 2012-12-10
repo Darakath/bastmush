@@ -11,7 +11,6 @@
  * Bast's Plugins
   * [Aardwolf_Regen]
   * [areaDB]
-  * [areaDB_Lookup]
   * [bast_hunt]
   * [bast_spellup]
   * [broadcast_cp]
@@ -27,7 +26,6 @@
   * [broadcast_spellsskills]
   * [broadcast_whois]
   * [eqDB]
-  * [eqLookup]
   * [fix]
   * [miniwin_cp]
   * [miniwin_double]

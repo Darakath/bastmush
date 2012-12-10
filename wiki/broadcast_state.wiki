@@ -1,0 +1,17 @@
+#summary broadcast some simple mud states, like ice age, login
+
+=== Table of Contents ===
+<wiki:toc max_depth="2" />
+
+= Introduction =
+ * a plugin to broadcast states like ice age
+
+= Installation =
+ * See the [Installation] Page
+ * The command for this plugin is "bstate"
+
+= Troubleshooting =
+
+= Examples =
+
+= Help =

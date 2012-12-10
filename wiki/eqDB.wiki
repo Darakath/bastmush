@@ -10,6 +10,7 @@
 = Installation =
  * See the [Installation] Page
  * The command for this plugin is "eqdb"
+  * for help on a specific command, {{{eqdb <cmd> help}}}
 
 = Extras in the plugin =
  * add an identifier to an item
@@ -32,12 +33,39 @@
 
 = Help =
 {{{
+------- Obtaining information on items -------
+lu              : lookup stuff in the db
+getitem         : print info on item with id
+comp            : compare items,args = list of serials
+getcolourname   : return the name of the item with embedded color codes
+
+------- Manipulating identifiers on items -------
 addid           : add an identifier to an item
-listid          : list items with identifiers
 remid           : remove an identifier from an item
-refresh         : refresh the db
+listid          : list items with identifiers
+
+------- Manipulating notes on items -------
+addnote         : add a note to an item, first arg is serial, the rest will be the note
+remnote         : remove a note from an item, only arg is note number
+listnote        : list notes for an item, only arg is item serial
+
+------- Manipulating items -------
 lget            : get items from container between level1 and level2
 lput            : put items in container between level1 and level2
+
+------- Database commands -------
 clean           : clean the db of stale items
+idinv           : identify all items in inventory (does not include Worn or items in bags)
+refresh         : refresh the db
 close           : close the db
+
+------- Misc -------
+translate       : show what strings mean for certain types of flags
+}}}
+
+= Variables =
+{{{
+Specific settings for this plugin
+showoutput                     : false                - show tags
+overloadid                     : true                 - overload the identify command to use getitem
 }}}

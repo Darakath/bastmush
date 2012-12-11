@@ -21,7 +21,7 @@
 = Installation =
  * See the [Installation] Page
  * The default command for this plugin is "bsp" 
-  * for help on a specific command, {{{bsp <cmd> help}}}
+  * for help on a specific command, "{{{bsp <cmd> help}}}"
 
 = Help =
  * the default cmd alias is bsp

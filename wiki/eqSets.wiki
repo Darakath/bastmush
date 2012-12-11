@@ -16,7 +16,7 @@
 
 = Troubleshooting =
  * If you can't add an item to a level set, make sure eqDB is loaded and type "eqdb refresh"
- * for help on a specific command, do {{{eqs <cmd> help}}}
+ * for help on a specific command, do "{{{eqs <cmd> help}}}"
 
 = Examples =
 

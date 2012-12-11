@@ -10,34 +10,34 @@
 = Installation =
  * See the [Installation] Page
  * The command for this plugin is "eqdb"
-  * for help on a specific command, {{{eqdb <cmd> help}}}
-  * there is an alias for eqlu that will pass the arguments to {{{eqdb lu}}}
+  * for help on a specific command, "{{{eqdb <cmd> help}}}"
+  * there is an alias for eqlu that will pass the arguments to "{{{eqdb lu}}}"
 
 = Extras in the plugin =
  * add an identifier to an item
-  * {{{eqdb addid <serial> <identifer>}}}
-  * {{{get 49495858}}} will get the item from whatever container it is in
+  * "{{{eqdb addid <serial> <identifer>}}}"
+  * "{{{get 49495858}}}" will get the item from whatever container it is in
   * for the following mud commands: get, put, remove, wear, ident
    * will substitute identifiers for item serial #s
- * {{{lget/lput <serialorident> <level1> <level2(opt)>}}} - get/put items between level1 and level2 from/into a container  
+ * "{{{lget/lput <serialorident> <level1> <level2(opt)>}}}" - get/put items between level1 and level2 from/into a container  
 
 = Troubleshooting =
  * To reset all eq
-  * {{{eqdb refresh}}} then {{{eqdb clean}}}
+  * "{{{eqdb refresh}}} then {{{eqdb clean}}}"
   * or delete the eqdb.db file in the logs directory and reload the plugin
 
 = Examples =
  * This is how I do portals
-  * {{{eqdb addid <bagserial> portbag}}}
-  * Then to use a portal I can get it with: {{{get share portbag}}}
-  * Also {{{get <serial#forshare>}}} would work
+  * "{{{eqdb addid <bagserial> portbag}}}"
+  * Then to use a portal I can get it with: "{{{get share portbag}}}"
+  * Also "{{{get <serial#forshare>}}}" would work
  * Looking up and sorting equipment
   * use the command eqlu
    * sorting all equipment by level
-    * {{{eqlu level between 1 and 50 ORDER BY level asc}}}
+    * "{{{eqlu level between 1 and 50 ORDER BY level asc}}}"
      * asc means ascending, so the order shown will start with 1 and go to 50 (desc is the opposite of asc)
    * sorting eq in a specific bag
-    * {{{eqlu level between 1 and 50 and containerid = 549229115 ORDER BY level asc}}}
+    * "{{{eqlu level between 1 and 50 and containerid = 549229115 ORDER BY level asc}}}"
      * containerid can be 'Worn' for worn items, 'Inventory' for items in Inventory, or a serial number of a container that you have
      
 

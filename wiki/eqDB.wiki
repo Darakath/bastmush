@@ -5,7 +5,7 @@
 
 = Introduction =
  * This plugins saves inventory into a sqlite database
- * Also see [eqdb] and [miniwin_eq]
+ * Also see [miniwin_eq]
 
 = Installation =
  * See the [Installation] Page

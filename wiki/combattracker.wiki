@@ -13,8 +13,8 @@
 = Troubleshooting =
 
 = Examples =
- * {{{btr last}}} will return the stats for the last mob you killed
- * {{{btr last 1}}} will return the stats for the second to last mob you killed
+ * "{{{btr last}}}" will return the stats for the last mob you killed
+ * "{{{btr last 1}}}" will return the stats for the second to last mob you killed
  
 = Help =
 {{{

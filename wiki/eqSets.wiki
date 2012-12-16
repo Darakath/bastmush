@@ -36,22 +36,13 @@ wearset         : wear a set
 show            : show the eq for a set
 stats           : get the stats for a set
 diff            : diff two sets
+noset           : show items that are not in sets
+compitem        : compare an item to a set
 
 ------- Manipulating items in a set -------
 getset          : get all items for a set and put them in inventory (or leave them worn if already worn)
-putset          : put all items for a set into their targetted container
+putset          : put all items for a set into their target container
 
 ------- Misc -------
 close           : close the db
-
-------- Default -------
-reset           : reset settings to default values
-windows         : list windows and some info associated with this plugin
-debug           : toggle debugging
-showevents      : show functions registered for all events
-showvars        : show plugin variables
-help            : show help
-save            : save plugin variables
-set             : set settings
-objects         : list objects associated with this plugin
 }}}

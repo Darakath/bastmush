@@ -16,6 +16,7 @@
 = Installation =
  * See the [Installation] Page
  * The default command for this plugin is "mev" 
+ * to show this window "{{{mev events front}}}" then "{{{mev events show}}}"
 
 = Screenshots =
 

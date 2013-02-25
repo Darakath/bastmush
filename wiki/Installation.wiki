@@ -18,7 +18,7 @@
   http://bastmush.googlecode.com/svn/wiki/images/install/mushclientpluginsfolder.png
  * Drag the Bast folder from the zipfile into the plugins directory
   http://bastmush.googlecode.com/svn/wiki/images/install/afterdrag.png
- * Use File->Plugins to Add the plugins you want to use
+ * Use File->Plugins and then the "Add" button to add new plugins
 
 = Upgrading an existing install =
  * Close mushclient
@@ -35,7 +35,7 @@
  * Drag the Bast folder from the zipfile into the plugins directory
   http://bastmush.googlecode.com/svn/wiki/images/install/afterdrag.png
  * open mushclient, you will get warnings that some plugins could not be found, those will be ones that were removed
- * Use File->Add to add new plugins
+ * Use File->Plugins and then the "Add" button to add new plugins
   * If the old plugins were not in a Bast folder, all plugins that you were using will need to be Added 
 
 = Migrating data to a new installation =

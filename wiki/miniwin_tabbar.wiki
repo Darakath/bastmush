@@ -16,7 +16,7 @@
  * left click on a tabname to bring up a menu of actions for that particular window
 
 = Troubleshooting =
- * if you do not see the window, "mtab tabwin toggle"
+ * if you do not see the window, "mtab tabwin show" then "mtab tabwin front"
 
 = Screenshots =
  http://bastmush.googlecode.com/svn/wiki/images/tabwin/tabwin.png

@@ -127,3 +127,34 @@ Your info channel is ON
  {{{
 You are displaying damage mode 1.
 }}}
+ * tags
+ {{{
+Tag Name      Description                                             Status    
+------------  ------------------------------------------------------- ------   
+BIGMAP        Display tags/keyword around bigmap: {BIGMAP}            YES
+CHANNELS      Display tags around channels - {chan ch=name}           YES
+COORDS        Display coordinates while on continents: {coords}       YES
+EDITORS       Display tags when entering / leaving editors: {edit/}   NO 
+EQUIP         Display tags when viewing own equipment: {equip/}       NO 
+EXITS         Display tags around autoexits: {exits}                  NO 
+HELPS         Display tags around help and help headers.              YES
+INV           Display tags when viewing own inventory: {inventory/}   NO 
+MAP           Display tags around map: <MAPSTART> <MAPEND>            YES
+MAPEXITS      Adds room exits within maptags                          YES
+MAPNAMES      Adds room name within maptags                           YES
+QUIET         Temporarily turns all other tags on/off:                NO 
+ROOMDESCS     Display tags around descs {RDESC}                       NO 
+ROOMNAMES     Display tags around roomnames when moving: {rname}      NO 
+SAYS          Display tags around says: {say}                         YES
+SCORE         Display tags around score: {score}                      NO 
+SKILLGAINS    Display tags when you gain/increase a skill/spell       YES
+SPELLUPS      Display tags on spellups - multiple tags                YES
+TELLS         Display tags around tells - {tell}                      YES
+TELOPTS       See output when client auto sets flags.                 NO 
+MAPDATA       Experimental - does nothing yet.                        NO 
+ROOMCHARS     Display tags around characters in a room.               NO 
+ROOMOBJS      Display tags around items in a room.                    NO 
+SCAN          See tags around scan output.                            YES
+REPOP         See tags around repop messages.                         NO 
+Global tags option (tags on/off) is On.
+}}}

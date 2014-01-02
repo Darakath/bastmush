@@ -26,6 +26,7 @@
 = Help =
  * the default cmd alias is bsp
  * For spells with multiple words, surround the spell with single quotes or use the sn
+ * to add a spell in a certain position, add a :<position> to the end of the spell, Example: "bsp sadd aid:1" to add aid to the first position
  * Commands for spellups on self
 {{{
 ------- self -------

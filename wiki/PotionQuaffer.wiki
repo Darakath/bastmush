@@ -16,6 +16,20 @@
 = Troubleshooting =
  *
 
+= Bast's settings =
+{{{
+PotionQuaffer: Heal Potion      = jade elixir
+PotionQuaffer: Heal Description = Jade Elixir
+PotionQuaffer: Heals Remaining  = 0
+PotionQuaffer: Mana Potion      = tea
+PotionQuaffer: Mana Description = Green Herbal Tea
+PotionQuaffer: Manas Remaining  = 0
+PotionQuaffer: Buff Potion      = idea
+PotionQuaffer: Buff Description = a Refreshing Idea
+PotionQuaffer: Buffs Remaining  = 0
+PotionQuaffer: Potion Bag       = (318474)
+PotionQuaffer: Group Alert      = off
+}}}
 = Help =
  {{{
 /*

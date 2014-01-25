@@ -14,6 +14,9 @@
  * See the [Installation] Page
  * The command for this plugin is "eqs"
 
+= Restoring a previous backup =
+ * Please see the [eqDB] page
+
 = Troubleshooting =
  * If you can't add an item to a level set, make sure eqDB is loaded and type "eqdb refresh"
  * for help on a specific command, do "{{{eqs <cmd> help}}}"

@@ -21,6 +21,12 @@
    * will substitute identifiers for item serial #s
  * "{{{lget/lput <serialorident> <level1> <level2(opt)>}}}" - get/put items between level1 and level2 from/into a container  
 
+= Restoring a previous backup =
+ * backups are located in the {{{<MUSHclient>\logs\db_backups}}} directory
+ * the eq database is {{{eq.db.<extension>}}}
+ * close MUSHclient and copy one of the backups into the logs directory
+ * reopen MUSHclient and then an {{{eqdb refresh}}}
+
 = Troubleshooting =
  * To reset all eq
   * "{{{eqdb refresh}}}" then "{{{eqdb clean}}}"

@@ -24,7 +24,7 @@
 = Restoring a previous backup =
  * backups are located in the {{{<MUSHclient>\logs\db_backups}}} directory
  * the eq database is {{{eq.db.<extension>}}}
- * close MUSHclient and copy one of the backups into the logs directory
+ * close MUSHclient and copy one of the backups into the logs directory and replace eq.db
  * reopen MUSHclient and then an {{{eqdb refresh}}}
 
 = Troubleshooting =

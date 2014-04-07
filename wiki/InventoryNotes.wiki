@@ -82,6 +82,7 @@ if u1 = 1, then add a stat value of statmod
   u2 = 6, luck
   u2 = 10, hit roll
   u2 = 11, dam roll
+  u2 = 12, saves
 
 type 581 = temper
 type 216 = envenom

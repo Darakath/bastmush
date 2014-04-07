@@ -1,34 +1,4 @@
 ﻿{{{
-<!-- {eqdata}
-55984226,KG,a hallowed light,1,1,1,0,-1
-6285253,HKG,bengal tiger skull,141,7,1,1,-1
-102295356,HKG,Gaze of the Mosaic,101,7,1,2,-1
-1048056,HKG,A Feather of a Fiery Phoenix,60,7,1,3,-1
-6285411,HKG,(>Whispers of the Earth<),41,7,1,4,-1
-57629271,HKG,the Amulet of Anubis,91,7,1,5,-1
-6285234,HKG,A Cloak skinned from a brave huntsman,116,7,1,6,-1
-6285207,HKG,Weather-Proof Duster,131,7,1,7,-1
-88519684,HKG,Academy Graduation Medal,1,7,0,8,-1
-229767819,HKG,V3 Aardwolf Supporters Pin,1,7,0,9,-1
-10337366,HKG,Aardwolf Breastplate of magic resistance,100,7,1,12,-1
-89148730,HKG,Nature's Embrace,121,7,1,13,-1
-1036064,HKG,SpillGaard Espresso Holster,131,7,1,14,-1
-55279170,HKG,Golden Asp Armbands,91,7,1,15,-1
-353412994,HKG,an Elven Patrol Guard Bracer,127,7,0,16,-1
-1006243,HKG,MoonStone Wrist Band,121,7,1,17,-1
-57630184,HKG,(Legendary) Gauntlets of the Warrior-Poet,91,7,1,18,-1
-6285182,HKG,Aardwolf Ring of Regeneration,1,6,1,19,-1
-2915141,HKG,Printer Bearing,131,7,1,20,-1
-6285209,HKG,Imperfection Completed,131,7,1,21,-1
-2510593,HKG,(*)(> Zircon Agilitian <)(*),121,7,1,22,-1
-6285279,HKG,Dagger of Aardwolf,140,5,1,24,-1
-6285278,HKG,Dagger of Aardwolf,140,5,1,25,-1
-10337408,HKG,Aardwolf Aura of Sanctuary,100,6,1,27,-1
-6285178,HKG,Aura of Trivia,1,7,1,30,-1
-6285181,HKG,the Amulet of Aardwolf,1,20,1,31,-1
-108471568,HKG,V3 Trivia Sleeping Bag,1,9,0,32,-1
-{/eqdata}
-
 self.invlayout['invheader'] = ["serial", "level", "type", "worth",
                         "weight", "wearable", "flags", "owner",
                         "fromclan", "timer", "u1", "u2", "u3",
@@ -51,18 +21,8 @@ self.invlayout['light'] = ['duration']
 self.invlayout['portal'] = ['uses']
 self.invlayout['tempmod'] = ['type', 'u1', 'u2', 'statmod', 'duration']
 
-{tempmod}
-{tempmod}581,9,14,5,24088
-{tempmod}216,7,6,1,17556
-{tempmod}216,9,14,6,17556
-
-[type, u1, u2, statmod, duration]
-
-if u1 = 7 and u2 = 6 then add poison flag
-if u1 = 9 and u2 = 15 then add average damage modified by statmod
-
-type 581 = temper
-type 216 = envenom
+In identify but not in invdetails:
+  Material, Leads To, keywords, Found at, Affect mods
 
 {invdetails}
 {invheader}10337366|100|Armor|100000|5|torso|unique, glow, hum, magic,
@@ -80,7 +40,7 @@ type 216 = envenom
 
 potions, wands, scrolls, pills
 {spells}1|60|54|54|54|54|0
-       uses|level|spell|spell|spell|spell|unknown
+     uses|level|spell|spell|spell|spell|unknown
 
 replenishes hunger
 {food}100
@@ -90,60 +50,26 @@ drink
    servings|liquid|liquidmax|liquidcurrent|replenishesthirst|replenisheshunger|unknown
 
 {statmod}Luck|2
-{statmod}Constitution|2
-{statmod}Wisdom|4
-{statmod}Dexterity|2
-{statmod}Strength|2
-{statmod}Intelligence|2
-{statmod}Hit points|125
-{statmod}Mana|125
-{statmod}Moves|125
-{statmod}Damage roll|25
-{statmod}Hit roll|20
-
+  stat|mod
 {skillmod}201|2
+  sn|mod
 
 {resistmod}Acid|100
-{resistmod}Air|100
-{resistmod}Cold|100
-{resistmod}Earth|100
-{resistmod}Energy|100
-{resistmod}Fire|100
-{resistmod}Holy|100
-{resistmod}Light|100
-{resistmod}Electric|100
-{resistmod}Mental|100
-{resistmod}Negative|100
-{resistmod}Sonic|100
-{resistmod}Shadow|100
-{resistmod}Water|100
-{resistmod}Magic|100
 {resistmod}All physical|25
+ resist|mod
 {/invdetails}
 
-{invdata}
-6285182,HKG,@RAardwolf@Y Ring of Regeneration@w,1,6,1,-1,-1
-358816921,HKG,a pocket dictionary Cougarian -> English,170,6,0,-1,-1
-145412098,K,@wMoricand Clothes@w,50,6,0,-1,-1
-200832150,K,@wa @Wsi@wlv@Wer @wbracelet adorned with @Wsi@wlve@Wry @wleaflets,135,6,1,-1,-1
-60125052,K,a @Gd@yrago@Gn @wmask,100,6,0,-1,-1
-158909251,K,@WConadrain Clothes@w,40,6,0,-1,-1
-58695136,K,@W>@yxxxxx@W(@Rseal of the Wild Boar@W)@yxxxxx@W<@w,95,7,0,-1,-1
-149303771,HKG,@cNeu@Ctrali@czer Sh@Ca@crd@w,80,6,0,-1,-1
-176499056,KG,@ga @GVe@grdu@Gre @gtoken@w,100,10,0,-1,-1
-63022438,HKG,@wa @Yg@yolde@Yn @ychain@w,131,6,0,-1,-1
-60365031,K,a @Rd@revil's @Rh@rand@w,100,5,0,-1,-1
-161002920,K,a puzzling ring,111,7,0,-1,-1
-153450231,HKG,a ball of light,100,1,0,-1,-1
-149303101,HK,a silk pouch,80,11,0,-1,-1
-118982790,HKG,a @YBag of @RAardwolf@w,143,11,1,-1,-1
-6285391,HKG,a @YBag of @RAardwolf@w,143,11,1,-1,-1
-6285290,HKG,a @YBag of @RAardwolf@w,143,11,1,-1,-1
-6285193,HKG,@ME@Ya@Cs@Mt@Ye@Cr @MB@Ya@Cs@Mk@Ye@Ct@w,200,11,1,-1,-1
-6285177,HKG,a demon school backpack,157,11,0,-1,-1
-6285176,HKG,@WS@wa@Wt@wc@Wh@we@Wl o@wf @WS@wa@Wn@wc@Wt@wi@Wt@wy,100,11,1,-1,-1
-{/invdata}
+{tempmod}
+{tempmod}581,9,14,5,24088
+{tempmod}216,7,6,1,17556
+{tempmod}216,9,14,6,17556
 
-In identify but not in invdetails:
-  Material, Leads To, keywords, Found at, Affect mods
+[type, u1, u2, statmod, duration]
+
+if u1 = 7 and u2 = 6 then add poison flag
+if u1 = 9 and u2 = 15 then add average damage modified by statmod
+
+type 581 = temper
+type 216 = envenom
+
 }}}

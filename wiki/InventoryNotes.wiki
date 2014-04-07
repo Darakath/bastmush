@@ -30,7 +30,8 @@
 {/eqdata}
 
 {invdetails}
-{invheader}10337366|100|Armor|100000|5|torso|unique, glow, hum, magic, dohskill, held, burn-proof, solidified, illuminated, v3, precious
+{invheader}10337366|100|Armor|100000|5|torso|unique, glow, hum, magic,
+ dohskill, held, burn-proof, solidified, illuminated, v3, precious
 |Bast||||||381
 
 {container}3860|100|604|77|-216|78|20

@@ -69,7 +69,7 @@ drink
 {tempmod}581,1,2,3,448125
 {tempmod}581,1,3,3,448125
 
-[type, u1, u2, statmod, duration]
+[skill/spell number, u1, u2, statmod, duration]
 
 if u1 = 7 and u2 = 6 then add poison flag
 if u1 = 9 and u2 = 14 then add average damage modified by statmod
@@ -84,7 +84,7 @@ if u1 = 1, then add a stat value of statmod
   u2 = 11, dam roll
   u2 = 12, saves
 
-type 581 = temper
-type 216 = envenom
+sn 581 = temper
+sn 216 = envenom
 
 }}}

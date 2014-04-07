@@ -76,11 +76,11 @@ type 216 = envenom
      weapontype|avedam|inflicts|damtype|specials
      
 {furniture}250|250|1
-     hp|mana|move (???)
+     hp|mana|unknown
 
 potions, wands, scrolls, pills
 {spells}1|60|54|54|54|54|0
-       uses|level|spell|spell|spell|spell|spell
+       uses|level|spell|spell|spell|spell|unknown
 
 replenishes hunger
 {food}100
@@ -144,92 +144,6 @@ drink
 6285176,HKG,@WS@wa@Wt@wc@Wh@we@Wl o@wf @WS@wa@Wn@wc@Wt@wi@Wt@wy,100,11,1,-1,-1
 {/invdata}
 
-Lasher needs to add:
-  affect mods - sanc, regen, etc..
--->
-
-item = {}
-item_name = ''
-
-items = {}
-
-function new_item()
-  item = {}
-  item.itemsn = ''
-  item.name = ''
-  item.flags = {}
-  item.fullflags = ''
---[[  
-  item.hum = false
-  item.glow = false
-  item.invis = false
-  item.magical = false
-  item.keep = false
-  item.burn-proof = false
-  item.unique = false
-  item.illuminated = false
-  item.resonate = false
-  item.solidify = false
-  item.precious = false
-  item.auctioned = false
-  item.donated = false
-  item.noshare = false
-  item.nolocate = false
---]]
-  item.v3 = false
-  item.level = -1
-  item.type = -1
-  item.location = -1
-  item.locationstring = ''
-  item.timer = -1
-  item.weight = -1
-  item.value = -1
-  item.score = -1
-  item.fromclanname = ''
-  item.foundat = ''
-  item.statmods = {}
---[[
-  item.wisdom = 0
-  item.strength = 0
-  item.intelligence = 0
-  item.constitution = 0
-  item.dexterity = 0
-  item.luck = 0
-  item.hitroll = 0
-  item.damroll = 0
-  item.moves = 0
-  item.hitpoints = 0
-  item.mana = 0
---]]
-  item.resistmods = {}
-  -- key will be resist, value will be mod
-    
-  item.skillmods = {}
-  -- key will be skillnumber, value will be mod
-  
-  item.affectmods = {}
-  -- key will be mod, value will be nothing
-  
-  item.weapon = false
-  item.weaponstuff = {}
---[[
-  item.weapon = false
-  item.weapontype = ''
-  item.weapondamage = 0
-  item.weaponinflicts = ''
-  item.weapondamtype = ''
-  item.weaponspecials = ''
---]]
-  
-  item.furniture = false
-  item.furniturestuff = {}
-  -- furniturestuff will have mana, move, hp, regen rate
-  
-  item.container = false
-  item.containerstuff = {}
-  -- containerstuff will have 
-  
-  return item
-end
-
+In identify but not in invdetails:
+  Material, Leads To, keywords, Found at, Affect mods
 }}}

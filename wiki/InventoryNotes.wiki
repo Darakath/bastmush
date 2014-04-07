@@ -22,7 +22,7 @@ self.invlayout['portal'] = ['uses']
 self.invlayout['tempmod'] = ['type', 'u1', 'u2', 'statmod', 'duration']
 
 In identify but not in invdetails:
-  Material, Leads To, keywords, Found at, Affect mods
+  Material, Leads To, keywords, Found at, Affect mods, Notes (like on an ore or area reset token)
 
 {invdetails}
 {invheader}10337366|100|Armor|100000|5|torso|unique, glow, hum, magic,

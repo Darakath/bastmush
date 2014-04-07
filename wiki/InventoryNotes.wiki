@@ -29,6 +29,40 @@
 108471568,HKG,V3 Trivia Sleeping Bag,1,9,0,32,-1
 {/eqdata}
 
+self.invlayout['invheader'] = ["serial", "level", "type", "worth",
+                        "weight", "wearable", "flags", "owner",
+                        "fromclan", "timer", "u1", "u2", "u3",
+                        "score"]
+self.invlayout['container'] = ["capacity", "heaviestitem", "holding",
+  "itemsinside", "totalweight", "itemburden", "itemweightpercent"]
+self.invlayout['statmod'] = ['name', 'value']
+self.invlayout['resistmod'] = ['name', 'value']
+self.invlayout['weapon'] = ["wtype", "avedam", "inflicts", "damtype",
+                             "special"]
+self.invlayout['skillmod'] = ['name', 'value']
+self.invlayout['spells'] = ["uses", "level", "sn1", "sn2", "sn3", "sn4",
+                             "u1"]
+self.invlayout['food'] = ['percent']
+self.invlayout['drink'] = ["servings", "liquid", "liquidmax", "liquidleft", "thirstpercent", "hungerpercent", "u1"]
+self.invlayout['furniture'] = ["hpregen", "manaregen", "u1"]
+self.invlayout['eqdata'] = ["serial", "shortflags", "cname", "level",
+                       "type", "unique", "wearslot", "timer"]
+self.invlayout['light'] = ['duration']
+self.invlayout['portal'] = ['uses']
+
+{tempmod}
+{tempmod}581,9,14,5,24088
+{tempmod}216,7,6,1,17556
+{tempmod}216,9,14,6,17556
+
+[type, u1, u2, statmod, duration]
+
+u1 = 7, u2 = 6 = poison flag
+u1 = 9, u2 = 15 = add average damage modified by statmod
+
+type 581 = temper
+type 216 = envenom
+
 {invdetails}
 {invheader}10337366|100|Armor|100000|5|torso|unique, glow, hum, magic,
  dohskill, held, burn-proof, solidified, illuminated, v3, precious

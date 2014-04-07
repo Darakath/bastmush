@@ -67,7 +67,7 @@ drink
 [type, u1, u2, statmod, duration]
 
 if u1 = 7 and u2 = 6 then add poison flag
-if u1 = 9 and u2 = 15 then add average damage modified by statmod
+if u1 = 9 and u2 = 14 then add average damage modified by statmod
 
 type 581 = temper
 type 216 = envenom

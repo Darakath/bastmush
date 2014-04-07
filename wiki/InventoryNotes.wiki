@@ -49,6 +49,7 @@ self.invlayout['eqdata'] = ["serial", "shortflags", "cname", "level",
                        "type", "unique", "wearslot", "timer"]
 self.invlayout['light'] = ['duration']
 self.invlayout['portal'] = ['uses']
+self.invlayout['tempmod'] = ['type', 'u1', 'u2', 'statmod', 'duration']
 
 {tempmod}
 {tempmod}581,9,14,5,24088

@@ -37,3 +37,11 @@ miniwin_events_help
   * reset  - reset the miniwindow
  1 type "mev events show" and "mev events front" to see the window
  1 If this doesn't work, then type "mev events reset"
+
+== I lost miniwindow X ==
+ Follow the instructions to find the appropriate object above
+ We will still assume minwin_events.
+
+ 1 "mev events reset"
+ 1 "mev events front"
+ 1 "mev events show"
